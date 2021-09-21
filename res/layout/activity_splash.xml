@@ -1,0 +1,155 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_theme_color"
+    >
+
+
+    <TextView
+        android:id="@+id/txtAppName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="#ffffff"
+        android:gravity="center_horizontal"
+        android:text=""
+        android:textColor="@color/theme_color"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+
+
+    <TextView
+        android:id="@+id/txtpunchLine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtAppName"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="0dp"
+        android:background="#ffffff"
+        android:gravity="center_horizontal"
+        android:text=""
+        android:textColor="@color/theme_color"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_above="@+id/view1"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:onClick="clickNext"
+        android:layout_margin="8dp"
+        android:textSize="14sp"
+        android:background="@drawable/button_background"
+        android:textColor="@color/white"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        />
+
+
+
+
+    <TextView
+        android:id="@+id/txtAppPunchline"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtAppName"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:background="#0000"
+        android:textColor="#000"
+        android:textSize="12sp" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/txtAppPunchline"
+        android:layout_marginTop="2dp"
+        android:background="#67A687"
+        android:visibility="gone"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view2"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical"
+        android:scrollbars="none"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/view1"
+            android:layout_marginTop="2dp"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                >
+
+                <!--<TextView-->
+                <!--android:id="@+id/txtAppDetail"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:padding="2dp"-->
+                <!--android:textColor="#000" />-->
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:visibility="gone"
+                >
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/splashimg"
+                    android:padding="5dp"
+                    android:visibility="gone"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="80dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                >
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/txtLabel"
+        android:background="#67A687" />
+
+    <TextView
+        android:id="@+id/txtLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo"
+        android:textColor="#000"
+        android:textSize="8sp" />
+
+</RelativeLayout>

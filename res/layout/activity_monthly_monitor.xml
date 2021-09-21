@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background_theme_color"
+    android:orientation="vertical"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvTitleBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="5dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/toolbar_color"
+            android:elevation="2dp"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/ivTitleBack"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:elevation="2dp"
+                android:src="@drawable/ic_baseline_keyboard_backspace_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:layout_margin="10dp"
+    android:layout_below="@+id/cvTitleBar"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Monthly Monitoring"
+            android:textColor="#000"
+            android:textSize="22dp"
+            android:visibility="gone"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="2dp"
+            android:background="#67A687"
+            android:visibility="gone"/>
+
+        
+
+        <TextView
+            android:id="@+id/sub_Monitor1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="22dp" />
+
+        <ImageView
+            android:id="@+id/imageView_monitor"
+            android:layout_width="450dp"
+            android:layout_height="400dp"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:src="@drawable/monthly_monitor" />
+
+        <ImageView
+            android:id="@+id/imageView_monitor_marathi"
+            android:layout_width="450dp"
+            android:layout_height="400dp"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:src="@drawable/monthly_monitor_marathi" />
+        
+        <TextView
+            android:id="@+id/Monitor_Heading2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#a93e49"
+            android:textSize="24dp" />
+
+        <TextView
+            android:id="@+id/sub_Monitor2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="22dp" />
+
+        <ImageView
+            android:id="@+id/imageView_preg_mon"
+            android:layout_width="450dp"
+            android:layout_height="400dp"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:src="@drawable/preg_wom_mon" />
+
+        <ImageView
+            android:id="@+id/imageView_preg_mon_mar"
+            android:layout_width="450dp"
+            android:layout_height="400dp"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:src="@drawable/preg_women_mon_marathi" />
+        
+        <TextView
+            android:id="@+id/Monitor_Heading3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#a93e49"
+            android:textSize="24dp" />
+
+        <TextView
+            android:id="@+id/sub_Monitor3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="22dp" />
+
+        <ImageView
+            android:id="@+id/imageView_child_mon"
+            android:layout_width="450dp"
+            android:layout_height="400dp"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:src="@drawable/child_mon" />
+
+        <ImageView
+            android:id="@+id/imageView_child_mon_mar"
+            android:layout_width="450dp"
+            android:layout_height="400dp"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:src="@drawable/child_nutrition_marathi" />
+        
+        <TextView
+            android:id="@+id/Monitor_Heading4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#a93e49"
+            android:textSize="24dp" />
+
+        <TextView
+            android:id="@+id/sub_Monitor4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="22dp" />
+
+        <ImageView
+            android:id="@+id/imageView_adol"
+            android:layout_width="450dp"
+            android:layout_height="400dp"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:src="@drawable/adol_monitor" />
+        
+        <ImageView
+            android:id="@+id/imageView_adol_mar"
+            android:layout_width="450dp"
+            android:layout_height="400dp"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:src="@drawable/adol_nut_marathi" />
+    </LinearLayout>
+
+</ScrollView>
+</RelativeLayout>

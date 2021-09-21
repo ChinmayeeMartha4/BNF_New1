@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background_theme_color">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvTitleBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="5dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/toolbar_color"
+            android:elevation="2dp"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/ivTitleBack"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:elevation="2dp"
+                android:src="@drawable/ic_baseline_keyboard_backspace_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="6dp"
+    android:scrollbars="none"
+    android:layout_below="@id/cvTitleBar"
+    >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/txtAdolescentGirlMonitor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="3dp"
+                android:textColor="#000"
+                android:text="Adolescent Girl Monitoring"
+                android:textSize="20sp"
+                android:visibility="gone"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="2dp"
+                android:background="#67A687"
+                android:visibility="gone"/>
+
+           <!-- <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" >
+
+                <EditText
+                    android:id="@+id/etxtSearchByHhid"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="80dp"
+                    android:hint="House Hold Id"
+                    android:singleLine="true"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/btnAdolescentGo"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:onClick="clickGo"
+                    />
+            </RelativeLayout>-->
+
+            <TextView
+                android:id="@+id/txtAdolscentName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="left"
+                android:text="Adolescent Girl"
+                android:paddingLeft="2dp"
+                android:textColor="#000"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/spnAdolescentName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:singleLine="true" />
+        </LinearLayout>
+
+      <!--  <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rgMGR">
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rbPresent"
+                android:text="Present"
+                android:textColor="#000"
+                android:textSize="15sp"/>
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rbAbsent"
+                android:text="Absent"
+                android:textColor="#000"
+                android:textSize="15sp"/>
+        </RadioGroup>-->
+
+
+        <TextView
+            android:id="@+id/txtAdolescentWeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="left"
+            android:paddingLeft="2dp"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:text="Weight (In Kg and Gram)" />
+
+        <EditText
+            android:id="@+id/etxtAdolescentWeight"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:inputType="numberDecimal"
+            android:maxLength="6"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/txtAdolescentHeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:gravity="left"
+            android:paddingLeft="2dp"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:text="Height (In Cms)" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/etxtAdolescentHeight"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:inputType="numberDecimal"
+                android:maxLength="5"
+                android:layout_marginTop="2dp"
+                android:singleLine="true" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txtAdolescentHb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:gravity="left"
+            android:paddingLeft="2dp"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:text="HB (In GM/DL)"/>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/etxtAdolescentHb"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:inputType="numberDecimal"
+                android:maxLength="5"
+                android:layout_marginTop="2dp"
+                android:singleLine="true" />
+        </RelativeLayout>
+
+
+
+        <TextView
+            android:id="@+id/txtDateOfRecord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:gravity="left"
+            android:paddingLeft="2dp"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:text="Date of Record"
+            android:visibility="gone"
+
+            />
+
+        <!--<RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/etxtDateOfRecord"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="2dp"
+                android:visibility="gone"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:layout_marginRight="45dp"
+                android:focusable="false"
+                android:focusableInTouchMode="false" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:visibility="gone"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:onClick="show_callender"
+                android:src="@drawable/calenderr" />
+        </RelativeLayout>-->
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="left"
+            android:paddingLeft="2dp"
+            android:text="Image"
+            android:textColor="#000"
+            android:textSize="15sp" />
+        <ImageView
+            android:id="@+id/imgAdolscentMon"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:onClick="click_Image"
+            android:src="@drawable/ic_action_camera" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="right" >
+
+            <Button
+                android:id="@+id/btnAdlMonSubmit"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:onClick="btnSave"
+                android:text="Submit" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/txtPregnantNutritionHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <WebView
+                android:id="@+id/wvAdlNutritionHistory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="#67A687" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/txtFooter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:gravity="center"
+                android:textColor="#000"
+                android:textSize="10sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>
+
+</RelativeLayout>

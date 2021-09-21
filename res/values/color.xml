@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <color name="white">#ffffff</color>
+    <color name="selected">#FD8B18</color>
+    <color name="new_blue">#1464f6</color>
+    <color name="new_wood_color">#5e0202</color>
+    <color name="new_adolescent_girl">#fec63d</color>
+    <color name="new_pregnent_women">#dc4c18</color>
+    <color name="new_pink">#f24c84</color>
+    <color name="new_house_hold">#2e1572</color>
+    <color name="resource">#484848</color>
+    <color name="blogs">#30577C</color>
+    <color name="discussion">#F5AF02</color>
+    <color name="faqs">#86B817</color>
+    <color name="help">#5B5202</color>
+    <color name="setting">#934910</color>
+    <color name="help_new">#570e28</color>
+    <color name="abs">#0080ff</color>
+    <color name="colorPrimary">#7cb342</color>
+    <color name="red">#EC0A0A</color>
+    <color name="toolbar_color">#b70f0a</color>
+    <color name="yellow">#FFA500</color>
+    <color name="color_green">#03966C</color>
+
+    <color name="pink">#ffe4e1</color>
+     <color name="back">#5B4820</color>
+    <color name="black">#000000</color>
+    <color name="background_theme_color">#FFFFFF</color>
+    <color name="theme_color">#EB6767</color>
+    <color name="theme_color_green">#96da45</color>
+
+</resources>

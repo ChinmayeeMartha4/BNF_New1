@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background_theme_color"
+    android:orientation="vertical"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvTitleBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="5dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/toolbar_color"
+            android:elevation="2dp"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/ivTitleBack"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:elevation="2dp"
+                android:src="@drawable/ic_baseline_keyboard_backspace_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:layout_below="@+id/cvTitleBar"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/lnrChildNutrn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/blogs_sel"
+            android:clickable="false"
+            android:onClick="click_list"
+            android:orientation="vertical"
+            android:padding="4dp" >
+
+            <TextView
+                android:id="@+id/txtUploadPendingData"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:gravity="center_horizontal"
+                android:text="Upload Data"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/uploadEligiblefamily"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/house_hold" />
+
+            <Button
+                android:id="@+id/uploadwomenregistration"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Pregnant women " />
+
+            <Button
+                android:id="@+id/uploadmotherregistration"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Mother" />
+
+            <Button
+                android:id="@+id/uploadchild"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text=" Children " />
+
+            <Button
+                android:id="@+id/uploadAdolscentGirl"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Adolescent Girl" />
+
+            <Button
+                android:id="@+id/uploadchiuldnutrition"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text=" Child nutrition " />
+
+            <Button
+                android:id="@+id/uploadChildBehaviourChange"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text=" Child Behaviour Change "
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/uploadwomenmonitoring"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Women nutrition " />
+
+            <Button
+                android:id="@+id/uploadAdolescentMonitoring"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Adolescent Girl Monitoring" />
+
+            <Button
+                android:id="@+id/uploadEventMeeting"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/events_or_meetings" />
+
+            <Button
+                android:id="@+id/btnUploadAdolescentBaseline"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Upload Adolescent Girl Baseline"
+                android:visibility="gone"/>
+            <Button
+                android:id="@+id/btnUploadPWBaseline"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Upload Pregnant Women Baseline"
+                android:visibility="gone"/>
+            
+            <Button
+                android:id="@+id/btnUploadAwcDetails"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Upload Anganwadi Details"
+                android:visibility="gone"/>
+            
+            <Button
+                android:id="@+id/btnUploadWorkerDetails"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Upload Worker and Helper Details"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/news_sel"
+            android:orientation="vertical"
+            android:padding="4dp" >
+
+            <TextView
+                android:id="@+id/txtDownloadData"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal"
+                android:text="Download Data"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btnDwnEligibleFamily"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:enabled="false"
+                android:text="Download Eligible Family  "
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btnDownloadAll"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:onClick="click_download"
+                android:text="Download All" />
+
+            <Button
+                android:id="@+id/btnEvents"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:onClick="click_Event_download"
+                android:text="@string/download_events" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
+</RelativeLayout>

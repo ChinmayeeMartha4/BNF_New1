@@ -1,0 +1,652 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background_theme_color"
+    android:orientation="vertical"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvTitleBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="5dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/toolbar_color"
+            android:elevation="2dp"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/ivTitleBack"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:elevation="2dp"
+                android:src="@drawable/ic_baseline_keyboard_backspace_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_theme_color"
+    android:padding="6dp"
+    android:layout_below="@+id/cvTitleBar"
+    android:scrollbars="none" >
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvWVDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="3dp"
+                android:text="Anganwadi Worker Detail"
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="2dp"
+                android:background="#67A687" />
+             <TextView
+                android:id="@+id/tvWVPosition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="left"
+                android:paddingLeft="2dp"
+                android:text="Anganwadi Worker Position"
+                android:textColor="#000"
+                android:textSize="15sp" />
+
+             <EditText 
+                 android:id="@+id/etWVAwcPosition"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center"
+                 android:gravity="center"
+                 android:singleLine="true"
+                 android:enabled="false" />
+             
+            <TextView
+                android:id="@+id/tvWVTempCharge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="left"
+                android:paddingLeft="2dp"
+                android:text="If Yes Temporary In-Charge "
+                android:textColor="#000"
+                android:textSize="15sp" />
+            <EditText 
+                 android:id="@+id/etWVInCharge"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center"
+                 android:gravity="center"
+                 android:singleLine="true"
+                 android:enabled="false" />
+            
+           <TextView
+               android:id="@+id/tvWVWhichAwc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="left"
+                android:paddingLeft="2dp"
+                android:text="If yes from which anganwadi"
+                android:textColor="#000"
+                android:textSize="15sp" />
+           <EditText 
+                 android:id="@+id/etWVWhichAwc"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center"
+                 android:gravity="center"
+                 android:singleLine="true"
+                 android:enabled="false" />
+           
+             <TextView
+                 android:id="@+id/tvWVName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="left"
+                android:paddingLeft="2dp"
+                android:text="Worker Name"
+                android:textColor="#000"
+                android:textSize="15sp" />
+             
+             <EditText 
+                 android:id="@+id/etWVWorkerName"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center"
+                 android:gravity="center"
+                 android:singleLine="true"
+                 android:enabled="false" />
+             
+            <TextView
+                android:id="@+id/tvWVReligion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="left"
+                android:paddingLeft="2dp"
+                android:text="Religion"
+                android:textColor="#000"
+                android:textSize="15sp" />
+            
+            <EditText 
+                 android:id="@+id/etWVReligion"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center"
+                 android:gravity="center"
+                 android:singleLine="true"
+                 android:enabled="false" />
+
+           <TextView
+               android:id="@+id/tvWVCC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="left"
+                android:paddingLeft="2dp"
+                android:text="Cast Category"
+                android:textColor="#000"
+                android:textSize="15sp" />
+           
+           <EditText 
+                 android:id="@+id/etWVCC"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center"
+                 android:gravity="center"
+                 android:singleLine="true"
+                 android:enabled="false" />           
+
+           <TextView
+               android:id="@+id/tvWVCast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="left"
+                android:paddingLeft="2dp"
+                android:text="Cast"
+                android:textColor="#000"
+                android:textSize="15sp" />
+           
+           <EditText 
+                 android:id="@+id/etWVCast"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center"
+                 android:gravity="center"
+                 android:singleLine="true"
+                 android:enabled="false" />  
+                 
+           <TextView
+               android:id="@+id/tvWVDOB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="left"
+                android:paddingLeft="2dp"
+                android:text="Date Of Birth"
+                android:textColor="#000"
+                android:textSize="15sp" />
+
+           <EditText 
+                 android:id="@+id/etWVDOB"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center"
+                 android:gravity="center"
+                 android:singleLine="true"
+                 android:enabled="false" />
+           
+           <TextView
+               android:id="@+id/tvWVDOJ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="left"
+                android:paddingLeft="2dp"
+                android:text="Date Of Joining"
+                android:textColor="#000"
+                android:textSize="15sp" />
+
+           <EditText 
+                 android:id="@+id/etWVDOJ"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center"
+                 android:gravity="center"
+                 android:singleLine="true"
+                 android:enabled="false" /> 
+                  
+           
+             <TextView
+                 android:id="@+id/tvWVEdu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="left"
+                android:paddingLeft="2dp"
+                android:text="Educational Qualification"
+                android:textColor="#000"
+                android:textSize="15sp" />
+             
+             <EditText 
+                 android:id="@+id/etWVEQ"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center"
+                 android:gravity="center"
+                 android:singleLine="true"
+                 android:enabled="false" /> 
+                 
+             <TextView
+                 android:id="@+id/tvWVTraining"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="left"
+                android:paddingLeft="2dp"
+                android:text="Training"
+                android:textColor="#000"
+                android:textSize="15sp" />
+             
+             <EditText 
+                 android:id="@+id/etWVTraining"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center"
+                 android:gravity="center"
+                 android:singleLine="true"
+                 android:enabled="false" /> 
+                 
+             <TextView
+                 android:id="@+id/tvWVResidance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="left"
+                android:paddingLeft="2dp"
+                android:text="Residance"
+                android:textColor="#000"
+                android:textSize="15sp" />
+             
+             <EditText 
+                 android:id="@+id/etWVResidance"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center"
+                 android:gravity="center"
+                 android:singleLine="true"
+                 android:enabled="false" /> 
+                 
+             <TextView
+                 android:id="@+id/tvWVAwcDistance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="left"
+                android:paddingLeft="2dp"
+                android:text="If Other Distance From Anganwadi"
+                android:textColor="#000"
+                android:textSize="15sp" />
+             
+             <EditText 
+                 android:id="@+id/etWVAwcDistance"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center"
+                 android:gravity="center"
+                 android:singleLine="true"
+                 android:enabled="false" /> 
+                 
+             <TextView
+                 android:id="@+id/tvWVMobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="left"
+                android:paddingLeft="2dp"
+                android:text="Mobile No."
+                android:textColor="#000"
+                android:textSize="15sp" />
+             
+             <EditText 
+                 android:id="@+id/etWVMobile"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center"
+                 android:gravity="center"
+                 android:singleLine="true"
+                 android:enabled="false" />
+             
+             <TextView
+                 android:id="@+id/tvWVAltMobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="left"
+                android:paddingLeft="2dp"
+                android:text="Alternate Mobile No."
+                android:textColor="#000"
+                android:textSize="15sp" />
+             
+             <EditText 
+                 android:id="@+id/etWVAltMobile"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center"
+                 android:gravity="center"
+                 android:singleLine="true"
+                 android:enabled="false" /> 
+
+        <TextView
+            android:id="@+id/tvWVFullImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="left"
+                android:paddingLeft="2dp"
+                android:text="Worker Full Image"
+                android:textColor="#000"
+                android:textSize="15sp" />
+        <ImageView
+            android:id="@+id/wvImg1"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/ic_action_camera" />
+        
+        <TextView
+            android:id="@+id/tvWVPPPhoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="left"
+                android:paddingLeft="2dp"
+                android:text="Worker Passport Size Image"
+                android:textColor="#000"
+                android:textSize="15sp" />
+        <ImageView
+            android:id="@+id/wvImg2"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/ic_action_camera" />
+        
+        <TextView
+            android:id="@+id/tvHVDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="center"
+                android:text="Helper Details"
+                android:textColor="#000"
+                android:textSize="20sp" />
+        
+        <TextView
+            android:id="@+id/tvHVName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="left"
+                android:paddingLeft="2dp"
+                android:text="Anganwadi Helper Name"
+                android:textColor="#000"
+                android:textSize="15sp" />
+             
+             <EditText 
+                 android:id="@+id/etHVName"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center"
+                 android:gravity="center"
+                 android:singleLine="true"
+                 android:enabled="false" />
+             
+             <TextView
+                 android:id="@+id/tvHVDOB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="left"
+                android:paddingLeft="2dp"
+                android:text="Date Of Bith"
+                android:textColor="#000"
+                android:textSize="15sp" />
+             
+             <EditText 
+                 android:id="@+id/etHVDOB"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center"
+                 android:gravity="center"
+                 android:singleLine="true"
+                 android:enabled="false" />
+             
+             <TextView
+                 android:id="@+id/tvHVDOJ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="left"
+                android:paddingLeft="2dp"
+                android:text="Date Of Joining"
+                android:textColor="#000"
+                android:textSize="15sp" />
+             
+             <EditText 
+                 android:id="@+id/etHVDOJ"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center"
+                 android:gravity="center"
+                 android:singleLine="true"
+                 android:enabled="false" />
+             
+             <TextView
+                 android:id="@+id/tvHVTraining"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="left"
+                android:paddingLeft="2dp"
+                android:text="Training"
+                android:textColor="#000"
+                android:textSize="15sp" />
+             
+             <EditText 
+                 android:id="@+id/etHVTraining"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center"
+                 android:gravity="center"
+                 android:singleLine="true"
+                 android:enabled="false" />
+             
+             <TextView
+                 android:id="@+id/tvHVResidance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="left"
+                android:paddingLeft="2dp"
+                android:text="Residance"
+                android:textColor="#000"
+                android:textSize="15sp" />
+             
+             <EditText 
+                 android:id="@+id/etHVResidance"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center"
+                 android:gravity="center"
+                 android:singleLine="true"
+                 android:enabled="false" />
+             
+             <TextView
+                 android:id="@+id/tvHVAwcDistance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="left"
+                android:paddingLeft="2dp"
+                android:text="If other Distance from anganwadi"
+                android:textColor="#000"
+                android:textSize="15sp" />
+             
+             <EditText 
+                 android:id="@+id/etHVAwcDistance"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center"
+                 android:gravity="center"
+                 android:singleLine="true"
+                 android:enabled="false" />
+             
+             <TextView
+                 android:id="@+id/tvHVMobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="left"
+                android:paddingLeft="2dp"
+                android:text="Mobile No."
+                android:textColor="#000"
+                android:textSize="15sp" />
+             
+             <EditText 
+                 android:id="@+id/etHVMobile"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center"
+                 android:gravity="center"
+                 android:singleLine="true"
+                 android:enabled="false" />
+             
+             <TextView
+                 android:id="@+id/tvHVAMobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="left"
+                android:paddingLeft="2dp"
+                android:text="Alternate Mobile No."
+                android:textColor="#000"
+                android:textSize="15sp" />
+             
+             <EditText 
+                 android:id="@+id/etHVAltMobileNo"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center"
+                 android:gravity="center"
+                 android:singleLine="true"
+                 android:enabled="false" />
+             <TextView
+                 android:id="@+id/tvHVFullImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="left"
+                android:paddingLeft="2dp"
+                android:text="Helper Full Image"
+                android:textColor="#000"
+                android:textSize="15sp" />
+        <ImageView
+            android:id="@+id/hvImg1"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/ic_action_camera" />
+        
+        <TextView
+            android:id="@+id/tvHVPPPhoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="left"
+                android:paddingLeft="2dp"
+                android:text="Helper Passport Size Image"
+                android:textColor="#000"
+                android:textSize="15sp" />
+        <ImageView
+            android:id="@+id/hvImg2"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/ic_action_camera" />
+        
+        <Button
+                    android:id="@+id/btnWVBack"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_centerInParent="true"
+                    android:text="Back"
+                    android:gravity="center"
+                    android:onClick="View_My_Awc_Details_Back" />
+                       
+         </LinearLayout>
+         
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="#67A687" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/txtFooter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="#000"
+                android:textSize="10sp" />
+        </RelativeLayout>
+    </LinearLayout>
+    
+</ScrollView>
+</RelativeLayout>

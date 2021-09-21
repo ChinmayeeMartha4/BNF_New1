@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background_theme_color"
+    android:orientation="vertical"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvTitleBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="5dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/toolbar_color"
+            android:elevation="2dp"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/ivTitleBack"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:elevation="2dp"
+                android:src="@drawable/ic_baseline_keyboard_backspace_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_theme_color"
+    android:padding="6dp"
+    android:layout_below="@+id/cvTitleBar"
+    android:scrollbars="none"
+    >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            > 
+            
+            
+            <TextView
+                android:id="@+id/txtSelectLanguage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:gravity="left"
+                android:paddingLeft="2dp"
+              
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/spnLanguage"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:drawSelectorOnTop="true"
+                />
+            
+               <TextView
+                android:id="@+id/txtSelectServer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:gravity="left"
+                android:paddingLeft="2dp"
+            
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/spnServer"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:drawSelectorOnTop="true"
+                />
+            <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:padding="3dp"
+                android:onClick="click_save"
+                android:textSize="18sp" />
+        </RelativeLayout>
+            
+            
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#67A687"
+                android:layout_marginTop="20dp"
+                android:visibility="gone"/>
+                
+                <Button 
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:text="Change Password"
+                    android:layout_marginTop="10dp"
+               android:visibility="gone"     />
+                
+                  <Button 
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:text="Logout"
+                      android:onClick="click_btnLogout"
+               android:layout_marginTop="10dp"
+               android:visibility="gone"
+                    />
+
+        </LinearLayout>
+
+       
+ <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" 
+            android:layout_marginBottom="20dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#67A687" />
+        </RelativeLayout>
+        
+
+       <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            android:layout_alignParentBottom="true"
+            android:gravity="center">
+
+          
+           
+           
+             
+                 
+           <TextView
+            android:id="@+id/txtFooter"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/tech_partner"
+            android:textColor="#000"
+            android:textSize="10sp" 
+            android:layout_alignParentLeft="true"
+            />
+                 
+                 
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>
+

@@ -1,0 +1,1023 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background_theme_color"
+    android:orientation="vertical"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvTitleBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="5dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/toolbar_color"
+            android:elevation="2dp"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/ivTitleBack"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:elevation="2dp"
+                android:src="@drawable/ic_baseline_keyboard_backspace_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_theme_color"
+    android:padding="6dp"
+    android:scrollbars="none"
+    android:layout_below="@+id/cvTitleBar"
+    tools:context=".PregnantWomenBaseline3">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Pregnant Women Baseline"
+        android:layout_marginBottom="3dp"
+        android:textColor="#000"
+        android:textSize="20sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="2dp"
+        android:background="#67A687" />
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtHandWashing"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Hand washing with soap and water:"
+                android:layout_marginTop="5dp"
+                android:gravity="left"
+                android:paddingLeft="2dp"
+                android:textColor="#000"
+                android:textSize="15sp"
+                />
+
+            <RadioGroup
+                android:id="@+id/rgHandWashing"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:weightSum="2">
+                <RadioButton
+                    android:layout_weight="1"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:text="Yes"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"/>
+
+                <RadioButton
+                    android:layout_weight="1"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:text="No"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"/>
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtHandWashingWhen"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Hands should be washed when all:"
+                android:layout_marginTop="5dp"
+                android:gravity="left"
+                android:paddingLeft="2dp"
+                android:textColor="#000"
+                android:textSize="15sp"
+                />
+
+            <RadioGroup
+                android:id="@+id/rgHandWashingWhen"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:weightSum="5">
+                <RadioButton
+                    android:layout_weight="1"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:text="After Defecation"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"/>
+
+                <RadioButton
+                    android:layout_weight="1"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:text="Before cooking food"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"/>
+                <RadioButton
+                    android:layout_weight="1"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:text="Before eating food"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"/>
+                <RadioButton
+                    android:layout_weight="1"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:text="Before taking water from a stored vessel"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"/>
+                <RadioButton
+                    android:layout_weight="1"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:text="All the above"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"/>
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtHowDiarrheaPrevented"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="How can Diarrhoea be prevented:"
+                android:layout_marginTop="5dp"
+                android:gravity="left"
+                android:paddingLeft="2dp"
+                android:textColor="#000"
+                android:textSize="15sp"
+                />
+
+            <RadioGroup
+                android:id="@+id/rgHowDiarrheaPrevented"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:weightSum="4">
+                <RadioButton
+                    android:layout_weight="1"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:text="Safe drinking water"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"/>
+
+                <RadioButton
+                    android:layout_weight="1"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:text="Use of improved sanitation"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"/>
+                <RadioButton
+                    android:layout_weight="1"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:text="Hand washing with soap"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"/>
+                <RadioButton
+                    android:layout_weight="1"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:text="All the above"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"/>
+
+            </RadioGroup>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtSourceOfWater"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="What is the source of drinking water"
+                android:layout_marginTop="5dp"
+                android:gravity="left"
+                android:paddingLeft="2dp"
+                android:textColor="#000"
+                android:textSize="15sp"
+                />
+
+            <RadioGroup
+                android:id="@+id/rgSourceOfWater"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:weightSum="3">
+                <RadioButton
+                    android:layout_weight="1"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:text="Tap water"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"/>
+
+                <RadioButton
+                    android:layout_weight="1"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:text="Well"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"/>
+                <RadioButton
+                    android:layout_weight="1"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:text="Hand pump"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"/>
+
+
+            </RadioGroup>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtBoilWaterBeforeDrinking"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Do you boil water before drinking?"
+                android:layout_marginTop="5dp"
+                android:gravity="left"
+                android:paddingLeft="2dp"
+                android:textColor="#000"
+                android:textSize="15sp"
+                />
+
+            <RadioGroup
+                android:id="@+id/rgBoilWaterBeforeDrinking"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:weightSum="2">
+                <RadioButton
+                    android:layout_weight="1"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:text="Yes"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"/>
+
+                <RadioButton
+                    android:layout_weight="1"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:text="No"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"/>
+
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtHaveToiletAtHome"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Do you have a toilet at home?"
+                android:layout_marginTop="5dp"
+                android:gravity="left"
+                android:paddingLeft="2dp"
+                android:textColor="#000"
+                android:textSize="15sp"
+                />
+
+            <RadioGroup
+                android:id="@+id/rgHaveToiletAtHome"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:weightSum="2">
+                <RadioButton
+                    android:layout_weight="1"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:text="Yes"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"/>
+
+                <RadioButton
+                    android:layout_weight="1"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:text="No"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"/>
+
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtKeepSurroundingClean"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Do you think it’s important to keep your surrounding clean?"
+                android:layout_marginTop="5dp"
+                android:gravity="left"
+                android:paddingLeft="2dp"
+                android:textColor="#000"
+                android:textSize="15sp"
+                />
+
+            <RadioGroup
+                android:id="@+id/rgKeepSurroundingClean"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:weightSum="4">
+                <RadioButton
+                    android:layout_weight="1"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:text="Yes"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"/>
+
+                <RadioButton
+                    android:layout_weight="1"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:text="No"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"/>
+
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtHeardAneamia"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Heard about anaemia?"
+                android:layout_marginTop="5dp"
+                android:gravity="left"
+                android:paddingLeft="2dp"
+                android:textColor="#000"
+                android:textSize="15sp"
+                />
+
+            <RadioGroup
+                android:id="@+id/rgHeardAneamia"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:weightSum="4">
+                <RadioButton
+                    android:layout_weight="1"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:text="Yes"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"/>
+
+                <RadioButton
+                    android:layout_weight="1"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:text="No"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"/>
+
+
+            </RadioGroup>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtNutrientDeficientInAneamia"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Which is the nutrient deficient in anaemia?"
+                android:layout_marginTop="5dp"
+                android:gravity="left"
+                android:paddingLeft="2dp"
+                android:textColor="#000"
+                android:textSize="15sp"
+                />
+
+            <RadioGroup
+                android:id="@+id/rgNutrientDeficientInAneamia"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:weightSum="4">
+                <RadioButton
+                    android:layout_weight="1"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:text="Iodine"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"/>
+
+                <RadioButton
+                    android:layout_weight="1"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:text="Iron"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"/>
+                <RadioButton
+                    android:layout_weight="1"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:text="Calcium"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"/>
+                <RadioButton
+                    android:layout_weight="1"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:text="Dont know"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"/>
+
+            </RadioGroup>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtCauseOfAneamia"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Cause of aneamia?"
+                android:layout_marginTop="5dp"
+                android:gravity="left"
+                android:paddingLeft="2dp"
+                android:textColor="#000"
+                android:textSize="15sp"
+                />
+
+            <RadioGroup
+                android:id="@+id/rgCauseOfAneamia"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:weightSum="5">
+                <RadioButton
+                    android:layout_weight="1"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:text="Worm infestation"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"/>
+
+                <RadioButton
+                    android:layout_weight="1"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:text="Poor nutrition"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"/>
+                <RadioButton
+                    android:layout_weight="1"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:text="Increased blood loss"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"/>
+                <RadioButton
+                    android:layout_weight="1"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:text="All the above"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"/>
+                <RadioButton
+                    android:layout_weight="1"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:text="Dont know"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"/>
+
+            </RadioGroup>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtItemEatAtHome"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Which of the below items you eat at home?"
+                android:layout_marginTop="5dp"
+                android:gravity="left"
+                android:paddingLeft="2dp"
+                android:textColor="#000"
+                android:textSize="15sp"
+                />
+
+            <RadioGroup
+                android:id="@+id/rgItemEatAtHome"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:weightSum="5">
+                <RadioButton
+                    android:layout_weight="1"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:text="Rice"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"/>
+
+                <RadioButton
+                    android:layout_weight="1"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:text="Roti"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"/>
+                <RadioButton
+                    android:layout_weight="1"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:text="Greenleaf vegetables"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"/>
+                <RadioButton
+                    android:layout_weight="1"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:text="Pulses"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"/>
+                <RadioButton
+                    android:layout_weight="1"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:text="Dairy"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"/>
+                <RadioButton
+                    android:layout_weight="1"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:text="Meat"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"/>
+
+            </RadioGroup>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtConsumeVegOrNonVeg"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Do you consume veg or non-veg?"
+                android:layout_marginTop="5dp"
+                android:gravity="left"
+                android:paddingLeft="2dp"
+                android:textColor="#000"
+                android:textSize="15sp"
+                />
+
+            <RadioGroup
+                android:id="@+id/rgConsumeVegOrNonVeg"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:weightSum="2">
+                <RadioButton
+                    android:layout_weight="1"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:text="Veg"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"/>
+
+                <RadioButton
+                    android:layout_weight="1"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:text="Non veg"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"/>
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtImportantOfChildNutrition"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="What is most important for your child’s nutrition?"
+                android:layout_marginTop="5dp"
+                android:gravity="left"
+                android:paddingLeft="2dp"
+                android:textColor="#000"
+                android:textSize="15sp"
+                />
+
+            <RadioGroup
+                android:id="@+id/rgImportantOfChildNutrition"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:weightSum="5">
+                <RadioButton
+                    android:layout_weight="1"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:text="Chocolates"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"/>
+                <RadioButton
+                    android:layout_weight="1"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:text="Chips"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"/>
+
+                <RadioButton
+                    android:layout_weight="1"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:text="Maggi"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"/>
+                <RadioButton
+                    android:layout_weight="1"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:text="Namkeen/Mixture"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"/>
+                <RadioButton
+                    android:layout_weight="1"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:text="Fruits and Vegetables"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"/>
+
+            </RadioGroup>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtDifferentFoodImportant"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Do you think eating different variety of foods is important?"
+                android:layout_marginTop="5dp"
+                android:gravity="left"
+                android:paddingLeft="2dp"
+                android:textColor="#000"
+                android:textSize="15sp"
+                />
+
+            <RadioGroup
+                android:id="@+id/rgDifferentFoodImportant"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:weightSum="2">
+                <RadioButton
+                    android:layout_weight="1"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:text="Yes"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"/>
+                <RadioButton
+                    android:layout_weight="1"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:text="No"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"/>
+
+            </RadioGroup>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtVisitAnganwadiCenter"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Do you visit Anganwadi Centre?"
+            android:layout_marginTop="5dp"
+            android:gravity="left"
+            android:paddingLeft="2dp"
+            android:textColor="#000"
+            android:textSize="15sp"
+            />
+
+        <RadioGroup
+            android:id="@+id/rgVisitAnganwadiCenter"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:weightSum="2">
+            <RadioButton
+                android:layout_weight="1"
+                android:textColor="#000"
+                android:textSize="15sp"
+                android:text="Yes"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"/>
+            <RadioButton
+                android:layout_weight="1"
+                android:textColor="#000"
+                android:textSize="15sp"
+                android:text="No"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"/>
+
+        </RadioGroup>
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtAttendMeeting"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Do you attend sessions/meetings at the Anganwadi Centre?"
+                android:layout_marginTop="5dp"
+                android:gravity="left"
+                android:paddingLeft="2dp"
+                android:textColor="#000"
+                android:textSize="15sp"
+                />
+
+            <RadioGroup
+                android:id="@+id/rgAttendMeeting"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:weightSum="2">
+                <RadioButton
+                    android:layout_weight="1"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:text="Yes"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"/>
+                <RadioButton
+                    android:layout_weight="1"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:text="No"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"/>
+
+            </RadioGroup>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtAwareOfGovtScheme"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Are you aware of the Govt. schemes for you?"
+                android:layout_marginTop="5dp"
+                android:gravity="left"
+                android:paddingLeft="2dp"
+                android:textColor="#000"
+                android:textSize="15sp"
+                />
+
+            <RadioGroup
+                android:id="@+id/rgAwareOfGovtScheme"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:weightSum="2">
+                <RadioButton
+                    android:layout_weight="1"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:text="Yes"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"/>
+                <RadioButton
+                    android:layout_weight="1"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:text="No"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"/>
+
+            </RadioGroup>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtHaveMotherCard"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Do you have mother card?"
+                android:layout_marginTop="5dp"
+                android:gravity="left"
+                android:paddingLeft="2dp"
+                android:textColor="#000"
+                android:textSize="15sp"
+                />
+
+            <RadioGroup
+                android:id="@+id/rgHaveMotherCard"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:weightSum="2">
+                <RadioButton
+                    android:layout_weight="1"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:text="Yes"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"/>
+                <RadioButton
+                    android:layout_weight="1"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:text="No"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"/>
+
+            </RadioGroup>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtWhatToDoInInfectation"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="In case of infection to child, what will you do?"
+                android:layout_marginTop="5dp"
+                android:gravity="left"
+                android:paddingLeft="2dp"
+                android:textColor="#000"
+                android:textSize="15sp"
+                />
+
+            <RadioGroup
+                android:id="@+id/rgWhatToDoInInfectation"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:weightSum="2">
+                <RadioButton
+                    android:layout_weight="1"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:text="Take the child to the Doctor"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"/>
+                <RadioButton
+                    android:layout_weight="1"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:text="Give some home remedy"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"/>
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Submit"
+            android:layout_marginBottom="30dp"
+            android:textSize="20dp"/>
+
+
+
+
+
+    </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
+</RelativeLayout>

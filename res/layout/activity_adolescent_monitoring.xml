@@ -1,0 +1,933 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background_theme_color"
+    android:orientation="vertical"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvTitleBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="5dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/toolbar_color"
+            android:elevation="2dp"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/ivTitleBack"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:elevation="2dp"
+                android:src="@drawable/ic_baseline_keyboard_backspace_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_theme_color"
+        android:padding="6dp"
+        android:layout_below="@+id/cvTitleBar"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtAdolescentGirlMonitor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="3dp"
+                    android:text="@string/adolescent_girl_monitoring"
+                    android:textColor="#000"
+                    android:textSize="20sp"
+                    android:visibility="gone"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginTop="2dp"
+                    android:background="#67A687"
+                    android:visibility="gone"/>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <EditText
+                        android:id="@+id/etxtSearchByHhid"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="80dp"
+                        android:gravity="center"
+                        android:hint="@string/house_hold_number"
+                        android:inputType="text"
+                        android:singleLine="true"
+                        android:textSize="15sp" />
+
+                    <Button
+                        android:id="@+id/btnAdolescentGo"
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:onClick="clickGo" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/txtAdolscentName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:gravity="left"
+                    android:paddingLeft="2dp"
+                    android:text="@string/adolescent_name"
+                    android:textColor="#000"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="6dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical">
+
+                    <!--<com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                        android:id="@+id/family_card_no_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_margin="4dp"
+                        android:layout_height="wrap_content"/>-->
+                    <Spinner
+                        android:id="@+id/family_card_no_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true" />
+                </LinearLayout>
+
+
+                <!--<Spinner
+                    android:id="@+id/spnAdolescentName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:singleLine="true" />-->
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/txtDateOfScreening"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="12dp"
+                android:gravity="left"
+                android:paddingLeft="2dp"
+                android:text="@string/date_of_screening"
+                android:textColor="#000"
+                android:textSize="15sp" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/etxtDateOfScreening"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="45dp"
+                    android:layout_marginTop="2dp"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:singleLine="true" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:onClick="show_callender1"
+                    android:src="@drawable/calenderr" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/marked_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000" />
+
+                <RadioGroup
+                    android:id="@+id/current_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/radio_button_border"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/adolescent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:textColor="#000" />
+
+                    <RadioButton
+                        android:id="@+id/mother"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="#000" />
+
+                    <RadioButton
+                        android:id="@+id/married"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/married"
+                        android:textColor="#000" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <RadioGroup
+                android:id="@+id/rgMGR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <RadioButton
+                    android:id="@+id/tempMigration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="#000" />
+
+                <RadioButton
+                    android:id="@+id/permMigration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/permanent_migration"
+                    android:textColor="#000" />
+
+                <RadioButton
+                    android:id="@+id/rbPresent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/present"
+                    android:checked="true"
+                    android:textColor="#000"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/rbAbsent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/absent"
+                    android:textColor="#000"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/death"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="deathDate"
+                    android:textColor="#000" />
+
+                <LinearLayout
+                    android:id="@+id/inr_death_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:gravity="left"
+                        android:paddingLeft="2dp"
+                        android:text="@string/death_date"
+                        android:textColor="#000"
+                        android:textSize="15sp" />
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/etxtDeathDate"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginRight="45dp"
+                            android:layout_marginTop="2dp"
+                            android:clickable="false"
+                            android:cursorVisible="false"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="2dp"
+                            android:onClick="show_callender"
+                            android:src="@drawable/calenderr" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </RadioGroup>
+
+
+            <TextView
+                android:id="@+id/txtAdolescentWeight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="left"
+                android:paddingLeft="2dp"
+                android:text="@string/weight_in_kg_and_gram"
+                android:textColor="#000"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/etxtAdolescentWeight"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:inputType="numberDecimal"
+                android:maxLength="3"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/txtAdolescentHeight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:gravity="left"
+                android:paddingLeft="2dp"
+                android:text="@string/height_in_cms"
+                android:textColor="#000"
+                android:textSize="15sp" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/etxtAdolescentHeight"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="2dp"
+                    android:inputType="numberDecimal"
+                    android:maxLength="5"
+                    android:singleLine="true" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txtAdolescentHb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:gravity="left"
+                android:paddingLeft="2dp"
+                android:text="@string/hb_in_gm_dl"
+                android:textColor="#000"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/etxtAdolescentHb"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:layout_weight="1"
+                    android:focusable="true"
+                    android:inputType="numberDecimal"
+                    android:maxLength="5"
+                    android:singleLine="true" />
+
+                <ImageView
+                    android:id="@+id/imgHbStatus"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="2dp"
+                    android:layout_weight=".1"
+                    android:padding="15dp"
+                    android:src="@drawable/na"
+                    android:visibility="gone"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtIFA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:gravity="left"
+                android:paddingLeft="2dp"
+                android:text="@string/consumption_of_ifa_tablet"
+                android:textColor="#000"
+                android:textSize="15sp"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <RadioGroup
+                    android:id="@+id/rgIFA"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/rbRegularly"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/regularly"
+                        android:textColor="#000" />
+
+                    <RadioButton
+                        android:id="@+id/rbNotRegularly"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/taking_but_not_regularly"
+                        android:textColor="#000" />
+
+                    <RadioButton
+                        android:id="@+id/rbNotTaking"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/not_taking"
+                        android:textColor="#000" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtPeriods"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="2dp"
+                android:gravity="left"
+                android:paddingLeft="2dp"
+                android:text="@string/periods"
+                android:textColor="#000"
+                android:textSize="15sp" />
+
+              <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:paddingLeft="2dp"
+                        android:text="*"
+                        android:textColor="@color/red"
+                        android:textSize="15sp"
+                        android:layout_toRightOf="@+id/txtPeriods"/>
+                </RelativeLayout>
+
+
+            <RadioGroup
+                android:id="@+id/radiogroupPeriods"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:visibility="visible"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioRegular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/regular"
+                    android:textColor="#000" />
+
+                <RadioButton
+                    android:id="@+id/radioIrregular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/irregular"
+                    android:textColor="#000" />
+            </RadioGroup>
+
+
+            <LinearLayout
+                android:id="@+id/llaccessICDS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+                <TextView
+                    android:id="@+id/tvaccessICDS"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:gravity="left"
+                    android:paddingLeft="2dp"
+                    android:text="@string/have_you_do_access_any_icds"
+                    android:textColor="#000"
+                    android:textSize="15sp" />
+                <RadioGroup
+                    android:id="@+id/rgaccessICDS"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <RadioButton
+                        android:id="@+id/rbaccessICDSYes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/yes"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:weightSum="1"/>
+
+                    <RadioButton
+                        android:id="@+id/rbaccessICDSNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/no"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:weightSum="1"/>
+
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llrececiveIFA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+                <TextView
+                    android:id="@+id/tvllrececiveIFA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:gravity="left"
+                    android:paddingLeft="2dp"
+                    android:text="@string/have_you_received_ifa_in_the_last_month"
+                    android:textColor="#000"
+                    android:textSize="15sp" />
+                <RadioGroup
+                    android:id="@+id/rgllrececiveIFA"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <RadioButton
+                        android:id="@+id/rbllrececiveIFAYes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/yes"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:weightSum="1"/>
+
+                    <RadioButton
+                        android:id="@+id/rbllrececiveIFANo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/no"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:weightSum="1"/>
+
+                </RadioGroup>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/lltakenIFA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+                <TextView
+                    android:id="@+id/tvtakenIFA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:gravity="left"
+                    android:paddingLeft="2dp"
+                    android:text="@string/have_you_taken_last_week"
+                    android:textColor="#000"
+                    android:textSize="15sp" />
+                <RadioGroup
+                    android:id="@+id/rgtakenIFA"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <RadioButton
+                        android:id="@+id/rbtakenIFAYes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/yes"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:weightSum="1"/>
+
+                    <RadioButton
+                        android:id="@+id/rbtakenIFANo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/no"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:weightSum="1"/>
+
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lladolescentDewarming"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+                <TextView
+                    android:id="@+id/tvadolescentDewarming"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:gravity="left"
+                    android:paddingLeft="2dp"
+                    android:text="@string/have_you_received_deworming_tablet_in_last_6_months"
+                    android:textColor="#000"
+                    android:textSize="15sp" />
+                <RadioGroup
+                    android:id="@+id/rgadolescentDewarming"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <RadioButton
+                        android:id="@+id/rbadolescentDewarmingYes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/yes"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:weightSum="1"/>
+
+                    <RadioButton
+                        android:id="@+id/rbadolescentDewarmingNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/no"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:weightSum="1"/>
+
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llhealthService"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/tvhealthService"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:gravity="left"
+                    android:paddingLeft="2dp"
+                    android:text="@string/have_you_received_any_counselling_or_health_service_related_to_menstrual_hygiene_or_sexual_health"
+                    android:textColor="#000"
+                    android:textSize="15sp" />
+                <RadioGroup
+                    android:id="@+id/rghealthService"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <RadioButton
+                        android:id="@+id/rbhealthServiceYes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/yes"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:weightSum="1"/>
+
+                    <RadioButton
+                        android:id="@+id/rbhealthServiceNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/no"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:weightSum="1"/>
+
+                </RadioGroup>
+            </LinearLayout>
+
+
+
+            <CheckBox
+                android:id="@+id/cbDewormingDone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textSize="15sp"
+                android:text="@string/deworming_done"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/txtDateOfRecord"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:gravity="left"
+                android:paddingLeft="2dp"
+                android:text="@string/date_of_record"
+                android:textColor="#000"
+                android:textSize="15sp"
+                android:visibility="gone"
+
+                />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/etxtDateOfRecord"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="45dp"
+                    android:layout_marginTop="2dp"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="2dp"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:onClick="show_callender"
+                    android:src="@drawable/calenderr"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="left"
+                android:paddingLeft="2dp"
+                android:text="@string/image"
+                android:textColor="#000"
+                android:textSize="15sp"
+                android:visibility="gone"
+                />
+
+            <ImageView
+                android:id="@+id/imgAdolscentMon"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:onClick="click_Image"
+                android:src="@drawable/ic_photo_camera"
+                android:visibility="visible"/>
+
+            <TextView
+                android:id="@+id/txtGps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="left"
+                android:paddingLeft="2dp"
+                android:textColor="#000"
+                android:textSize="15sp" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btnGps"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:onClick="click_getgps"
+                    android:singleLine="true" />
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:layout_gravity="center">
+
+                <Button
+                    android:id="@+id/btnAdlMonSubmit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:background="@drawable/button_background"
+                    android:textColor="@color/white"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:paddingStart="45dp"
+                    android:paddingEnd="45dp"
+                    android:onClick="btnSave"
+                    android:text="@string/submit" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/txtPregnantNutritionHistory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <WebView
+                    android:id="@+id/wvAdlNutritionHistory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginBottom="2dp"
+                android:background="#67A687" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/txtFooter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center"
+                    android:textColor="#000"
+                    android:textSize="10sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

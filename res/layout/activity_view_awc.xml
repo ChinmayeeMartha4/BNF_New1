@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background_theme_color"
+    android:orientation="vertical"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvTitleBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="5dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/toolbar_color"
+            android:elevation="2dp"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/ivTitleBack"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:elevation="2dp"
+                android:src="@drawable/ic_baseline_keyboard_backspace_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_theme_color"
+    android:padding="6dp"
+    android:layout_below="@+id/cvTitleBar"
+    android:scrollbars="none" >
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvAVAwcHead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="3dp"
+                android:text="Anganwadi Detail"
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="2dp"
+                android:background="#67A687" />
+             <TextView
+                 android:id="@+id/tvAVAwcType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="left"
+                android:paddingLeft="2dp"
+                android:text="Anganwadi Type"
+                android:textColor="#000"
+                android:textSize="15sp" />
+
+             <EditText 
+                 android:id="@+id/etAVAwcType"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center"
+                 android:gravity="center"
+                 android:singleLine="true"
+                 android:enabled="false" />
+             
+            <TextView
+                android:id="@+id/tvAVAwcSB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="left"
+                android:paddingLeft="2dp"
+                android:text="Status of building "
+                android:textColor="#000"
+                android:textSize="15sp" />
+            <EditText 
+                 android:id="@+id/etAVPukkaKuchha"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center"
+                 android:gravity="center"
+                 android:singleLine="true"
+                 android:enabled="false" />
+            
+           <TextView
+               android:id="@+id/tvAVAwcBT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="left"
+                android:paddingLeft="2dp"
+                android:text="Building Type"
+                android:textColor="#000"
+                android:textSize="15sp" />
+           <EditText 
+                 android:id="@+id/etAVOwnedRented"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center"
+                 android:gravity="center"
+                 android:singleLine="true"
+                 android:enabled="false" />
+           
+             <TextView
+                 android:id="@+id/tvAVAwcWaterType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="left"
+                android:paddingLeft="2dp"
+                android:text="Source of water"
+                android:textColor="#000"
+                android:textSize="15sp" />
+             
+             <EditText 
+                 android:id="@+id/etAVWaterType"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center"
+                 android:gravity="center"
+                 android:singleLine="true"
+                 android:enabled="false" />
+             
+            <TextView
+                android:id="@+id/tvAVAwcWaterSafety"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="left"
+                android:paddingLeft="2dp"
+                android:text="Water Safety"
+                android:textColor="#000"
+                android:textSize="15sp" />
+            
+            <EditText 
+                 android:id="@+id/etAVWaterSafety"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center"
+                 android:gravity="center"
+                 android:singleLine="true"
+                 android:enabled="false" />
+
+           <TextView
+                android:id="@+id/tvAVAwcToilet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="left"
+                android:paddingLeft="2dp"
+                android:text="Toilet"
+                android:textColor="#000"
+                android:textSize="15sp" />
+           
+           <EditText 
+                 android:id="@+id/etAVToilet"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center"
+                 android:gravity="center"
+                 android:singleLine="true"
+                 android:enabled="false" />           
+
+           <TextView
+                android:id="@+id/tvAVAwcWA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="left"
+                android:paddingLeft="2dp"
+                android:text="If yes Water availability"
+                android:textColor="#000"
+                android:textSize="15sp" />
+           
+           <EditText 
+                 android:id="@+id/etAVWaterAvailability"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center"
+                 android:gravity="center"
+                 android:singleLine="true"
+                 android:enabled="false" />  
+                 
+           <TextView
+               android:id="@+id/tvAVAwcHWF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="left"
+                android:paddingLeft="2dp"
+                android:text="Hand Washing facility"
+                android:textColor="#000"
+                android:textSize="15sp" />
+
+           <EditText 
+                 android:id="@+id/etAVHWF"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center"
+                 android:gravity="center"
+                 android:singleLine="true"
+                 android:enabled="false" />
+           
+           <TextView
+                android:id="@+id/tvAVAwcTL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="left"
+                android:paddingLeft="2dp"
+                android:text="Availability of teaching and learning aids"
+                android:textColor="#000"
+                android:textSize="15sp" />
+
+           <EditText 
+                 android:id="@+id/etAVAOTALA"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center"
+                 android:gravity="center"
+                 android:singleLine="true"
+                 android:enabled="false" /> 
+                  
+           
+             <TextView
+                 android:id="@+id/tvAVAwcAE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="left"
+                android:paddingLeft="2dp"
+                android:text="Availability of equipment"
+                android:textColor="#000"
+                android:textSize="15sp" />
+             
+             <EditText 
+                 android:id="@+id/etAVAOE"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center"
+                 android:gravity="center"
+                 android:singleLine="true"
+                 android:enabled="false" /> 
+
+        <TextView
+            android:id="@+id/tvAVAwcOutsideImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="left"
+                android:paddingLeft="2dp"
+                android:text="Take Outside anganwadi with entrance with signboard with children Image"
+                android:textColor="#000"
+                android:textSize="15sp" />
+        <ImageView
+            android:id="@+id/imgAV1"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/ic_action_camera" />
+        
+        <TextView
+            android:id="@+id/tvAVAwcKitchenImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="left"
+                android:paddingLeft="2dp"
+                android:text="Take Indoor kitchen Image"
+                android:textColor="#000"
+                android:textSize="15sp" />
+        <ImageView
+            android:id="@+id/imgAV2"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/ic_action_camera" />
+        
+        <TextView
+            android:id="@+id/tvAVAwcToiletImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="left"
+                android:paddingLeft="2dp"
+                android:text="Take Toilet Image"
+                android:textColor="#000"
+                android:textSize="15sp" />
+        <ImageView
+            android:id="@+id/imgAV3"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/ic_action_camera" />
+
+        
+
+        <TextView
+            android:id="@+id/tvAVAwcHandWashImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="left"
+                android:paddingLeft="2dp"
+                android:text="Take Hand Washing Place Image"
+                android:textColor="#000"
+                android:textSize="15sp" />
+        <ImageView
+            android:id="@+id/imgAV4"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/ic_action_camera" />
+        
+        <TextView
+             android:id="@+id/tvChildrenDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Children Details :-"
+            android:layout_marginTop="10dp"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent" >
+
+            <WebView
+                android:id="@+id/wvAwcViewChild"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp" />
+        </RelativeLayout>
+        
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="3dp"
+            android:background="#67A687"
+            android:visibility="gone" />
+        
+        <TextView
+             android:id="@+id/tvAGirlDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Adolescent Girl Details :-"
+            android:layout_marginTop="10dp"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent" >
+
+            <WebView
+                android:id="@+id/wvAwcViewAG"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp" />
+        </RelativeLayout>
+        
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="3dp"
+            android:background="#67A687"
+            android:visibility="gone" />
+        
+        <TextView
+            android:id="@+id/tvPregWomenDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Women Details :-"
+            android:layout_marginTop="10dp"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent" >
+
+            <WebView
+                android:id="@+id/wvAwcViewLW"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp" />
+        </RelativeLayout>
+        
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/btnBack"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_centerInParent="true"
+                    android:text="Back"
+                    android:gravity="center"
+                    android:onClick="View_My_Awc_Details_Back" />
+            </LinearLayout>                       
+         </LinearLayout>
+         
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="#67A687" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/txtFooter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="#000"
+                android:textSize="10sp" />
+        </RelativeLayout>
+    </LinearLayout>
+    
+</ScrollView>
+</RelativeLayout>

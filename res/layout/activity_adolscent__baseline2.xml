@@ -1,0 +1,1053 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background_theme_color"
+    android:orientation="vertical"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvTitleBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="5dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/toolbar_color"
+            android:elevation="2dp"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/ivTitleBack"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:elevation="2dp"
+                android:src="@drawable/ic_baseline_keyboard_backspace_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_theme_color"
+    android:padding="6dp"
+    android:scrollbars="none"
+    android:layout_below="@+id/cvTitleBar"
+    tools:context=".Adolscent_Baseline2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Adolscent Baseline"
+                android:layout_marginBottom="3dp"
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="2dp"
+                android:background="#67A687" />
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtIronRichFood"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Which of the following are Iron-rich foods?"
+                    android:layout_marginTop="5dp"
+                    android:gravity="left"
+                    android:paddingLeft="2dp"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    />
+
+                <RadioGroup
+                    android:id="@+id/rgIronRichFood"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="2"
+                    >
+                    <RadioButton
+                        android:id="@+id/rbGreenVeg"
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:text="Green leafy vegetables"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+
+                    <RadioButton
+                        android:id="@+id/rbSproutedPulses"
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:text="Sprouted pulses"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+
+                    <RadioButton
+                        android:id="@+id/rbMeat"
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:text="Meat/Poultry"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+
+                    <RadioButton
+                        android:id="@+id/rbAllCorrect"
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:text="All are Correct"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+
+                    <RadioButton
+                        android:id="@+id/rbnoKnow"
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:text="Dont Know"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtMoreIronNeeds"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Are the iron needs of adolescents more?"
+                    android:layout_marginTop="5dp"
+                    android:gravity="left"
+                    android:paddingLeft="2dp"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    />
+
+                <RadioGroup
+                    android:id="@+id/rgMoreIronNeeds"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="2"
+                    >
+                    <RadioButton
+                        android:id="@+id/rbIronYes"
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:text="Yes"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+
+                    <RadioButton
+                        android:id="@+id/rbIronNo"
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:text="No"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+
+                    <RadioButton
+                        android:id="@+id/rbIronDontNo"
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:text="Dont Know"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtYouAreAneamic"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Do you think you are aneamic?"
+                    android:layout_marginTop="5dp"
+                    android:gravity="left"
+                    android:paddingLeft="2dp"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    />
+
+                <RadioGroup
+                    android:id="@+id/rgYouAreAneamic"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="2"
+                    >
+                    <RadioButton
+                        android:id="@+id/rbanemicYes"
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:text="Yes"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+
+                    <RadioButton
+                        android:id="@+id/rbanemicNo"
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:text="No"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+
+                    <RadioButton
+                        android:id="@+id/rbAnemiaDontNo"
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:text="Dont Know"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtHowSeriousAneamia"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="How serious do you think anaemia is?"
+                    android:layout_marginTop="5dp"
+                    android:gravity="left"
+                    android:paddingLeft="2dp"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    />
+
+                <RadioGroup
+                    android:id="@+id/rgHowSeriousAneamia"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="2"
+                    >
+                    <RadioButton
+                        android:id="@+id/rbVerySerious"
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:text="Very serious"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+
+                    <RadioButton
+                        android:id="@+id/rbNotSoSerious"
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:text="Not so serious"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+
+                    <RadioButton
+                        android:id="@+id/rbNotSoSeriousAtall"
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:text="Not serious at all"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtGetIronTablet"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="@string/get_iron_tablet"
+                    android:layout_marginTop="5dp"
+                    android:gravity="left"
+                    android:paddingLeft="2dp"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    />
+
+                <RadioGroup
+                    android:id="@+id/rgGetIronTablet"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="2"
+                    >
+                    <RadioButton
+                        android:id="@+id/rbGettingTabYes"
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:text="Yes"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+
+                    <RadioButton
+                        android:id="@+id/rbGettingTabNo"
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:text="No"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtHowTakeIronTablet"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="How often you take iron tablets?"
+                    android:layout_marginTop="5dp"
+                    android:gravity="left"
+                    android:paddingLeft="2dp"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    />
+
+                <RadioGroup
+                    android:id="@+id/rgHowTakeIronTablet"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="2"
+                    >
+                    <RadioButton
+                        android:id="@+id/rbOnceInWeek"
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:text="Once in a week"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+
+                    <RadioButton
+                        android:id="@+id/rbOnceInFortnight"
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:text="Once in a fortnight"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+
+                    <RadioButton
+                        android:id="@+id/rbOnceInMonth"
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:text="Once in a month"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+                    <RadioButton
+                        android:id="@+id/rbNotApplicable"
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:text="Not Applicable"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtLikeIronTablet"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Do you like taking iron tablets?"
+                    android:layout_marginTop="5dp"
+                    android:gravity="left"
+                    android:paddingLeft="2dp"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    />
+
+                <RadioGroup
+                    android:id="@+id/rgLikeIronTablet"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="2"
+                    >
+                    <RadioButton
+                        android:id="@+id/rbVeruMuch"
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:text="Very much"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+
+                    <RadioButton
+                        android:id="@+id/rbNotSoMuch"
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:text="Not so much"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+
+                    <RadioButton
+                        android:id="@+id/rbDontLike"
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:text="I dont like"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+                    <RadioButton
+                        android:id="@+id/rbnotApplicable"
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:text="Not Applicable"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtFoodTypeConsume"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="What type of food do you consume?"
+                    android:layout_marginTop="5dp"
+                    android:gravity="left"
+                    android:paddingLeft="2dp"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    />
+
+                <RadioGroup
+                    android:id="@+id/rgFoodTypeConsume"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="2"
+                    >
+                    <RadioButton
+                        android:id="@+id/rbVegitarian"
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:text="Vegetarian"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+
+                    <RadioButton
+                        android:id="@+id/rbNonVegitarian"
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:text="Non vegetarian"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+
+                    <RadioButton
+                        android:id="@+id/rbBoth"
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:text="Both"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtConsumePastWeek"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Did you consume any of the following in the past one week?"
+                    android:layout_marginTop="5dp"
+                    android:gravity="left"
+                    android:paddingLeft="2dp"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    />
+
+
+                    <CheckBox
+                        android:id="@+id/cb_beansandpulses"
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:text="Peas/Beans and Pulses"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+
+                    <CheckBox
+                        android:id="@+id/cb_seafood"
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:text="Seafood"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+
+                    <CheckBox
+                        android:id="@+id/cb_meat"
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:text="Meat"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+
+                    <CheckBox
+                        android:id="@+id/cb_eggs"
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:text="Eggs"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+
+
+                    <CheckBox
+                        android:id="@+id/cb_greenleaf"
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:text="Green Leaf vegetables"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+
+
+                    <CheckBox
+                        android:id="@+id/cb_almonds"
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:text="Almonds and Nuts"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+
+                    <CheckBox
+                        android:id="@+id/cb_other"
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:text="Not Applicable"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtFrequencyOfConsumption"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Frequency of consumption of items"
+                    android:layout_marginTop="5dp"
+                    android:gravity="left"
+                    android:paddingLeft="2dp"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="6"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtPeas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="Peas/Beans and Pulses"
+                        android:gravity="left"
+                        android:paddingLeft="5dp"
+                        android:textColor="#000"
+                        android:textSize="15sp"/>
+
+                    <EditText
+                        android:id="@+id/etxtPeas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:textSize="14sp"
+                        android:inputType="number"
+                        android:maxLength="3"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="6"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtSeafood"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="Seafood"
+                        android:gravity="left"
+                        android:paddingLeft="5dp"
+                        android:textColor="#000"
+                        android:textSize="15sp"/>
+
+                    <EditText
+                        android:id="@+id/etxtSeafood"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:textSize="14sp"
+                        android:inputType="number"
+                        android:maxLength="3"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="6"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtMeat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="Meat"
+                        android:gravity="left"
+                        android:paddingLeft="5dp"
+                        android:textColor="#000"
+                        android:textSize="15sp"/>
+
+                    <EditText
+                        android:id="@+id/etxtMeat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:textSize="14sp"
+                        android:inputType="number"
+                        android:maxLength="3"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="6"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtEgg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="Eggs"
+                        android:gravity="left"
+                        android:paddingLeft="5dp"
+                        android:textColor="#000"
+                        android:textSize="15sp"/>
+
+                    <EditText
+                        android:id="@+id/etxtEgg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:textSize="14sp"
+                        android:inputType="number"
+                        android:maxLength="3"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="6"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtGreenleaf"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="Greenleaf Vegetables"
+                        android:gravity="left"
+                        android:paddingLeft="5dp"
+                        android:textColor="#000"
+                        android:textSize="15sp"/>
+
+                    <EditText
+                        android:id="@+id/etxtGreenleaf"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:textSize="14sp"
+                        android:inputType="number"
+                        android:maxLength="3"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="6"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtAlmonds"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="Almonds and Nuts"
+                        android:gravity="left"
+                        android:paddingLeft="5dp"
+                        android:textColor="#000"
+                        android:textSize="15sp"/>
+
+                    <EditText
+                        android:id="@+id/etxtAlmonds"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:textSize="14sp"
+                        android:inputType="number"
+                        android:maxLength="3"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtIncludeLemonInDiet"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Did you include lemon/guava/orange/amla in your diet?"
+                    android:layout_marginTop="5dp"
+                    android:gravity="left"
+                    android:paddingLeft="2dp"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    />
+
+                <RadioGroup
+                    android:id="@+id/rgIncludeLemonInDiet"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="2"
+                    >
+                    <RadioButton
+                        android:id="@+id/rbYesLemon"
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:text="Yes"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+
+                    <RadioButton
+                        android:id="@+id/rbNoLemon"
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:text="No"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtDewormingTablet"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Have you taken de-worming (albendazole tablets) tablets in the past 6 months"
+                    android:layout_marginTop="5dp"
+                    android:gravity="left"
+                    android:paddingLeft="2dp"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    />
+
+                <RadioGroup
+                    android:id="@+id/rgDewormingTablet"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="2"
+                    >
+                    <RadioButton
+                        android:id="@+id/rbDewormingYes"
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:text="Yes"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+
+                    <RadioButton
+                        android:id="@+id/rbDewormingNo"
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:text="No"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+                </RadioGroup>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtFrequentlyAlbandazoleTablet"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="If yes, how frequently do you take albendazole tablet?"
+                    android:layout_marginTop="5dp"
+                    android:gravity="left"
+                    android:paddingLeft="2dp"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    />
+
+                <RadioGroup
+                    android:id="@+id/rgFrequentlyAlbandazoleTablet"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="2"
+                    >
+                    <RadioButton
+                        android:id="@+id/rbtakingAlbenzoYearly"
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:text="Once yearly"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+
+                    <RadioButton
+                        android:id="@+id/rbtakingAlbenzoTwiceYearly"
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:text="Twice yearly"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+
+                    <RadioButton
+                        android:id="@+id/rbtakingAlbenzoDontKnow"
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:text="Dont know"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtHadCheckedHBBefore"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Had checked HB before?"
+                    android:layout_marginTop="5dp"
+                    android:gravity="left"
+                    android:paddingLeft="2dp"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    />
+
+                <RadioGroup
+                    android:id="@+id/rgHadCheckedHBBefore"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="2"
+                    >
+                    <RadioButton
+                        android:id="@+id/rbHbYes"
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:text="Yes"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+
+                    <RadioButton
+                        android:id="@+id/rbHbNo"
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:text="No"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+
+
+                </RadioGroup>
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/txtHB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="left"
+                android:text="Haemoglobin count"
+                android:paddingLeft="2dp"
+                android:textColor="#000"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/etxtHB"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:inputType="numberDecimal"
+                android:singleLine="true" />
+
+            <Button
+                android:id="@+id/submitButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Submit"
+                android:layout_marginBottom="20dp"
+                android:textSize="20dp"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
+</RelativeLayout>

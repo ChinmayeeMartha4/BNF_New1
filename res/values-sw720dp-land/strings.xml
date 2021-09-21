@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="grain">" Grain: Grains, roots and tubers (all cereals such as rice, wheat, bread, noodles, porridge which are made from grain, roots and tubers like potato, white yam, sweet potato)"</string>
+    <string name="dal">Dal: Pulses and lentils (Any food made from Dal of all kind, beans, peas, and lentils)</string>
+    <string name="milk_related">" Milk related: (excluding mother’s milk)- Animal milk, Yogurt, Paneer, Cheese, Curd, Infant formula, canned/ powdered milk"</string>
+    <string name="eggs">Eggs</string>
+    <string name="flesh_food">Flesh food: Meat, fish, chicken, Liver, Kidney or any organ meat, beef, pork, lamb, sea food</string>
+    <string name="vit_a_rich_fruits_and_vegetables">Vit-A rich fruits and vegetables:     Pumpkin, carrots, squash or sweet potatoes that are yellow or orange inside, any dark green vegetables, ripe mangos, ripe papaya, musk melon</string>
+    <string name="other_fruits_and_vegetables">Other fruits and vegetables</string>
+</resources>

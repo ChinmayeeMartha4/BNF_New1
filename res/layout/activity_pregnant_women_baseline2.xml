@@ -1,0 +1,874 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background_theme_color"
+    android:orientation="vertical"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvTitleBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="5dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/toolbar_color"
+            android:elevation="2dp"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/ivTitleBack"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:elevation="2dp"
+                android:src="@drawable/ic_baseline_keyboard_backspace_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_theme_color"
+    android:padding="6dp"
+    android:scrollbars="none"
+    android:layout_below="@+id/cvTitleBar"
+    tools:context=".PregnantWomenBaseline2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Pregnant Women Baseline"
+                android:layout_marginBottom="3dp"
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="2dp"
+                android:background="#67A687" />
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtBreastFeedingInitiated"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Breast feeding should be initiated within"
+                    android:layout_marginTop="5dp"
+                    android:gravity="left"
+                    android:paddingLeft="2dp"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    />
+
+                <RadioGroup
+                    android:id="@+id/rgBreastFeedingInitiated"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="4">
+                    <RadioButton
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:text="1 hour of birth"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+
+                    <RadioButton
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:text="2 hour of birth"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+                    <RadioButton
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:text="3 hour of birth"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+                    <RadioButton
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:text="Dont know"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+                </RadioGroup>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtHowLongBreastFeeding"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="For how long the baby should be exclusively breastfed?"
+                    android:layout_marginTop="5dp"
+                    android:gravity="left"
+                    android:paddingLeft="2dp"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    />
+
+                <RadioGroup
+                    android:id="@+id/rgHowLongBreastFeeding"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="4">
+                    <RadioButton
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:text="3 months"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+
+                    <RadioButton
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:text="6 months"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+                    <RadioButton
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:text="9 months"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+                    <RadioButton
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:text="Dont know"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtWhenStartFood"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="@string/whenStartFood"
+                    android:layout_marginTop="5dp"
+                    android:gravity="left"
+                    android:paddingLeft="2dp"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    />
+
+                <RadioGroup
+                    android:id="@+id/rgWhenStartFood"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="5">
+                    <RadioButton
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:text="1 month"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+
+                    <RadioButton
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:text="3 months"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+                    <RadioButton
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:text="6 months"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+                    <RadioButton
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:text="1 Year"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+                    <RadioButton
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:text="Dont Know"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+                </RadioGroup>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtDecesionToStartFeeding"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="The decision to start complementary feeding is taken by who in the family:"
+                    android:layout_marginTop="5dp"
+                    android:gravity="left"
+                    android:paddingLeft="2dp"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    />
+
+                <RadioGroup
+                    android:id="@+id/rgDecesionToStartFeeding"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="4">
+                    <RadioButton
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:text="Mother"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+
+                    <RadioButton
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:text="Both Parents"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+                    <RadioButton
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:text="Mother in law"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+                    <RadioButton
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:text="Self"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+                </RadioGroup>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtBreastFeedingGivenDuring"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Breast feeding should be given during:"
+                    android:layout_marginTop="5dp"
+                    android:gravity="left"
+                    android:paddingLeft="2dp"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    />
+
+                <RadioGroup
+                    android:id="@+id/rgBreastFeedingGivenDuring"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="3">
+                    <RadioButton
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:text="Day"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+
+                    <RadioButton
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:text="Night"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+                    <RadioButton
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:text="As often as child wants"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtFirstDoseOfTetnus"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="When should the first dose of tetanus be administered to pregnant mother:"
+                    android:layout_marginTop="5dp"
+                    android:gravity="left"
+                    android:paddingLeft="2dp"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    />
+
+                <RadioGroup
+                    android:id="@+id/rgFirstDoseOfTetnus"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="4">
+                    <RadioButton
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:text="As soon as pregnancy is detected"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+
+                    <RadioButton
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:text="After 2 months"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+                    <RadioButton
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:text="After 6 months"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+                    <RadioButton
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:text="Dont know"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+
+                </RadioGroup>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtSecondDoseOfTetnus"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="When should the second dose of tetanus be administered to pregnant mother:"
+                    android:layout_marginTop="5dp"
+                    android:gravity="left"
+                    android:paddingLeft="2dp"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    />
+
+                <RadioGroup
+                    android:id="@+id/rgSecondDoseOfTetnus"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="4">
+                    <RadioButton
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:text="4 weeks after TT1"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+
+                    <RadioButton
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:text="8 weeks after TT1"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+                    <RadioButton
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:text="12 weeks after TT1"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+                    <RadioButton
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:text="Dont know"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtBoosterTetnus"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="When is the booster tetanus to be taken:"
+                    android:layout_marginTop="5dp"
+                    android:gravity="left"
+                    android:paddingLeft="2dp"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    />
+
+                <RadioGroup
+                    android:id="@+id/rgBoosterTetnus"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="4">
+                    <RadioButton
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:text="When mother gets pregnant again within 2 yrs"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+
+                    <RadioButton
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:text="When mother gets pregnant again within 3 yrs"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+                    <RadioButton
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:text="When mother gets pregnant again within 4 yrs"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+                    <RadioButton
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:text="Dont know"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtVaccinesToBeGiven"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Which all vaccines are to be given at the time of birth:"
+                    android:layout_marginTop="5dp"
+                    android:gravity="left"
+                    android:paddingLeft="2dp"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    />
+
+                <RadioGroup
+                    android:id="@+id/rgVaccinesToBeGiven"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="4">
+                    <RadioButton
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:text="BCG"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+
+                    <RadioButton
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:text="Oral polio vaccine and Hepatitis B"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+                    <RadioButton
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:text="All of the above"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+                    <RadioButton
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:text="Dont know"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+
+                </RadioGroup>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtIronSupplementImportant"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Do you think Iron and Folic Acid supplementation is important during pregnancy?"
+                    android:layout_marginTop="5dp"
+                    android:gravity="left"
+                    android:paddingLeft="2dp"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    />
+
+                <RadioGroup
+                    android:id="@+id/rgIronSupplementImportant"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="3">
+                    <RadioButton
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:text="Yes"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+
+                    <RadioButton
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:text="No"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+
+                    <RadioButton
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:text="Dont know"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+
+                </RadioGroup>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtTrimesterOfDeworming"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="In Which trimester De- worming tablet should be taken:"
+                    android:layout_marginTop="5dp"
+                    android:gravity="left"
+                    android:paddingLeft="2dp"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    />
+
+                <RadioGroup
+                    android:id="@+id/rgTrimesterOfDeworming"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="4">
+                    <RadioButton
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:text="1st Trimester"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+
+                    <RadioButton
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:text="2nd Trimester"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+
+                    <RadioButton
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:text="3rd Trimester"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+                    <RadioButton
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:text="Dont know"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+
+                </RadioGroup>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtOftenTakeIronTablet"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="How often you taken Iron tablets?"
+                    android:layout_marginTop="5dp"
+                    android:gravity="left"
+                    android:paddingLeft="2dp"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    />
+
+                <RadioGroup
+                    android:id="@+id/rgOftenTakeIronTablet"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="4">
+                    <RadioButton
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:text="Once in a week"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+
+                    <RadioButton
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:text="Once in a fortnight"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+
+                    <RadioButton
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:text="Once in a month"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+                    <RadioButton
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:text="Dont take"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtIronRichFood"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Which of the following are iron-rich foods?"
+                    android:layout_marginTop="5dp"
+                    android:gravity="left"
+                    android:paddingLeft="2dp"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    />
+
+                <RadioGroup
+                    android:id="@+id/rgIronRichFood"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="5">
+                    <RadioButton
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:text="Green leafy vegetables"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+
+                    <RadioButton
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:text="Sprouted pulses"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+
+                    <RadioButton
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:text="Meat/Poultry"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+                    <RadioButton
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:text="All are correct"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+                    <RadioButton
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:text="Dont know"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+
+                </RadioGroup>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtIronTabletFromGovt"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="@string/iron_tablet_from_govt"
+                    android:layout_marginTop="5dp"
+                    android:gravity="left"
+                    android:paddingLeft="2dp"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    />
+
+                <RadioGroup
+                    android:id="@+id/rgIronTabletFromGovt"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="3">
+                    <RadioButton
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:text="Yes"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+
+                    <RadioButton
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:text="No"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+
+                    <RadioButton
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:text="Dont know"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+
+
+                </RadioGroup>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/nextButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Next"
+                android:layout_marginBottom="30dp"
+                android:textSize="20dp"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
+</RelativeLayout>

@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:background="#ececec"
+    tools:context=".EditMenu">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:baselineAligned="false"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/lnrChild"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/news_sel"
+                android:clickable="true"
+                android:orientation="vertical"
+                android:padding="4dp" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:gravity="center"
+                        android:src="@drawable/child_icon" />
+
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="#fff"
+                        android:textSize="22sp"
+                        android:text="Child"
+                        android:layout_marginTop="5dp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnrEligibleFamily"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/house_hold"
+                android:clickable="true"
+                android:orientation="horizontal"
+                android:padding="4dp" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:gravity="center"
+                        android:src="@drawable/family_eligible" />
+
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="#fff"
+                        android:textSize="22sp"
+                        android:text="Eligible Family"
+                        android:layout_marginTop="5dp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:baselineAligned="false"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/lnrChildNutrn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/help_sel"
+                android:clickable="true"
+                android:orientation="horizontal"
+                android:padding="4dp"
+                android:tag="Synchronize" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:gravity="center"
+                        android:src="@drawable/nutrition_icon" />
+
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="#fff"
+                        android:textSize="22sp"
+                        android:text="Child Nutration"
+                        android:layout_marginTop="5dp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnrEditAbsent"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/blogs_sel1"
+                android:clickable="true"
+                android:orientation="horizontal"
+                android:padding="4dp"
+                android:tag="Events or Meetings" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:gravity="center"
+                        android:src="@drawable/absent_edit" />
+
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="#fff"
+                        android:textSize="22sp"
+                        android:text="Edit Absent Status"
+                        android:layout_marginTop="5dp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            >
+
+            <LinearLayout
+                android:id="@+id/lnrBcktoMenu"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/resource_sel"
+                android:clickable="true"
+                android:orientation="horizontal"
+                android:padding="4dp"
+                android:tag="Events or Meetings" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:gravity="center"
+                        android:src="@drawable/back_to_menu" />
+
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="#fff"
+                        android:textSize="22sp"
+                        android:text="Back to menu"
+                        android:layout_marginTop="5dp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="5dp"
+            android:background="#67A687" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/txtFooter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:gravity="center"
+                android:textColor="#000"
+                android:textSize="10sp" />
+        </RelativeLayout>
+
+
+        <!--hide here-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="0dp"-->
+<!--            android:layout_marginTop="5dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:baselineAligned="false"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            <include layout="@layout/common_company_name" />-->
+
+<!--        </LinearLayout>-->
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

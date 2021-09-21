@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mhealth"
+    android:installLocation="internalOnly"
+    android:versionCode="9"
+    android:versionName="3.7" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <application
+        android:name=".helper.GoogleAnalyticsHelper"
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme" >
+        <receiver
+            android:name="com.google.android.gms.analytics.AnalyticsReceiver"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="com.google.android.gms.analytics.ANALYTICS_DISPATCH" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.google.android.gms.analytics.AnalyticsService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <receiver
+            android:name="com.google.android.gms.analytics.CampaignTrackingReceiver"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.google.android.gms.analytics.CampaignTrackingService" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.gms.analytics.globalConfigResource"
+            android:resource="@xml/global_tracker" />
+
+        <activity
+            android:name=".ActivityLogin"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ActivitySplash"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:label="@string/app_name"
+            android:noHistory="true"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ActivityHelp"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:label="Help "
+            android:noHistory="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ActivitySettings"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:label="Settings "
+            android:noHistory="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainMenuActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:label="@string/title_activity_main_menu"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Activity_Add_Awc"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:label="Add Anganwadi Details"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Activity_Add_Worker"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:label="Add Worker Details"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Activity_View_Awc"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:label="View Anganwadi Details"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Activity_View_Worker"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:label="View Worker Details"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".awc_main_menu"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:label="Anganwadi Main Menu"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".MainMenuRegistrationActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:label="@string/title_activity_main_menu_registration"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".MainMenuMonitoringActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:label="@string/title_activity_main_menu_monitoring"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ActivityEligibleFamilyRegistration"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:label="@string/title_activity_activity_parent_registration"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ActivityPregnantWomenMonitoring"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:label="@string/title_activity_activity_pregnant_women_monitoring"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ActivityPregnantWomenRegistration"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:label="@string/title_activity_activity_pregnant_women_registration"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ActivityChildReg"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:label="@string/title_activity_activity_child_reg"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ActivityChildNutritionMonitor"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:label="@string/title_activity_activity_child_nutrition_monitor"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ActivityAdoGirlData"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:label="Adolescent Girl Data"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".SyncActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:label="@string/title_activity_activity_synchronization"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Activity_parentList"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:label="Eligible Family Listing"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity_womenListing"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:label="Women Listing"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity_AdlGirlList"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:label="Adolescent Girl List"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity_motherListing"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:label="Mother Listing"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity_childListing"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:label="Child Listing"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity_EditChildNutritionListing"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:label="Child Listing"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ActivityEdit"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:label="Edit"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity_EditEligibleFamilyListing"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:label="Edit Eligible family Listing :-"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity_EditChildListing"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:label="Edit Child Listing :-"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity_EditChildAbsentListing"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:label="Absent Child Listing :-"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity_EditAbsentChildNutrition"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:label="Edit Absent Child:-"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity_EditChild"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:label="Edit Child"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity_EditChildNutritionHB"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:label="Edit Child Nutrition HB"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity_EditEF"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:label="Edit Eligible family"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ActivityParentData"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:label="Eligible Family Data"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ActivityWomenData"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:label="Women Data"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ActivityChildData"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:label="Child Data"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ActivityAdolescentGirlReg"
+            android:label="@string/title_activity_adolescent_girl"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".AdolescentMonitoringActivity"
+            android:label="@string/title_activity_adolescent_monitoring"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <service android:name=".LocationTracking" />
+
+        <activity
+            android:name=".ActivityViews"
+            android:label="@string/title_activity_activity_views"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ActivityChildView"
+            android:label="@string/title_activity_activity_child_view"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ActivityPregnantWomenView"
+            android:label="@string/title_activity_activity_pregnant_women_view"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ActivityMotherView"
+            android:label="@string/title_activity_activity_mother_view"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ActivityAdlView"
+            android:label="@string/title_activity_activity_adl_view"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ShowWebViewChart"
+            android:label="@string/title_activity_show_web_view_chart"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".UserManualActivity"
+            android:label="@string/title_activity_user_manual" >
+        </activity>
+        <activity
+            android:name=".ActivitySelectAnganwadi"
+            android:theme="@style/AppTheme" >
+        </activity>
+
+        <activity
+            android:name=".Activity_Background"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:label="Background "
+            android:noHistory="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity_System_specification"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:label="System Specification "
+            android:noHistory="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity_Guideline"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:label="Guideline "
+            android:noHistory="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity_Registration"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:label="Registration "
+            android:noHistory="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity_Monitor"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:label="Monthly Monitoring "
+            android:noHistory="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity_View"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:label="View "
+            android:noHistory="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity_Sync"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:label="Synchronization"
+            android:noHistory="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity_Conclusion"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:label="Conclusion"
+            android:noHistory="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ActivityMotherRegistration"
+            android:label="@string/title_activity_activity_mother_registration" >
+        </activity>
+        <activity
+            android:name="jim.h.common.android.zxinglib.CaptureActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Preg_women_tab"
+            android:label="@string/title_activity_preg_women_tab" >
+        </activity>
+        <activity
+            android:name=".Activity_Exiting_Mother"
+            android:label="@string/title_activity_activity__exiting__mother" >
+        </activity>
+    </application>
+
+</manifest>

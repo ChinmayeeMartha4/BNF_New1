@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="1dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvPropertyList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="#F5F5F5"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp">
+
+        <LinearLayout
+            android:id="@+id/ll_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+
+            <LinearLayout
+                android:id="@+id/llEventList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="16dp"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:layout_weight="1.3"
+                        android:text="@string/event_name"
+                        android:textColor="@android:color/black"
+                        android:textSize="11dp" />
+
+                    <TextView
+                        android:id="@+id/tv_event"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="0.7"
+                        android:singleLine="true"
+                        android:text="Campaign"
+                        android:textColor="@color/black"
+                        android:textSize="13dp" />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="16dp"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:layout_weight="1.3"
+                        android:text="@string/event_type"
+                        android:textColor="@android:color/black"
+                        android:textSize="11dp" />
+
+                    <TextView
+                        android:id="@+id/tv_event_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="0.7"
+                        android:singleLine="true"
+                        android:text="Campaign"
+                        android:textColor="@color/black"
+                        android:textSize="13dp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="16dp"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:layout_weight="1.3"
+                        android:text="@string/event_date"
+                        android:textColor="@android:color/black"
+                        android:textSize="11dp" />
+
+                    <TextView
+                        android:id="@+id/tv_event_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="0.7"
+                        android:singleLine="true"
+                        android:text="09/09/2021"
+                        android:textColor="@color/black"
+                        android:textSize="13dp" />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="16dp"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:layout_weight="1.3"
+                        android:text="@string/total_attendees"
+                        android:textColor="@android:color/black"
+                        android:textSize="11dp" />
+
+                    <TextView
+                        android:id="@+id/tv_total_attendees"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="0.7"
+                        android:singleLine="true"
+                        android:text="50"
+                        android:textColor="@color/black"
+                        android:textSize="13dp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="right"
+                    android:visibility="gone">
+
+                    <Button
+                        android:id="@+id/btnUpdate"
+                        android:layout_width="90dp"
+                        android:layout_height="30dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/update"
+                        android:textSize="10dp"
+                        android:textColor="@color/white"
+                        android:background="@drawable/add_mother_background"
+                        android:onClick="click_save"
+                        android:gravity="center" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

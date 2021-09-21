@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background_theme_color"
+    android:orientation="vertical"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvTitleBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="5dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/toolbar_color"
+            android:elevation="2dp"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/ivTitleBack"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:elevation="2dp"
+                android:src="@drawable/ic_baseline_keyboard_backspace_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:layout_margin="10dp"
+    android:layout_below="@+id/cvTitleBar"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Registration"
+            android:textColor="#000"
+            android:textSize="22dp"
+            android:visibility="gone"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="2dp"
+            android:background="#67A687"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/sub_Register1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="22dp" />
+
+        <ImageView
+            android:id="@+id/imageView_reg_main"
+            android:layout_width="450dp"
+            android:layout_height="400dp"
+            android:layout_gravity="center"
+            android:src="@drawable/registration_main"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/imageView_reg_main_marathi"
+            android:layout_width="450dp"
+            android:layout_height="400dp"
+            android:layout_gravity="center"
+            android:src="@drawable/registration_marathi"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/Register_Heading2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#a93e49"
+            android:textSize="24dp" />
+
+        <TextView
+            android:id="@+id/sub_Register2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="22dp" />
+
+        <ImageView
+            android:id="@+id/imageView_elg_family"
+            android:layout_width="450dp"
+            android:layout_height="400dp"
+            android:layout_gravity="center"
+            android:src="@drawable/eligble_family_reg"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/imageView_family_marathi"
+            android:layout_width="450dp"
+            android:layout_height="400dp"
+            android:layout_gravity="center"
+            android:src="@drawable/elg_fam_marathi"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/Register_Heading3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#a93e49"
+            android:textSize="24dp" />
+
+        <TextView
+            android:id="@+id/sub_Register3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="22dp" />
+
+        <ImageView
+            android:id="@+id/imageView_preg_reg"
+            android:layout_width="450dp"
+            android:layout_height="400dp"
+            android:layout_gravity="center"
+            android:src="@drawable/preg_reg"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/imageView_preg_marathi"
+            android:layout_width="450dp"
+            android:layout_height="400dp"
+            android:layout_gravity="center"
+            android:src="@drawable/preg_reg_marathi"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/Register_Heading4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#a93e49"
+            android:textSize="24dp" />
+
+        <TextView
+            android:id="@+id/sub_Register4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="22dp" />
+
+        <ImageView
+            android:id="@+id/imageView_child_reg"
+            android:layout_width="450dp"
+            android:layout_height="400dp"
+            android:layout_gravity="center"
+            android:src="@drawable/child_reg"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/imageView_child_marathi"
+            android:layout_width="450dp"
+            android:layout_height="400dp"
+            android:layout_gravity="center"
+            android:src="@drawable/child_reg_marathi"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/Register_Heading5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#a93e49"
+            android:textSize="24dp" />
+
+        <TextView
+            android:id="@+id/sub_Register5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="22dp" />
+
+        <ImageView
+            android:id="@+id/imageView_adol_reg"
+            android:layout_width="450dp"
+            android:layout_height="400dp"
+            android:layout_gravity="center"
+            android:src="@drawable/adol_reg"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/imageView_adol_marathi"
+            android:layout_width="450dp"
+            android:layout_height="400dp"
+            android:layout_gravity="center"
+            android:src="@drawable/adol_reg_marathi"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</ScrollView>
+</RelativeLayout>

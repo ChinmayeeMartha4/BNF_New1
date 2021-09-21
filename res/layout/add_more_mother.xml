@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="left"
+            android:paddingLeft="2dp"
+            android:text="@string/name_of_the_mother"
+            android:textColor="#000"
+            android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/mother_remove"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="3dp"
+                android:src="@drawable/ic_baseline_delete_forever_24"
+                android:layout_alignParentRight="true"
+                />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/etxtMother"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:inputType="textPersonName"
+            android:singleLine="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="left"
+            android:paddingLeft="2dp"
+            android:text="@string/age"
+            android:textColor="#000"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/etxtAge"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:inputType="number"
+            android:singleLine="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="left"
+            android:paddingLeft="2dp"
+            android:text="@string/marital_status"
+            android:textColor="#000"
+            android:textSize="15sp" />
+
+        <Spinner
+            android:id="@+id/spnMaritalStatus"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:drawSelectorOnTop="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="left"
+            android:paddingLeft="2dp"
+            android:text="@string/education"
+            android:textColor="#000"
+            android:textSize="15sp" />
+
+        <Spinner
+            android:id="@+id/spnEducation"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:drawSelectorOnTop="true" />
+
+    </LinearLayout>
+
+</LinearLayout>
