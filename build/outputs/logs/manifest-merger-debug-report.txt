@@ -1,0 +1,1351 @@
+-- Merging decision tree log ---
+provider#androidx.core.content.FileProvider
+INJECTED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:113:9-121:20
+	android:grantUriPermissions
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:117:13-47
+	android:authorities
+		INJECTED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:115:13-60
+	android:exported
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:116:13-37
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:114:13-62
+manifest
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:2:1-525:12
+INJECTED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:2:1-525:12
+INJECTED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:2:1-525:12
+INJECTED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:2:1-525:12
+MERGED from [com.google.android.material:material:1.3.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\material-1.3.0.aar\dd25a2d2b56e4bb2f5d2f543b40bd81f\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\constraintlayout-2.0.4.aar\cfa9c7e6da8e10aacb9f23f77715fa1c\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.appcompat:appcompat:1.3.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\appcompat-1.3.0.aar\8813a02f82dee88c0b06678c4a10ae8f\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\cardview-1.0.0.aar\f4d0228873da151ecec39a9c224153a0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.toptoche.searchablespinner:searchablespinnerlibrary:1.3.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\searchablespinnerlibrary-1.3.1.aar\793a0bc15037cd8e169b355aaba6652a\AndroidManifest.xml:2:1-17:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\viewpager2-1.0.0.aar\912b28af16a6c6e68fe33c5f835bb5e0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.recyclerview:recyclerview:1.2.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\recyclerview-1.2.1.aar\4804167e49ffb32112581c4f873430ef\AndroidManifest.xml:17:1-24:12
+MERGED from [com.jakewharton.timber:timber:4.7.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\jetified-timber-4.7.1.aar\29088517a2f44750611c7f38cd9f3505\AndroidManifest.xml:2:1-9:12
+MERGED from [de.hdodenhof:circleimageview:3.1.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\circleimageview-3.1.0.aar\33cba20e9cfac6d753e9fbba6a2a697c\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\legacy-support-v4-1.0.0.aar\2f49a735914449607279a24b0f5c76b4\AndroidManifest.xml:17:1-22:12
+MERGED from [com.journeyapps:zxing-android-embedded:2.0.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-2.0.1.aar\8de5e428564d6c4e05909ebfeba29b87\AndroidManifest.xml:17:1-77:12
+MERGED from [com.journeyapps:zxing-android-legacy:2.0.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\zxing-android-legacy-2.0.1.aar\1ab802e9a43698b737984f2fa09e0992\AndroidManifest.xml:17:1-77:12
+MERGED from [com.journeyapps:zxing-android-integration:2.0.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\jetified-zxing-android-integration-2.0.1.aar\58dc05df484762709d9bd0bca68056a5\AndroidManifest.xml:2:1-12:12
+MERGED from [androidx.fragment:fragment:1.3.4] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\fragment-1.3.4.aar\6ec635ccafea01718e29a63f94c7ef22\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity:1.2.3] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\activity-1.2.3.aar\58e385809043c303ca9d745ce3ca73f8\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat-resources:1.3.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\appcompat-resources-1.3.0.aar\be9771c5caf24736f6dde7a7675ab301\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\legacy-support-core-ui-1.0.0.aar\f37f18195b851114c82f2b090213222e\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\drawerlayout-1.0.0.aar\28d007d7e8e651e2cd32ad61c08f420c\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-1.1.0.aar\0ce375266c7fbc1d1d0abe7a6bd5c4d7\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\viewpager-1.0.0.aar\ebf3e262cc991a9564d3c3c4b54db3a0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-1.0.0.aar\4f1dfbb7a0a4be0cd9a3a3e68decce99\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\customview-1.0.0.aar\5b15b0ff73cbd2e42189e01901b53121\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\dynamicanimation-1.0.0.aar\a784a304c229f0af53f33f1df13bc058\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.transition:transition:1.2.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\transition-1.2.0.aar\339a79fb9c2eba40ea9996245c09a644\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\vectordrawable-animated-1.1.0.aar\74d843cadcce1499926eaf6304b7f1a5\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\vectordrawable-1.1.0.aar\7db739b37f4465eac1fe549d8edb0dd2\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.media:media:1.0.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\media-1.0.0.aar\1675c2962f116d79fb3831c25f207fec\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\legacy-support-core-utils-1.0.0.aar\b5d6e3b69461b479538d7c069f2e5d11\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\loader-1.0.0.aar\661f54688151a4095e9e328e00c13aaf\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-1.0.0.aar\94a4f17772af3f1b03bc35850cfbeea4\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-1.0.0.aar\b923ae48e5fdaf4e70ce778b0768c6a2\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.5.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\core-1.5.0.aar\7ca93194e1b97fefec6786d482b4e321\AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\cursoradapter-1.0.0.aar\3871a76015b91a96cececfeb25c69372\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\lifecycle-viewmodel-savedstate-2.3.1.aar\be2b4311dc6774fcbcc44fb633ea922a\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.1.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\savedstate-1.1.0.aar\7291de863670f0430dea55cf78e94fe1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\lifecycle-runtime-2.3.1.aar\30b26f75839d3ea23aa9b79bf635d9e7\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\lifecycle-viewmodel-2.3.1.aar\2473bb317c3e12fb5153ef93c342b676\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\versionedparcelable-1.1.1.aar\13d2f00a3c866a45ddf86522b3ee02ab\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\tracing-1.0.0.aar\0ba5148eacf6b7bb69daba152c6283ad\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\lifecycle-livedata-2.0.0.aar\8e8f76f9e81199db2f253429147ff8d3\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\lifecycle-livedata-core-2.3.1.aar\8a8a92d8ecb7b38d86661fea4a1d7cb1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\core-runtime-2.1.0.aar\3240df76dc8974db6c3e13e28acf014c\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\documentfile-1.0.0.aar\07e1643c7134a68d16d4b3aa711dfa69\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-1.0.0.aar\dfa5e4086f304e2d3ecf48b832bb1531\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\print-1.0.0.aar\1653dd5922b23ab56456000a86fef505\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\interpolator-1.0.0.aar\456406e7efb3cad19edbbb44c884ac55\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\annotation-experimental-1.0.0.aar\355c63173522942a46aa10be558fb6d4\AndroidManifest.xml:17:1-24:12
+INJECTED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:2:1-525:12
+INJECTED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:2:1-525:12
+INJECTED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:2:1-525:12
+	package
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:4:5-34
+		INJECTED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml
+		INJECTED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml
+	android:versionName
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:7:5-30
+		INJECTED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml
+		INJECTED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml
+	xmlns:tools
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:3:5-51
+	xmlns:android
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:2:11-69
+	android:versionCode
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:6:5-29
+		INJECTED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml
+		INJECTED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml
+	android:installLocation
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:5:5-43
+uses-permission#android.permission.CAMERA
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:9:5-65
+MERGED from [com.journeyapps:zxing-android-embedded:2.0.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-2.0.1.aar\8de5e428564d6c4e05909ebfeba29b87\AndroidManifest.xml:23:5-65
+MERGED from [com.journeyapps:zxing-android-embedded:2.0.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-2.0.1.aar\8de5e428564d6c4e05909ebfeba29b87\AndroidManifest.xml:23:5-65
+MERGED from [com.journeyapps:zxing-android-legacy:2.0.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\zxing-android-legacy-2.0.1.aar\1ab802e9a43698b737984f2fa09e0992\AndroidManifest.xml:24:5-65
+MERGED from [com.journeyapps:zxing-android-legacy:2.0.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\zxing-android-legacy-2.0.1.aar\1ab802e9a43698b737984f2fa09e0992\AndroidManifest.xml:24:5-65
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:9:22-62
+uses-permission#android.permission.WRITE_SETTINGS
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:10:5-12:47
+	tools:ignore
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:12:9-44
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:11:9-57
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:13:5-79
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:13:22-76
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:14:5-67
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:14:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:15:5-79
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:15:22-76
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:16:5-75
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:16:22-72
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:17:5-80
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:17:22-77
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:18:5-81
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:18:22-78
+uses-permission#android.permission.MANAGE_EXTERNAL_STORAGE
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:19:5-21:40
+	tools:ignore
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:21:9-37
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:20:9-66
+uses-feature#android.hardware.camera
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:23:5-60
+MERGED from [com.journeyapps:zxing-android-embedded:2.0.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-2.0.1.aar\8de5e428564d6c4e05909ebfeba29b87\AndroidManifest.xml:28:5-30:36
+MERGED from [com.journeyapps:zxing-android-embedded:2.0.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-2.0.1.aar\8de5e428564d6c4e05909ebfeba29b87\AndroidManifest.xml:28:5-30:36
+MERGED from [com.journeyapps:zxing-android-legacy:2.0.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\zxing-android-legacy-2.0.1.aar\1ab802e9a43698b737984f2fa09e0992\AndroidManifest.xml:29:5-31:36
+MERGED from [com.journeyapps:zxing-android-legacy:2.0.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\zxing-android-legacy-2.0.1.aar\1ab802e9a43698b737984f2fa09e0992\AndroidManifest.xml:29:5-31:36
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:23:19-57
+uses-feature#android.hardware.camera.autofocus
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:24:5-70
+MERGED from [com.journeyapps:zxing-android-embedded:2.0.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-2.0.1.aar\8de5e428564d6c4e05909ebfeba29b87\AndroidManifest.xml:36:5-38:36
+MERGED from [com.journeyapps:zxing-android-embedded:2.0.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-2.0.1.aar\8de5e428564d6c4e05909ebfeba29b87\AndroidManifest.xml:36:5-38:36
+MERGED from [com.journeyapps:zxing-android-legacy:2.0.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\zxing-android-legacy-2.0.1.aar\1ab802e9a43698b737984f2fa09e0992\AndroidManifest.xml:37:5-39:36
+MERGED from [com.journeyapps:zxing-android-legacy:2.0.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\zxing-android-legacy-2.0.1.aar\1ab802e9a43698b737984f2fa09e0992\AndroidManifest.xml:37:5-39:36
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:24:19-67
+uses-permission#android.permission.VIBRATE
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:26:5-66
+MERGED from [com.journeyapps:zxing-android-embedded:2.0.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-2.0.1.aar\8de5e428564d6c4e05909ebfeba29b87\AndroidManifest.xml:24:5-66
+MERGED from [com.journeyapps:zxing-android-embedded:2.0.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-2.0.1.aar\8de5e428564d6c4e05909ebfeba29b87\AndroidManifest.xml:24:5-66
+MERGED from [com.journeyapps:zxing-android-legacy:2.0.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\zxing-android-legacy-2.0.1.aar\1ab802e9a43698b737984f2fa09e0992\AndroidManifest.xml:25:5-66
+MERGED from [com.journeyapps:zxing-android-legacy:2.0.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\zxing-android-legacy-2.0.1.aar\1ab802e9a43698b737984f2fa09e0992\AndroidManifest.xml:25:5-66
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:26:22-63
+uses-permission#android.permission.FLASHLIGHT
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:27:5-69
+MERGED from [com.journeyapps:zxing-android-embedded:2.0.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-2.0.1.aar\8de5e428564d6c4e05909ebfeba29b87\AndroidManifest.xml:25:5-69
+MERGED from [com.journeyapps:zxing-android-embedded:2.0.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-2.0.1.aar\8de5e428564d6c4e05909ebfeba29b87\AndroidManifest.xml:25:5-69
+MERGED from [com.journeyapps:zxing-android-legacy:2.0.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\zxing-android-legacy-2.0.1.aar\1ab802e9a43698b737984f2fa09e0992\AndroidManifest.xml:26:5-69
+MERGED from [com.journeyapps:zxing-android-legacy:2.0.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\zxing-android-legacy-2.0.1.aar\1ab802e9a43698b737984f2fa09e0992\AndroidManifest.xml:26:5-69
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:27:22-66
+application
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:29:5-523:19
+MERGED from [com.google.android.material:material:1.3.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\material-1.3.0.aar\dd25a2d2b56e4bb2f5d2f543b40bd81f\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.3.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\material-1.3.0.aar\dd25a2d2b56e4bb2f5d2f543b40bd81f\AndroidManifest.xml:22:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\constraintlayout-2.0.4.aar\cfa9c7e6da8e10aacb9f23f77715fa1c\AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\constraintlayout-2.0.4.aar\cfa9c7e6da8e10aacb9f23f77715fa1c\AndroidManifest.xml:9:5-20
+MERGED from [com.toptoche.searchablespinner:searchablespinnerlibrary:1.3.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\searchablespinnerlibrary-1.3.1.aar\793a0bc15037cd8e169b355aaba6652a\AndroidManifest.xml:11:5-15:19
+MERGED from [com.toptoche.searchablespinner:searchablespinnerlibrary:1.3.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\searchablespinnerlibrary-1.3.1.aar\793a0bc15037cd8e169b355aaba6652a\AndroidManifest.xml:11:5-15:19
+MERGED from [com.jakewharton.timber:timber:4.7.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\jetified-timber-4.7.1.aar\29088517a2f44750611c7f38cd9f3505\AndroidManifest.xml:7:5-20
+MERGED from [com.jakewharton.timber:timber:4.7.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\jetified-timber-4.7.1.aar\29088517a2f44750611c7f38cd9f3505\AndroidManifest.xml:7:5-20
+MERGED from [de.hdodenhof:circleimageview:3.1.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\circleimageview-3.1.0.aar\33cba20e9cfac6d753e9fbba6a2a697c\AndroidManifest.xml:9:5-20
+MERGED from [de.hdodenhof:circleimageview:3.1.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\circleimageview-3.1.0.aar\33cba20e9cfac6d753e9fbba6a2a697c\AndroidManifest.xml:9:5-20
+MERGED from [com.journeyapps:zxing-android-embedded:2.0.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-2.0.1.aar\8de5e428564d6c4e05909ebfeba29b87\AndroidManifest.xml:59:5-75:19
+MERGED from [com.journeyapps:zxing-android-embedded:2.0.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-2.0.1.aar\8de5e428564d6c4e05909ebfeba29b87\AndroidManifest.xml:59:5-75:19
+MERGED from [com.journeyapps:zxing-android-legacy:2.0.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\zxing-android-legacy-2.0.1.aar\1ab802e9a43698b737984f2fa09e0992\AndroidManifest.xml:60:5-75:19
+MERGED from [com.journeyapps:zxing-android-legacy:2.0.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\zxing-android-legacy-2.0.1.aar\1ab802e9a43698b737984f2fa09e0992\AndroidManifest.xml:60:5-75:19
+MERGED from [com.journeyapps:zxing-android-integration:2.0.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\jetified-zxing-android-integration-2.0.1.aar\58dc05df484762709d9bd0bca68056a5\AndroidManifest.xml:9:5-10:19
+MERGED from [com.journeyapps:zxing-android-integration:2.0.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\jetified-zxing-android-integration-2.0.1.aar\58dc05df484762709d9bd0bca68056a5\AndroidManifest.xml:9:5-10:19
+MERGED from [androidx.core:core:1.5.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\core-1.5.0.aar\7ca93194e1b97fefec6786d482b4e321\AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.5.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\core-1.5.0.aar\7ca93194e1b97fefec6786d482b4e321\AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\versionedparcelable-1.1.1.aar\13d2f00a3c866a45ddf86522b3ee02ab\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\versionedparcelable-1.1.1.aar\13d2f00a3c866a45ddf86522b3ee02ab\AndroidManifest.xml:24:5-25:19
+	android:requestLegacyExternalStorage
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:37:9-52
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.5.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\core-1.5.0.aar\7ca93194e1b97fefec6786d482b4e321\AndroidManifest.xml:24:18-86
+	android:supportsRtl
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:38:9-35
+	android:label
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:34:9-41
+	android:hardwareAccelerated
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:32:9-44
+	tools:ignore
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:40:9-48
+	android:largeHeap
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:35:9-33
+	android:icon
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:33:9-42
+	android:allowBackup
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:31:9-35
+	android:networkSecurityConfig
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:36:9-69
+	android:usesCleartextTraffic
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:39:9-44
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:30:9-53
+activity#com.example.mhealth.NewCode.NutritionChampionsMonitoring
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:41:9-43:39
+	android:exported
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:43:13-36
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:42:13-65
+activity#com.example.mhealth.NewCode.SuposhanSakhiMonitoring
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:44:9-46:39
+	android:exported
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:46:13-36
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:45:13-60
+activity#com.example.mhealth.NewCode.ViewMenu
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:47:9-49:39
+	android:exported
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:49:13-36
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:48:13-45
+activity#com.example.mhealth.NewCode.NutritionChampionsRegistration
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:50:9-52:39
+	android:exported
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:52:13-36
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:51:13-67
+activity#com.example.mhealth.NewCode.SuposhanSakhiRegistration
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:53:9-55:39
+	android:exported
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:55:13-36
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:54:13-62
+activity#com.example.mhealth.EditMenu
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:56:9-58:39
+	android:exported
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:58:13-36
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:57:13-37
+activity#com.example.mhealth.Activity_AddEvent
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:59:9-61:47
+	android:theme
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:61:13-44
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:60:13-46
+activity#com.example.mhealth.MainMenuUtilityActivity
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:62:9-67:47
+	android:screenOrientation
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:66:13-49
+	android:label
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:65:13-44
+	android:configChanges
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:64:13-122
+	android:theme
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:67:13-44
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:63:13-52
+activity#com.example.mhealth.utils.EventMeetingsViewActivity
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:68:9-72:47
+	android:screenOrientation
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:71:13-49
+	android:configChanges
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:70:13-122
+	android:theme
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:72:13-44
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:69:13-60
+activity#com.example.mhealth.EventMeetingActivity
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:73:9-77:47
+	android:screenOrientation
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:76:13-49
+	android:configChanges
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:75:13-122
+	android:theme
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:77:13-44
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:74:13-49
+activity#com.example.mhealth.Activity_ChildBehivourChange
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:78:9-81:47
+	android:screenOrientation
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:80:13-49
+	android:theme
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:81:13-44
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:79:13-57
+uses-library#org.apache.http.legacy
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:83:9-85:40
+	android:required
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:85:13-37
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:84:13-50
+activity#com.example.mhealth.ActivityUnderWeight_Calculator
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:87:9-92:56
+	android:screenOrientation
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:91:13-49
+	android:label
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:90:13-60
+	android:configChanges
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:89:13-122
+	android:theme
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:92:13-53
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:88:13-59
+activity#com.example.mhealth.ViewMonitoringDetails
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:93:9-59
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:93:19-56
+activity#com.example.mhealth.AdolescentBaselineAndView
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:94:9-63
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:94:19-60
+activity#com.example.mhealth.PregnantWomenBaseline3
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:95:9-97:56
+	android:theme
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:97:13-53
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:96:13-51
+activity#com.example.mhealth.PregnantWomenBaseline2
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:98:9-100:56
+	android:theme
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:100:13-53
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:99:13-51
+activity#com.example.mhealth.PregnantWomenBaseline
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:101:9-103:56
+	android:theme
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:103:13-53
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:102:13-50
+activity#com.example.mhealth.Adolscent_Baseline2
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:104:9-107:56
+	android:screenOrientation
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:106:13-49
+	android:theme
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:107:13-53
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:105:13-48
+activity#com.example.mhealth.Adolscent_Baseline
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:108:9-111:56
+	android:screenOrientation
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:110:13-49
+	android:theme
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:111:13-53
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:109:13-47
+receiver#com.google.android.gms.analytics.AnalyticsReceiver
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:123:9-129:20
+	android:enabled
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:125:13-35
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:124:13-78
+intent-filter#action:name:com.google.android.gms.analytics.ANALYTICS_DISPATCH
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:126:13-128:29
+action#com.google.android.gms.analytics.ANALYTICS_DISPATCH
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:127:17-94
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:127:25-91
+service#com.google.android.gms.analytics.AnalyticsService
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:131:9-134:40
+	android:enabled
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:133:13-35
+	android:exported
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:134:13-37
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:132:13-77
+receiver#com.google.android.gms.analytics.CampaignTrackingReceiver
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:136:9-142:20
+	android:exported
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:138:13-36
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:137:13-85
+intent-filter#action:name:com.android.vending.INSTALL_REFERRER
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:139:13-141:29
+action#com.android.vending.INSTALL_REFERRER
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:140:17-79
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:140:25-76
+service#com.google.android.gms.analytics.CampaignTrackingService
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:144:9-92
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:144:18-89
+meta-data#com.google.android.gms.version
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:146:9-148:69
+	android:value
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:148:13-66
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:147:13-58
+meta-data#com.google.android.gms.analytics.globalConfigResource
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:149:9-151:54
+	android:resource
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:151:13-51
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:150:13-81
+activity#com.example.mhealth.ActivityLogin
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:153:9-158:47
+	android:screenOrientation
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:157:13-49
+	android:label
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:156:13-29
+	android:configChanges
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:155:13-122
+	android:theme
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:158:13-44
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:154:13-42
+activity#com.example.mhealth.ActivitySplash
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:159:9-171:20
+	android:screenOrientation
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:164:13-49
+	android:label
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:162:13-45
+	android:noHistory
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:163:13-37
+	android:configChanges
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:161:13-122
+	android:theme
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:165:13-53
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:160:13-43
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:166:13-170:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:167:17-69
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:167:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:169:17-77
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:169:27-74
+activity#com.example.mhealth.ActivityHelp
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:172:9-178:47
+	android:screenOrientation
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:177:13-49
+	android:label
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:175:13-34
+	android:noHistory
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:176:13-37
+	android:configChanges
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:174:13-122
+	android:theme
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:178:13-44
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:173:13-41
+activity#com.example.mhealth.ActivitySettings
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:179:9-185:47
+	android:screenOrientation
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:184:13-49
+	android:label
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:182:13-38
+	android:noHistory
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:183:13-37
+	android:configChanges
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:181:13-122
+	android:theme
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:185:13-44
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:180:13-45
+activity#com.example.mhealth.MainMenuActivity
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:186:9-190:53
+	android:screenOrientation
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:189:13-49
+	android:configChanges
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:188:13-122
+	android:theme
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:190:13-50
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:187:13-45
+activity#com.example.mhealth.Activity_Add_Awc
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:191:9-196:47
+	android:screenOrientation
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:195:13-49
+	android:label
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:194:13-50
+	android:configChanges
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:193:13-122
+	android:theme
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:196:13-44
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:192:13-45
+activity#com.example.mhealth.Activity_Add_Worker
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:197:9-202:47
+	android:screenOrientation
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:201:13-49
+	android:label
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:200:13-47
+	android:configChanges
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:199:13-122
+	android:theme
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:202:13-44
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:198:13-48
+activity#com.example.mhealth.Activity_View_Awc
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:203:9-208:47
+	android:screenOrientation
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:207:13-49
+	android:label
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:206:13-51
+	android:configChanges
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:205:13-122
+	android:theme
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:208:13-44
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:204:13-46
+activity#com.example.mhealth.Activity_View_Worker
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:209:9-214:47
+	android:screenOrientation
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:213:13-49
+	android:label
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:212:13-48
+	android:configChanges
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:211:13-122
+	android:theme
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:214:13-44
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:210:13-49
+activity#com.example.mhealth.awc_main_menu
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:215:9-220:47
+	android:screenOrientation
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:219:13-49
+	android:label
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:218:13-48
+	android:configChanges
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:217:13-122
+	android:theme
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:220:13-44
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:216:13-42
+activity#com.example.mhealth.MainMenuRegistrationActivity
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:221:9-226:47
+	android:screenOrientation
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:225:13-49
+	android:label
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:224:13-74
+	android:configChanges
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:223:13-122
+	android:theme
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:226:13-44
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:222:13-57
+activity#com.example.mhealth.MainMenuMonitoringActivity
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:227:9-232:47
+	android:screenOrientation
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:231:13-49
+	android:label
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:230:13-72
+	android:configChanges
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:229:13-122
+	android:theme
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:232:13-44
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:228:13-55
+activity#com.example.mhealth.ActivityEligibleFamilyRegistration
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:233:9-238:47
+	android:screenOrientation
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:237:13-49
+	android:label
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:236:13-80
+	android:configChanges
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:235:13-122
+	android:theme
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:238:13-44
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:234:13-63
+activity#com.example.mhealth.ActivitySAM_Calculator
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:239:9-244:47
+	android:screenOrientation
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:243:13-49
+	android:label
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:242:13-66
+	android:configChanges
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:241:13-122
+	android:theme
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:244:13-44
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:240:13-51
+activity#com.example.mhealth.ActivityBMI_Calculator
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:245:9-250:47
+	android:screenOrientation
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:249:13-49
+	android:label
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:248:13-58
+	android:configChanges
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:247:13-122
+	android:theme
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:250:13-44
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:246:13-51
+activity#com.example.mhealth.ActivityPregnantWomenMonitoring
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:251:9-256:47
+	android:screenOrientation
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:255:13-49
+	android:label
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:254:13-86
+	android:configChanges
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:253:13-122
+	android:theme
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:256:13-44
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:252:13-60
+activity#com.example.mhealth.ActivityPregnantWomenRegistration
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:257:9-262:47
+	android:screenOrientation
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:261:13-49
+	android:label
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:260:13-88
+	android:configChanges
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:259:13-122
+	android:theme
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:262:13-44
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:258:13-62
+activity#com.example.mhealth.ActivityChildReg
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:263:9-268:47
+	android:screenOrientation
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:267:13-49
+	android:label
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:266:13-70
+	android:configChanges
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:265:13-122
+	android:theme
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:268:13-44
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:264:13-45
+activity#com.example.mhealth.ActivityChildNutritionMonitor
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:269:9-274:47
+	android:screenOrientation
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:273:13-49
+	android:label
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:272:13-84
+	android:configChanges
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:271:13-122
+	android:theme
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:274:13-44
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:270:13-58
+activity#com.example.mhealth.ActivityAdoGirlData
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:275:9-280:47
+	android:screenOrientation
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:279:13-49
+	android:label
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:278:13-49
+	android:configChanges
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:277:13-122
+	android:theme
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:280:13-44
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:276:13-48
+activity#com.example.mhealth.SyncActivity
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:281:9-286:47
+	android:screenOrientation
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:285:13-49
+	android:label
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:284:13-76
+	android:configChanges
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:283:13-122
+	android:theme
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:286:13-44
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:282:13-41
+activity#com.example.mhealth.Activity_parentList
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:287:9-292:47
+	android:screenOrientation
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:291:13-49
+	android:label
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:290:13-52
+	android:configChanges
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:289:13-122
+	android:theme
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:292:13-44
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:288:13-48
+activity#com.example.mhealth.Activity_womenListing
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:293:9-298:47
+	android:screenOrientation
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:297:13-49
+	android:label
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:296:13-42
+	android:configChanges
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:295:13-122
+	android:theme
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:298:13-44
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:294:13-50
+activity#com.example.mhealth.Activity_AdlGirlList
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:299:9-304:47
+	android:screenOrientation
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:303:13-49
+	android:label
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:302:13-49
+	android:configChanges
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:301:13-122
+	android:theme
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:304:13-44
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:300:13-49
+activity#com.example.mhealth.Activity_motherListing
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:305:9-310:47
+	android:screenOrientation
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:309:13-49
+	android:label
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:308:13-43
+	android:configChanges
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:307:13-122
+	android:theme
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:310:13-44
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:306:13-51
+activity#com.example.mhealth.Activity_childListing
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:311:9-316:47
+	android:screenOrientation
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:315:13-49
+	android:label
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:314:13-42
+	android:configChanges
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:313:13-122
+	android:theme
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:316:13-44
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:312:13-50
+activity#com.example.mhealth.Activity_EditChildNutritionListing
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:317:9-322:47
+	android:screenOrientation
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:321:13-49
+	android:label
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:320:13-42
+	android:configChanges
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:319:13-122
+	android:theme
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:322:13-44
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:318:13-63
+activity#com.example.mhealth.ActivityEdit
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:323:9-328:47
+	android:screenOrientation
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:327:13-49
+	android:label
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:326:13-33
+	android:configChanges
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:325:13-122
+	android:theme
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:328:13-44
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:324:13-41
+activity#com.example.mhealth.Activity_EditEligibleFamilyListing
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:329:9-334:47
+	android:screenOrientation
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:333:13-49
+	android:label
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:332:13-60
+	android:configChanges
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:331:13-122
+	android:theme
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:334:13-44
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:330:13-63
+activity#com.example.mhealth.Activity_EditChildListing
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:335:9-340:47
+	android:screenOrientation
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:339:13-49
+	android:label
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:338:13-50
+	android:configChanges
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:337:13-122
+	android:theme
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:340:13-44
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:336:13-54
+activity#com.example.mhealth.Activity_EditChildAbsentListing
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:341:9-346:47
+	android:screenOrientation
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:345:13-49
+	android:label
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:344:13-44
+	android:configChanges
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:343:13-122
+	android:theme
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:346:13-44
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:342:13-60
+activity#com.example.mhealth.Activity_EditAbsentChildNutrition
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:347:9-352:47
+	android:screenOrientation
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:351:13-49
+	android:label
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:350:13-48
+	android:configChanges
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:349:13-122
+	android:theme
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:352:13-44
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:348:13-62
+activity#com.example.mhealth.Activity_EditChild
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:353:9-358:47
+	android:screenOrientation
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:357:13-49
+	android:label
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:356:13-39
+	android:configChanges
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:355:13-122
+	android:theme
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:358:13-44
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:354:13-47
+activity#com.example.mhealth.Activity_EditChildNutritionHB
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:359:9-364:47
+	android:screenOrientation
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:363:13-49
+	android:label
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:362:13-52
+	android:configChanges
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:361:13-122
+	android:theme
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:364:13-44
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:360:13-58
+activity#com.example.mhealth.ActivityParentData
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:365:9-370:47
+	android:screenOrientation
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:369:13-49
+	android:label
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:368:13-49
+	android:configChanges
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:367:13-122
+	android:theme
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:370:13-44
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:366:13-47
+activity#com.example.mhealth.ActivityWomenData
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:371:9-376:47
+	android:screenOrientation
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:375:13-49
+	android:label
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:374:13-39
+	android:configChanges
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:373:13-122
+	android:theme
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:376:13-44
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:372:13-46
+activity#com.example.mhealth.ActivityChildData
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:377:9-382:47
+	android:screenOrientation
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:381:13-49
+	android:label
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:380:13-39
+	android:configChanges
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:379:13-122
+	android:theme
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:382:13-44
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:378:13-46
+activity#com.example.mhealth.ActivityAdolescentGirlReg
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:383:9-387:47
+	android:screenOrientation
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:386:13-49
+	android:label
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:385:13-67
+	android:theme
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:387:13-44
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:384:13-54
+activity#com.example.mhealth.AdolescentMonitoringActivity
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:388:9-392:47
+	android:screenOrientation
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:391:13-49
+	android:label
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:390:13-73
+	android:theme
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:392:13-44
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:389:13-57
+service#com.example.mhealth.LocationTracking
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:394:9-53
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:394:18-50
+activity#com.example.mhealth.ActivityViews
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:396:9-400:47
+	android:screenOrientation
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:399:13-49
+	android:label
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:398:13-66
+	android:theme
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:400:13-44
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:397:13-42
+activity#com.example.mhealth.ActivityChildView
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:401:9-405:47
+	android:screenOrientation
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:404:13-49
+	android:label
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:403:13-71
+	android:theme
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:405:13-44
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:402:13-46
+activity#com.example.mhealth.ActivityPregnantWomenView
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:406:9-410:47
+	android:screenOrientation
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:409:13-49
+	android:label
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:408:13-80
+	android:theme
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:410:13-44
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:407:13-54
+activity#com.example.mhealth.ActivityMotherView
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:411:9-415:47
+	android:screenOrientation
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:414:13-49
+	android:label
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:413:13-72
+	android:theme
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:415:13-44
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:412:13-47
+activity#com.example.mhealth.ActivityAdlView
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:416:9-420:47
+	android:screenOrientation
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:419:13-49
+	android:label
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:418:13-69
+	android:theme
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:420:13-44
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:417:13-44
+activity#com.example.mhealth.ShowWebViewChart
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:421:9-425:47
+	android:screenOrientation
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:424:13-49
+	android:label
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:423:13-71
+	android:theme
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:425:13-44
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:422:13-45
+activity#com.example.mhealth.UserManualActivity
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:426:9-429:47
+	android:label
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:428:13-63
+	android:theme
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:429:13-44
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:427:13-47
+activity#com.example.mhealth.ActivitySelectAnganwadi
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:430:9-432:47
+	android:theme
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:432:13-44
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:431:13-52
+activity#com.example.mhealth.Activity_Background
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:433:9-439:47
+	android:screenOrientation
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:438:13-49
+	android:label
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:436:13-40
+	android:noHistory
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:437:13-37
+	android:configChanges
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:435:13-122
+	android:theme
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:439:13-44
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:434:13-48
+activity#com.example.mhealth.Activity_System_specification
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:440:9-446:47
+	android:screenOrientation
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:445:13-49
+	android:label
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:443:13-50
+	android:noHistory
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:444:13-37
+	android:configChanges
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:442:13-122
+	android:theme
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:446:13-44
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:441:13-58
+activity#com.example.mhealth.Activity_Guideline
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:447:9-453:47
+	android:screenOrientation
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:452:13-49
+	android:label
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:450:13-39
+	android:noHistory
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:451:13-37
+	android:configChanges
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:449:13-122
+	android:theme
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:453:13-44
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:448:13-47
+activity#com.example.mhealth.Activity_Registration
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:454:9-460:47
+	android:screenOrientation
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:459:13-49
+	android:label
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:457:13-42
+	android:noHistory
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:458:13-37
+	android:configChanges
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:456:13-122
+	android:theme
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:460:13-44
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:455:13-50
+activity#com.example.mhealth.Activity_Monitor
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:461:9-467:47
+	android:screenOrientation
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:466:13-49
+	android:label
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:464:13-47
+	android:noHistory
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:465:13-37
+	android:configChanges
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:463:13-122
+	android:theme
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:467:13-44
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:462:13-45
+activity#com.example.mhealth.Activity_View
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:468:9-474:47
+	android:screenOrientation
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:473:13-49
+	android:label
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:471:13-34
+	android:noHistory
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:472:13-37
+	android:configChanges
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:470:13-122
+	android:theme
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:474:13-44
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:469:13-42
+activity#com.example.mhealth.Activity_Sync
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:475:9-481:47
+	android:screenOrientation
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:480:13-49
+	android:label
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:478:13-44
+	android:noHistory
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:479:13-37
+	android:configChanges
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:477:13-122
+	android:theme
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:481:13-44
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:476:13-42
+activity#com.example.mhealth.Activity_Conclusion
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:482:9-488:47
+	android:screenOrientation
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:487:13-49
+	android:label
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:485:13-39
+	android:noHistory
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:486:13-37
+	android:configChanges
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:484:13-122
+	android:theme
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:488:13-44
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:483:13-48
+activity#com.example.mhealth.ActivityMotherRegistration
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:489:9-492:47
+	android:label
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:491:13-80
+	android:theme
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:492:13-44
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:490:13-55
+activity#jim.h.common.android.zxinglib.CaptureActivity
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:493:9-498:63
+	android:screenOrientation
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:496:13-50
+	android:windowSoftInputMode
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:498:13-60
+	android:configChanges
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:495:13-63
+	android:theme
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:497:13-71
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:494:13-73
+activity#com.example.mhealth.Preg_women_tab
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:499:9-502:47
+	android:label
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:501:13-66
+	android:theme
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:502:13-44
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:500:13-43
+activity#com.example.mhealth.Activity_Exiting_Mother
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:503:9-506:47
+	android:label
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:505:13-77
+	android:theme
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:506:13-44
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:504:13-52
+activity#com.example.mhealth.Activity_EditAbsentPregnantWomenNutrition
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:507:9-512:47
+	android:screenOrientation
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:511:13-49
+	android:label
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:510:13-55
+	android:configChanges
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:509:13-122
+	android:theme
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:512:13-44
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:508:13-70
+activity#com.example.mhealth.Activity_EditAbsentAdolescentGirlNutrition
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:513:9-518:47
+	android:screenOrientation
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:517:13-49
+	android:label
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:516:13-49
+	android:configChanges
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:515:13-122
+	android:theme
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:518:13-44
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:514:13-71
+activity#com.example.mhealth.MonthlyProgress
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:519:9-522:47
+	android:screenOrientation
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:521:13-49
+	android:theme
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:522:13-44
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:520:13-44
+uses-sdk
+INJECTED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml
+INJECTED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml
+MERGED from [com.google.android.material:material:1.3.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\material-1.3.0.aar\dd25a2d2b56e4bb2f5d2f543b40bd81f\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.3.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\material-1.3.0.aar\dd25a2d2b56e4bb2f5d2f543b40bd81f\AndroidManifest.xml:20:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\constraintlayout-2.0.4.aar\cfa9c7e6da8e10aacb9f23f77715fa1c\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\constraintlayout-2.0.4.aar\cfa9c7e6da8e10aacb9f23f77715fa1c\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.appcompat:appcompat:1.3.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\appcompat-1.3.0.aar\8813a02f82dee88c0b06678c4a10ae8f\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.3.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\appcompat-1.3.0.aar\8813a02f82dee88c0b06678c4a10ae8f\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\cardview-1.0.0.aar\f4d0228873da151ecec39a9c224153a0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\cardview-1.0.0.aar\f4d0228873da151ecec39a9c224153a0\AndroidManifest.xml:20:5-44
+MERGED from [com.toptoche.searchablespinner:searchablespinnerlibrary:1.3.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\searchablespinnerlibrary-1.3.1.aar\793a0bc15037cd8e169b355aaba6652a\AndroidManifest.xml:7:5-9:41
+MERGED from [com.toptoche.searchablespinner:searchablespinnerlibrary:1.3.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\searchablespinnerlibrary-1.3.1.aar\793a0bc15037cd8e169b355aaba6652a\AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\viewpager2-1.0.0.aar\912b28af16a6c6e68fe33c5f835bb5e0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\viewpager2-1.0.0.aar\912b28af16a6c6e68fe33c5f835bb5e0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.2.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\recyclerview-1.2.1.aar\4804167e49ffb32112581c4f873430ef\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.2.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\recyclerview-1.2.1.aar\4804167e49ffb32112581c4f873430ef\AndroidManifest.xml:20:5-22:41
+MERGED from [com.jakewharton.timber:timber:4.7.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\jetified-timber-4.7.1.aar\29088517a2f44750611c7f38cd9f3505\AndroidManifest.xml:5:5-43
+MERGED from [com.jakewharton.timber:timber:4.7.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\jetified-timber-4.7.1.aar\29088517a2f44750611c7f38cd9f3505\AndroidManifest.xml:5:5-43
+MERGED from [de.hdodenhof:circleimageview:3.1.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\circleimageview-3.1.0.aar\33cba20e9cfac6d753e9fbba6a2a697c\AndroidManifest.xml:5:5-7:41
+MERGED from [de.hdodenhof:circleimageview:3.1.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\circleimageview-3.1.0.aar\33cba20e9cfac6d753e9fbba6a2a697c\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\legacy-support-v4-1.0.0.aar\2f49a735914449607279a24b0f5c76b4\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\legacy-support-v4-1.0.0.aar\2f49a735914449607279a24b0f5c76b4\AndroidManifest.xml:20:5-44
+MERGED from [com.journeyapps:zxing-android-embedded:2.0.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-2.0.1.aar\8de5e428564d6c4e05909ebfeba29b87\AndroidManifest.xml:19:5-21:41
+MERGED from [com.journeyapps:zxing-android-embedded:2.0.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-2.0.1.aar\8de5e428564d6c4e05909ebfeba29b87\AndroidManifest.xml:19:5-21:41
+MERGED from [com.journeyapps:zxing-android-legacy:2.0.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\zxing-android-legacy-2.0.1.aar\1ab802e9a43698b737984f2fa09e0992\AndroidManifest.xml:20:5-22:41
+MERGED from [com.journeyapps:zxing-android-legacy:2.0.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\zxing-android-legacy-2.0.1.aar\1ab802e9a43698b737984f2fa09e0992\AndroidManifest.xml:20:5-22:41
+MERGED from [com.journeyapps:zxing-android-integration:2.0.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\jetified-zxing-android-integration-2.0.1.aar\58dc05df484762709d9bd0bca68056a5\AndroidManifest.xml:5:5-7:41
+MERGED from [com.journeyapps:zxing-android-integration:2.0.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\jetified-zxing-android-integration-2.0.1.aar\58dc05df484762709d9bd0bca68056a5\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.fragment:fragment:1.3.4] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\fragment-1.3.4.aar\6ec635ccafea01718e29a63f94c7ef22\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.3.4] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\fragment-1.3.4.aar\6ec635ccafea01718e29a63f94c7ef22\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.2.3] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\activity-1.2.3.aar\58e385809043c303ca9d745ce3ca73f8\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.2.3] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\activity-1.2.3.aar\58e385809043c303ca9d745ce3ca73f8\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.3.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\appcompat-resources-1.3.0.aar\be9771c5caf24736f6dde7a7675ab301\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.3.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\appcompat-resources-1.3.0.aar\be9771c5caf24736f6dde7a7675ab301\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\legacy-support-core-ui-1.0.0.aar\f37f18195b851114c82f2b090213222e\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\legacy-support-core-ui-1.0.0.aar\f37f18195b851114c82f2b090213222e\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\drawerlayout-1.0.0.aar\28d007d7e8e651e2cd32ad61c08f420c\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\drawerlayout-1.0.0.aar\28d007d7e8e651e2cd32ad61c08f420c\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-1.1.0.aar\0ce375266c7fbc1d1d0abe7a6bd5c4d7\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-1.1.0.aar\0ce375266c7fbc1d1d0abe7a6bd5c4d7\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\viewpager-1.0.0.aar\ebf3e262cc991a9564d3c3c4b54db3a0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\viewpager-1.0.0.aar\ebf3e262cc991a9564d3c3c4b54db3a0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-1.0.0.aar\4f1dfbb7a0a4be0cd9a3a3e68decce99\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-1.0.0.aar\4f1dfbb7a0a4be0cd9a3a3e68decce99\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\customview-1.0.0.aar\5b15b0ff73cbd2e42189e01901b53121\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\customview-1.0.0.aar\5b15b0ff73cbd2e42189e01901b53121\AndroidManifest.xml:20:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\dynamicanimation-1.0.0.aar\a784a304c229f0af53f33f1df13bc058\AndroidManifest.xml:20:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\dynamicanimation-1.0.0.aar\a784a304c229f0af53f33f1df13bc058\AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.2.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\transition-1.2.0.aar\339a79fb9c2eba40ea9996245c09a644\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\transition-1.2.0.aar\339a79fb9c2eba40ea9996245c09a644\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\vectordrawable-animated-1.1.0.aar\74d843cadcce1499926eaf6304b7f1a5\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\vectordrawable-animated-1.1.0.aar\74d843cadcce1499926eaf6304b7f1a5\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\vectordrawable-1.1.0.aar\7db739b37f4465eac1fe549d8edb0dd2\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\vectordrawable-1.1.0.aar\7db739b37f4465eac1fe549d8edb0dd2\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.media:media:1.0.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\media-1.0.0.aar\1675c2962f116d79fb3831c25f207fec\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\media-1.0.0.aar\1675c2962f116d79fb3831c25f207fec\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\legacy-support-core-utils-1.0.0.aar\b5d6e3b69461b479538d7c069f2e5d11\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\legacy-support-core-utils-1.0.0.aar\b5d6e3b69461b479538d7c069f2e5d11\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\loader-1.0.0.aar\661f54688151a4095e9e328e00c13aaf\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\loader-1.0.0.aar\661f54688151a4095e9e328e00c13aaf\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-1.0.0.aar\94a4f17772af3f1b03bc35850cfbeea4\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-1.0.0.aar\94a4f17772af3f1b03bc35850cfbeea4\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-1.0.0.aar\b923ae48e5fdaf4e70ce778b0768c6a2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-1.0.0.aar\b923ae48e5fdaf4e70ce778b0768c6a2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.5.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\core-1.5.0.aar\7ca93194e1b97fefec6786d482b4e321\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.5.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\core-1.5.0.aar\7ca93194e1b97fefec6786d482b4e321\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\cursoradapter-1.0.0.aar\3871a76015b91a96cececfeb25c69372\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\cursoradapter-1.0.0.aar\3871a76015b91a96cececfeb25c69372\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\lifecycle-viewmodel-savedstate-2.3.1.aar\be2b4311dc6774fcbcc44fb633ea922a\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\lifecycle-viewmodel-savedstate-2.3.1.aar\be2b4311dc6774fcbcc44fb633ea922a\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.1.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\savedstate-1.1.0.aar\7291de863670f0430dea55cf78e94fe1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.1.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\savedstate-1.1.0.aar\7291de863670f0430dea55cf78e94fe1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\lifecycle-runtime-2.3.1.aar\30b26f75839d3ea23aa9b79bf635d9e7\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\lifecycle-runtime-2.3.1.aar\30b26f75839d3ea23aa9b79bf635d9e7\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\lifecycle-viewmodel-2.3.1.aar\2473bb317c3e12fb5153ef93c342b676\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\lifecycle-viewmodel-2.3.1.aar\2473bb317c3e12fb5153ef93c342b676\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\versionedparcelable-1.1.1.aar\13d2f00a3c866a45ddf86522b3ee02ab\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\versionedparcelable-1.1.1.aar\13d2f00a3c866a45ddf86522b3ee02ab\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\tracing-1.0.0.aar\0ba5148eacf6b7bb69daba152c6283ad\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\tracing-1.0.0.aar\0ba5148eacf6b7bb69daba152c6283ad\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\lifecycle-livedata-2.0.0.aar\8e8f76f9e81199db2f253429147ff8d3\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\lifecycle-livedata-2.0.0.aar\8e8f76f9e81199db2f253429147ff8d3\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\lifecycle-livedata-core-2.3.1.aar\8a8a92d8ecb7b38d86661fea4a1d7cb1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\lifecycle-livedata-core-2.3.1.aar\8a8a92d8ecb7b38d86661fea4a1d7cb1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\core-runtime-2.1.0.aar\3240df76dc8974db6c3e13e28acf014c\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\core-runtime-2.1.0.aar\3240df76dc8974db6c3e13e28acf014c\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\documentfile-1.0.0.aar\07e1643c7134a68d16d4b3aa711dfa69\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\documentfile-1.0.0.aar\07e1643c7134a68d16d4b3aa711dfa69\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-1.0.0.aar\dfa5e4086f304e2d3ecf48b832bb1531\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-1.0.0.aar\dfa5e4086f304e2d3ecf48b832bb1531\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\print-1.0.0.aar\1653dd5922b23ab56456000a86fef505\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\print-1.0.0.aar\1653dd5922b23ab56456000a86fef505\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\interpolator-1.0.0.aar\456406e7efb3cad19edbbb44c884ac55\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\interpolator-1.0.0.aar\456406e7efb3cad19edbbb44c884ac55\AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\annotation-experimental-1.0.0.aar\355c63173522942a46aa10be558fb6d4\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\annotation-experimental-1.0.0.aar\355c63173522942a46aa10be558fb6d4\AndroidManifest.xml:20:5-22:41
+INJECTED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml
+INJECTED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml
+		INJECTED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml
+		INJECTED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:118:13-120:58
+	android:resource
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:120:17-55
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:119:17-67
+uses-feature#android.hardware.camera.front
+ADDED from [com.journeyapps:zxing-android-embedded:2.0.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-2.0.1.aar\8de5e428564d6c4e05909ebfeba29b87\AndroidManifest.xml:31:5-33:36
+MERGED from [com.journeyapps:zxing-android-legacy:2.0.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\zxing-android-legacy-2.0.1.aar\1ab802e9a43698b737984f2fa09e0992\AndroidManifest.xml:32:5-34:36
+MERGED from [com.journeyapps:zxing-android-legacy:2.0.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\zxing-android-legacy-2.0.1.aar\1ab802e9a43698b737984f2fa09e0992\AndroidManifest.xml:32:5-34:36
+	android:required
+		ADDED from [com.journeyapps:zxing-android-embedded:2.0.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-2.0.1.aar\8de5e428564d6c4e05909ebfeba29b87\AndroidManifest.xml:33:9-33
+	android:name
+		ADDED from [com.journeyapps:zxing-android-embedded:2.0.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-2.0.1.aar\8de5e428564d6c4e05909ebfeba29b87\AndroidManifest.xml:32:9-53
+uses-feature#android.hardware.camera.flash
+ADDED from [com.journeyapps:zxing-android-embedded:2.0.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-2.0.1.aar\8de5e428564d6c4e05909ebfeba29b87\AndroidManifest.xml:39:5-41:36
+MERGED from [com.journeyapps:zxing-android-legacy:2.0.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\zxing-android-legacy-2.0.1.aar\1ab802e9a43698b737984f2fa09e0992\AndroidManifest.xml:40:5-42:36
+MERGED from [com.journeyapps:zxing-android-legacy:2.0.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\zxing-android-legacy-2.0.1.aar\1ab802e9a43698b737984f2fa09e0992\AndroidManifest.xml:40:5-42:36
+	android:required
+		ADDED from [com.journeyapps:zxing-android-embedded:2.0.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-2.0.1.aar\8de5e428564d6c4e05909ebfeba29b87\AndroidManifest.xml:41:9-33
+	android:name
+		ADDED from [com.journeyapps:zxing-android-embedded:2.0.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-2.0.1.aar\8de5e428564d6c4e05909ebfeba29b87\AndroidManifest.xml:40:9-53
+uses-feature#android.hardware.screen.landscape
+ADDED from [com.journeyapps:zxing-android-embedded:2.0.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-2.0.1.aar\8de5e428564d6c4e05909ebfeba29b87\AndroidManifest.xml:42:5-44:36
+MERGED from [com.journeyapps:zxing-android-legacy:2.0.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\zxing-android-legacy-2.0.1.aar\1ab802e9a43698b737984f2fa09e0992\AndroidManifest.xml:43:5-45:36
+MERGED from [com.journeyapps:zxing-android-legacy:2.0.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\zxing-android-legacy-2.0.1.aar\1ab802e9a43698b737984f2fa09e0992\AndroidManifest.xml:43:5-45:36
+	android:required
+		ADDED from [com.journeyapps:zxing-android-embedded:2.0.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-2.0.1.aar\8de5e428564d6c4e05909ebfeba29b87\AndroidManifest.xml:44:9-33
+	android:name
+		ADDED from [com.journeyapps:zxing-android-embedded:2.0.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-2.0.1.aar\8de5e428564d6c4e05909ebfeba29b87\AndroidManifest.xml:43:9-57
+uses-feature#android.hardware.wifi
+ADDED from [com.journeyapps:zxing-android-embedded:2.0.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-2.0.1.aar\8de5e428564d6c4e05909ebfeba29b87\AndroidManifest.xml:45:5-47:36
+MERGED from [com.journeyapps:zxing-android-legacy:2.0.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\zxing-android-legacy-2.0.1.aar\1ab802e9a43698b737984f2fa09e0992\AndroidManifest.xml:46:5-48:36
+MERGED from [com.journeyapps:zxing-android-legacy:2.0.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\zxing-android-legacy-2.0.1.aar\1ab802e9a43698b737984f2fa09e0992\AndroidManifest.xml:46:5-48:36
+	android:required
+		ADDED from [com.journeyapps:zxing-android-embedded:2.0.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-2.0.1.aar\8de5e428564d6c4e05909ebfeba29b87\AndroidManifest.xml:47:9-33
+	android:name
+		ADDED from [com.journeyapps:zxing-android-embedded:2.0.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-2.0.1.aar\8de5e428564d6c4e05909ebfeba29b87\AndroidManifest.xml:46:9-45
+supports-screens
+ADDED from [com.journeyapps:zxing-android-embedded:2.0.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-2.0.1.aar\8de5e428564d6c4e05909ebfeba29b87\AndroidManifest.xml:52:5-57:40
+MERGED from [com.journeyapps:zxing-android-legacy:2.0.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\zxing-android-legacy-2.0.1.aar\1ab802e9a43698b737984f2fa09e0992\AndroidManifest.xml:53:5-58:40
+MERGED from [com.journeyapps:zxing-android-legacy:2.0.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\zxing-android-legacy-2.0.1.aar\1ab802e9a43698b737984f2fa09e0992\AndroidManifest.xml:53:5-58:40
+	android:largeScreens
+		ADDED from [com.journeyapps:zxing-android-embedded:2.0.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-2.0.1.aar\8de5e428564d6c4e05909ebfeba29b87\AndroidManifest.xml:54:9-36
+	android:smallScreens
+		ADDED from [com.journeyapps:zxing-android-embedded:2.0.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-2.0.1.aar\8de5e428564d6c4e05909ebfeba29b87\AndroidManifest.xml:56:9-36
+	android:normalScreens
+		ADDED from [com.journeyapps:zxing-android-embedded:2.0.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-2.0.1.aar\8de5e428564d6c4e05909ebfeba29b87\AndroidManifest.xml:55:9-37
+	android:xlargeScreens
+		ADDED from [com.journeyapps:zxing-android-embedded:2.0.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-2.0.1.aar\8de5e428564d6c4e05909ebfeba29b87\AndroidManifest.xml:57:9-37
+	android:anyDensity
+		ADDED from [com.journeyapps:zxing-android-embedded:2.0.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-2.0.1.aar\8de5e428564d6c4e05909ebfeba29b87\AndroidManifest.xml:53:9-34
+activity#com.google.zxing.client.android.CaptureActivity
+ADDED from [com.journeyapps:zxing-android-embedded:2.0.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-2.0.1.aar\8de5e428564d6c4e05909ebfeba29b87\AndroidManifest.xml:60:9-66:63
+	android:screenOrientation
+		ADDED from [com.journeyapps:zxing-android-embedded:2.0.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-2.0.1.aar\8de5e428564d6c4e05909ebfeba29b87\AndroidManifest.xml:63:13-56
+	android:clearTaskOnLaunch
+		ADDED from [com.journeyapps:zxing-android-embedded:2.0.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-2.0.1.aar\8de5e428564d6c4e05909ebfeba29b87\AndroidManifest.xml:62:13-45
+	android:stateNotNeeded
+		ADDED from [com.journeyapps:zxing-android-embedded:2.0.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-2.0.1.aar\8de5e428564d6c4e05909ebfeba29b87\AndroidManifest.xml:64:13-42
+	android:windowSoftInputMode
+		ADDED from [com.journeyapps:zxing-android-embedded:2.0.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-2.0.1.aar\8de5e428564d6c4e05909ebfeba29b87\AndroidManifest.xml:66:13-60
+	android:theme
+		ADDED from [com.journeyapps:zxing-android-embedded:2.0.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-2.0.1.aar\8de5e428564d6c4e05909ebfeba29b87\AndroidManifest.xml:65:13-54
+	android:name
+		ADDED from [com.journeyapps:zxing-android-embedded:2.0.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-2.0.1.aar\8de5e428564d6c4e05909ebfeba29b87\AndroidManifest.xml:61:13-75
+activity#com.google.zxing.client.android.HelpActivity
+ADDED from [com.journeyapps:zxing-android-embedded:2.0.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-2.0.1.aar\8de5e428564d6c4e05909ebfeba29b87\AndroidManifest.xml:67:9-71:45
+	android:screenOrientation
+		ADDED from [com.journeyapps:zxing-android-embedded:2.0.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-2.0.1.aar\8de5e428564d6c4e05909ebfeba29b87\AndroidManifest.xml:70:13-45
+	android:stateNotNeeded
+		ADDED from [com.journeyapps:zxing-android-embedded:2.0.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-2.0.1.aar\8de5e428564d6c4e05909ebfeba29b87\AndroidManifest.xml:71:13-42
+	android:label
+		ADDED from [com.journeyapps:zxing-android-embedded:2.0.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-2.0.1.aar\8de5e428564d6c4e05909ebfeba29b87\AndroidManifest.xml:69:13-52
+	android:name
+		ADDED from [com.journeyapps:zxing-android-embedded:2.0.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-2.0.1.aar\8de5e428564d6c4e05909ebfeba29b87\AndroidManifest.xml:68:13-72
+activity#com.google.zxing.client.android.encode.EncodeActivity
+ADDED from [com.journeyapps:zxing-android-embedded:2.0.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-2.0.1.aar\8de5e428564d6c4e05909ebfeba29b87\AndroidManifest.xml:72:9-74:48
+	android:screenOrientation
+		ADDED from [com.journeyapps:zxing-android-embedded:2.0.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-2.0.1.aar\8de5e428564d6c4e05909ebfeba29b87\AndroidManifest.xml:74:13-45
+	android:name
+		ADDED from [com.journeyapps:zxing-android-embedded:2.0.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-2.0.1.aar\8de5e428564d6c4e05909ebfeba29b87\AndroidManifest.xml:73:13-81
+activity#com.google.zxing.client.androidlegacy.CaptureActivity
+ADDED from [com.journeyapps:zxing-android-legacy:2.0.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\zxing-android-legacy-2.0.1.aar\1ab802e9a43698b737984f2fa09e0992\AndroidManifest.xml:61:9-68:63
+	android:screenOrientation
+		ADDED from [com.journeyapps:zxing-android-legacy:2.0.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\zxing-android-legacy-2.0.1.aar\1ab802e9a43698b737984f2fa09e0992\AndroidManifest.xml:65:13-50
+	android:clearTaskOnLaunch
+		ADDED from [com.journeyapps:zxing-android-legacy:2.0.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\zxing-android-legacy-2.0.1.aar\1ab802e9a43698b737984f2fa09e0992\AndroidManifest.xml:63:13-45
+	android:stateNotNeeded
+		ADDED from [com.journeyapps:zxing-android-legacy:2.0.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\zxing-android-legacy-2.0.1.aar\1ab802e9a43698b737984f2fa09e0992\AndroidManifest.xml:66:13-42
+	android:windowSoftInputMode
+		ADDED from [com.journeyapps:zxing-android-legacy:2.0.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\zxing-android-legacy-2.0.1.aar\1ab802e9a43698b737984f2fa09e0992\AndroidManifest.xml:68:13-60
+	android:configChanges
+		ADDED from [com.journeyapps:zxing-android-legacy:2.0.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\zxing-android-legacy-2.0.1.aar\1ab802e9a43698b737984f2fa09e0992\AndroidManifest.xml:64:13-63
+	android:theme
+		ADDED from [com.journeyapps:zxing-android-legacy:2.0.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\zxing-android-legacy-2.0.1.aar\1ab802e9a43698b737984f2fa09e0992\AndroidManifest.xml:67:13-71
+	android:name
+		ADDED from [com.journeyapps:zxing-android-legacy:2.0.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\zxing-android-legacy-2.0.1.aar\1ab802e9a43698b737984f2fa09e0992\AndroidManifest.xml:62:13-81
+activity#com.google.zxing.client.androidlegacy.HelpActivity
+ADDED from [com.journeyapps:zxing-android-legacy:2.0.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\zxing-android-legacy-2.0.1.aar\1ab802e9a43698b737984f2fa09e0992\AndroidManifest.xml:69:9-71:48
+	android:screenOrientation
+		ADDED from [com.journeyapps:zxing-android-legacy:2.0.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\zxing-android-legacy-2.0.1.aar\1ab802e9a43698b737984f2fa09e0992\AndroidManifest.xml:71:13-45
+	android:name
+		ADDED from [com.journeyapps:zxing-android-legacy:2.0.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\zxing-android-legacy-2.0.1.aar\1ab802e9a43698b737984f2fa09e0992\AndroidManifest.xml:70:13-78
+activity#com.google.zxing.client.androidlegacy.encode.EncodeActivity
+ADDED from [com.journeyapps:zxing-android-legacy:2.0.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\zxing-android-legacy-2.0.1.aar\1ab802e9a43698b737984f2fa09e0992\AndroidManifest.xml:72:9-74:48
+	android:screenOrientation
+		ADDED from [com.journeyapps:zxing-android-legacy:2.0.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\zxing-android-legacy-2.0.1.aar\1ab802e9a43698b737984f2fa09e0992\AndroidManifest.xml:74:13-45
+	android:name
+		ADDED from [com.journeyapps:zxing-android-legacy:2.0.1] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\zxing-android-legacy-2.0.1.aar\1ab802e9a43698b737984f2fa09e0992\AndroidManifest.xml:73:13-87

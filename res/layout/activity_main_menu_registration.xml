@@ -104,7 +104,7 @@
                     android:gravity="center"
                     android:onClick="click_child"
                     android:textColor="#fff"
-                    android:textSize="18sp" />
+                    android:textSize="17sp" />
 
 
                 <TextView
@@ -200,7 +200,7 @@
                     android:layout_centerHorizontal="true"
                     android:gravity="center"
                     android:textColor="#fff"
-                    android:textSize="18sp" />
+                    android:textSize="17sp" />
             </RelativeLayout>
         </LinearLayout>
 
@@ -236,7 +236,7 @@
                     android:layout_below="@+id/imgAdolcent"
                     android:gravity="center"
                     android:textColor="#fff"
-                    android:textSize="18sp" />
+                    android:textSize="17sp" />
 
                 <TextView
                     android:layout_width="fill_parent"
@@ -292,7 +292,7 @@
                     android:gravity="center"
                     android:text="Suposhan Sakhi"
                     android:textColor="#fff"
-                    android:textSize="18sp" />
+                    android:textSize="17sp" />
             </RelativeLayout>
         </LinearLayout>
 
@@ -327,9 +327,9 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/imgNutrition"
                     android:gravity="center"
+                    android:singleLine="true"
                     android:text="Nutrition Champions"
                     android:textColor="#fff"
-                    android:singleLine="true"
                     android:textSize="17sp" />
 
 <!--                <TextView-->
@@ -384,7 +384,7 @@
                     android:layout_below="@+id/imgChild"
                     android:gravity="center"
                     android:textColor="#fff"
-                    android:textSize="18sp" />
+                    android:textSize="17sp" />
 
                 <TextView
                     android:layout_width="fill_parent"
@@ -432,7 +432,7 @@
                     android:gravity="center"
                     android:text=""
                     android:textColor="#fff"
-                    android:textSize="18sp" />
+                    android:textSize="17sp" />
 
 
 

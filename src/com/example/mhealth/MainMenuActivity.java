@@ -29,6 +29,7 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.example.mhealth.NewCode.ViewMenu;
 import com.example.mhealth.app_drawer.AppDrawer;
 import com.example.mhealth.helper.ConstantValue;
 import com.example.mhealth.helper.GlobalVars;
@@ -63,7 +64,7 @@ public class MainMenuActivity extends AppDrawer {
             strCancel, strFooter, strMainMenu, strAwcAndMemDetails,strAdolBaseline,strPWBaseline;
 
     Menu menuEdit;
-    LinearLayout lnrEventsOrMeetings,lnrEdit;
+    LinearLayout lnrEventsOrMeetings,lnrEdit,lnrView,lnrSetting;
 
 
     String curDate, Sstatus = "", Hstatus = "";
@@ -146,6 +147,20 @@ public class MainMenuActivity extends AppDrawer {
             @Override
             public void onClick(View view) {
                 Intent intent=new Intent(MainMenuActivity.this, EditMenu.class);
+                startActivity(intent);
+            }
+        });
+        lnrView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(MainMenuActivity.this, ViewMenu.class);
+                startActivity(intent);
+            }
+        });
+        lnrSetting.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(MainMenuActivity.this, ActivitySettings.class);
                 startActivity(intent);
             }
         });
@@ -335,6 +350,8 @@ public class MainMenuActivity extends AppDrawer {
         //txtEventsOrMeetings = findViewById(R.id.txtEventsOrMeetings);
 
         lnrEdit = findViewById(R.id.lnrEdit);
+        lnrView = findViewById(R.id.lnrEdit);
+        lnrSetting= findViewById(R.id.lnrEdit);
     }
 
     public void click_registration(View vw) {
@@ -385,7 +402,7 @@ public class MainMenuActivity extends AppDrawer {
                 startActivity(i,bndlanimation5);
 
                 break;
-            case R.id.lnrSettings:
+            case R.id.lnrSetting:
                 Intent intent3 = new Intent(this, ActivitySettings.class);
                 startActivity(intent3);
                 break;

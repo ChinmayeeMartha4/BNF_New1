@@ -101,7 +101,7 @@
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/imgWomen"
                         android:layout_centerHorizontal="true"
-                        android:layout_marginTop="20dp"
+                        android:layout_marginTop="5dp"
                         android:gravity="center"
                         android:textColor="#fff"
                         android:textSize="18sp" />
@@ -113,7 +113,7 @@
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/txtPregntWomenm"
                         android:layout_centerHorizontal="true"
-                        android:layout_marginTop="20dp"
+                        android:layout_marginTop="5dp"
                         android:gravity="center"
                         android:textColor="#fff"
                         android:textSize="18sp" />
@@ -150,7 +150,7 @@
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/imgAdolcent"
-                        android:layout_marginTop="20dp"
+                        android:layout_marginTop="5dp"
                         android:gravity="center"
                         android:textColor="#fff"
                         android:textSize="18sp" />
@@ -160,7 +160,114 @@
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/txtAdolescentGirl"
-                        android:layout_marginTop="20dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:textColor="#fff"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:baselineAligned="false"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/lnrSuposhanSakhi"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/edit_child_nutrition"
+                android:clickable="true"
+                android:onClick="click_list"
+                android:orientation="horizontal"
+                android:padding="4dp" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                    <ImageView
+                        android:id="@+id/imgSuposhanSakhi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:src="@drawable/suposhan_sakhi_icon" />
+
+                    <TextView
+                        android:id="@+id/txtSuposhanSakhi"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imgSuposhanSakhi"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:textColor="#fff"
+                        android:text="Suposhan Sakhi"
+                        android:textSize="18sp" />
+
+
+                    <TextView
+                        android:id="@+id/txtSuposhan"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtSuposhanSakhi"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:textColor="#fff"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnrNutrition"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/help_sel"
+                android:clickable="true"
+                android:onClick="click_list"
+                android:orientation="horizontal"
+                android:padding="4dp"
+                android:tag="Synchronize" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                    <ImageView
+                        android:id="@+id/imgNutrition"
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:src="@drawable/nutrition_icon" />
+
+                    <TextView
+                        android:id="@+id/txtNutrition"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imgNutrition"
+                        android:layout_marginTop="5dp"
+                        android:text="Nutrition Champions"
+                        android:gravity="center"
+                        android:textColor="#fff"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/txtNutri"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtNutrition"
+                        android:layout_marginTop="5dp"
                         android:gravity="center"
                         android:textColor="#fff"
                         android:textSize="18sp" />
@@ -205,7 +312,7 @@
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/imgChild"
-                        android:layout_marginTop="20dp"
+                        android:layout_marginTop="5dp"
                         android:gravity="center"
                         android:textColor="#fff"
                         android:textSize="18sp" />
@@ -216,7 +323,7 @@
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/txtChildNutritionm"
-                        android:layout_marginTop="20dp"
+                        android:layout_marginTop="5dp"
                         android:gravity="center"
                         android:textColor="#fff"
                         android:textSize="18sp" />
@@ -231,7 +338,7 @@
                 android:layout_height="match_parent"
                 android:layout_marginLeft="5dp"
                 android:layout_weight="1"
-                android:background="@drawable/help_sel"
+                android:background="@drawable/resource_sel"
                 android:clickable="true"
                 android:onClick="click_list"
                 android:orientation="horizontal"
@@ -248,15 +355,14 @@
                         android:layout_height="60dp"
                         android:layout_centerInParent="true"
                         android:gravity="center"
-                        android:src="@drawable/main_menu"
-                        />
+                        android:src="@drawable/main_menu" />
 
                     <TextView
                         android:id="@+id/txtBackToMenu"
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/imgBacktoMainMenu"
-                        android:layout_marginTop="20dp"
+                        android:layout_marginTop="5dp"
                         android:gravity="center"
                         android:textColor="#fff"
                         android:textSize="18sp" />
@@ -332,7 +438,8 @@
             android:layout_width="match_parent"
             android:layout_marginTop="5dp"
 
-            android:background="@color/blogs">
+            android:background="@color/blogs"
+            android:visibility="gone">
             <TextView
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
@@ -352,14 +459,16 @@
             android:layout_height="2dp"
             android:layout_marginBottom="2dp"
             android:layout_marginTop="10dp"
-            android:background="#67A687" />
+            android:background="#67A687"
+            android:visibility="gone"/>
 
         <RelativeLayout
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="5dp"
             android:layout_marginTop="5dp"
-            android:gravity="center" >
+            android:gravity="center"
+            android:visibility="gone">
 
             <TextView
                 android:id="@+id/txtFooter"

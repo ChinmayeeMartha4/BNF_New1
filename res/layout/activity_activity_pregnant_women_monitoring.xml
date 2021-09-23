@@ -144,7 +144,8 @@
                 android:text="@string/date_of_screening"
                 android:drawableRight="@drawable/ic_baseline_star_24"
                 android:textColor="#000"
-                android:textSize="15sp" />
+                android:textSize="15sp"
+                android:visibility="gone"/>
 
             <RelativeLayout
                 android:layout_width="fill_parent"
@@ -156,13 +157,14 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentTop="true"
-                    android:layout_marginRight="45dp"
                     android:layout_marginTop="2dp"
+                    android:layout_marginRight="45dp"
                     android:clickable="false"
                     android:cursorVisible="false"
                     android:focusable="false"
                     android:focusableInTouchMode="false"
-                    android:singleLine="true" />
+                    android:singleLine="true"
+                    android:visibility="gone"/>
 
                 <ImageView
                     android:layout_width="wrap_content"
@@ -170,7 +172,8 @@
                     android:layout_alignParentRight="true"
                     android:layout_alignParentTop="true"
                     android:onClick="show_callender1"
-                    android:src="@drawable/calenderr" />
+                    android:src="@drawable/calenderr"
+                    android:visibility="gone"/>
             </RelativeLayout>
 
             <TextView
@@ -198,13 +201,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:visibility="gone"
+
                 >
                 <RadioGroup
                     android:id="@+id/rgMGR"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:visibility="gone">
+                    >
 
                     <RadioButton
                         android:id="@+id/rbPresent"
@@ -345,7 +348,8 @@
                         android:id="@+id/lldelivery"
                         android:layout_height="wrap_content"
                         android:layout_width="match_parent"
-                        android:orientation="vertical">
+                        android:orientation="vertical"
+                        android:visibility="gone">
 
                         <TextView
                             android:id="@+id/childDeliveryType"
@@ -357,6 +361,7 @@
                             android:paddingLeft="2dp"
                             android:textColor="#000"
                             android:textSize="15sp"
+                            android:visibility="gone"
                             />
 
                         <RadioGroup
@@ -365,6 +370,7 @@
                             android:layout_width="match_parent"
                             android:orientation="vertical"
                             android:weightSum="2"
+                            android:visibility="gone"
                             >
                             <RadioButton
                                 android:id="@+id/rbinstitutional"
@@ -483,7 +489,8 @@
                     android:gravity="left"
                     android:paddingLeft="2dp"
                     android:textColor="#000"
-                    android:textSize="15sp" />
+                    android:textSize="15sp"
+                    />
 
                 <RelativeLayout
                     android:layout_width="fill_parent"
@@ -503,33 +510,7 @@
 
                 </RelativeLayout>
 
-                <TextView
-                    android:id="@+id/diastxtBp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="12dp"
-                    android:gravity="left"
-                    android:paddingLeft="2dp"
-                    android:textColor="#000"
-                    android:textSize="15sp" />
 
-                <RelativeLayout
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content">
-
-                    <EditText
-                        android:id="@+id/diasetxtBp"
-                        android:layout_width="fill_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentLeft="true"
-                        android:layout_alignParentTop="true"
-                        android:layout_marginTop="2dp"
-                        android:inputType="numberDecimal"
-                        android:maxLength="6"
-                        android:singleLine="true" />
-
-
-                </RelativeLayout>
                 <!-- TWO TYPE OF BLOOD PRESSURE ENDS -->
                 <TextView
                     android:id="@+id/txtBirthMuac"
@@ -540,7 +521,8 @@
                     android:paddingLeft="2dp"
                     android:text="@string/muac_mid_upper_arm_circumference_in_cms"
                     android:textColor="#000"
-                    android:textSize="15sp" />
+                    android:textSize="15sp"
+                    android:visibility="gone"/>
 
                 <EditText
                     android:id="@+id/etxtBirthMuac"
@@ -552,7 +534,8 @@
                     android:inputType="numberDecimal"
                     android:maxLength="6"
                     android:padding="4dp"
-                    android:singleLine="true" />
+                    android:singleLine="true"
+                    android:visibility="gone"/>
 
                 <TextView
                     android:id="@+id/txtWeekOfPregnancy"
@@ -564,7 +547,8 @@
                     android:text="@string/week_of_pregnancy"
                     android:drawableRight="@drawable/ic_baseline_star_24"
                     android:textColor="#000"
-                    android:textSize="15sp" />
+                    android:textSize="15sp"
+                    android:visibility="gone"/>
 
                 <EditText
                     android:id="@+id/etxtWeekOfPregnancy"
@@ -576,7 +560,8 @@
                     android:inputType="number"
                     android:maxLength="2"
                     android:padding="4dp"
-                    android:singleLine="true" />
+                    android:singleLine="true"
+                    android:visibility="gone"/>
 
                 <TextView
                     android:id="@+id/txtBMI"
@@ -588,7 +573,9 @@
                     android:text="@string/bmi"
                     android:drawableRight="@drawable/ic_baseline_star_24"
                     android:textColor="#000"
-                    android:textSize="15sp" />
+                    android:textSize="15sp"
+                    android:visibility="gone"
+                    />
 
                 <EditText
                     android:id="@+id/etxtBMI"
@@ -600,7 +587,8 @@
                     android:inputType="number"
                     android:maxLength="2"
                     android:padding="4dp"
-                    android:singleLine="true" />
+                    android:singleLine="true"
+                    android:visibility="gone"/>
 
                 <TextView
                     android:id="@+id/txtNightBlindness"
@@ -613,6 +601,7 @@
                     android:text="@string/night_blindness"
                     android:textColor="#000"
                     android:textSize="15sp"
+                    android:visibility="gone"
                     />
 
                 <RadioGroup
@@ -620,7 +609,8 @@
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="2"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:visibility="gone">
 
                     <RadioButton
                         android:id="@+id/rbNBYes"
@@ -658,6 +648,7 @@
                     android:text="@string/iodine_deficiency_visible_goitre"
                     android:textColor="#000"
                     android:textSize="15sp"
+                    android:visibility="gone"
                     />
 
                 <RadioGroup
@@ -665,7 +656,8 @@
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="2"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:visibility="gone">
 
                     <RadioButton
                         android:id="@+id/rbIDYes"
@@ -703,6 +695,7 @@
                     android:text="@string/fluorosis_skeletal_fluorosis"
                     android:textColor="#000"
                     android:textSize="15sp"
+                    android:visibility="gone"
                     />
 
                 <RadioGroup
@@ -710,7 +703,8 @@
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="2"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:visibility="gone">
 
                     <RadioButton
                         android:id="@+id/rbFluorosisYes"
@@ -746,14 +740,16 @@
                     android:paddingLeft="2dp"
                     android:text="@string/fever_with_child"
                     android:textColor="#000"
-                    android:textSize="15sp" />
+                    android:textSize="15sp"
+                    android:visibility="gone"/>
 
                 <RadioGroup
                     android:id="@+id/rgFeverWithChild"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="2"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:visibility="gone">
 
                     <RadioButton
                         android:id="@+id/rbFeverWithChildYes"
@@ -789,14 +785,16 @@
                     android:paddingLeft="2dp"
                     android:text="@string/Cough_child"
                     android:textColor="#000"
-                    android:textSize="15sp" />
+                    android:textSize="15sp"
+                    android:visibility="gone"/>
 
                 <RadioGroup
                     android:id="@+id/rgCoughChild"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="2"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:visibility="gone">
 
                     <RadioButton
                         android:id="@+id/rbCoughChildYes"
@@ -825,14 +823,16 @@
                     android:paddingLeft="2dp"
                     android:text="@string/blood_in_sputum"
                     android:textColor="#000"
-                    android:textSize="15sp" />
+                    android:textSize="15sp"
+                    android:visibility="gone"/>
 
                 <RadioGroup
                     android:id="@+id/rgBloodSputum"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="2"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:visibility="gone">
 
                     <RadioButton
                         android:id="@+id/rbBloodSputumYes"
@@ -861,14 +861,16 @@
                     android:paddingLeft="2dp"
                     android:text="@string/Urinary_complaints"
                     android:textColor="#000"
-                    android:textSize="15sp" />
+                    android:textSize="15sp"
+                    android:visibility="gone"/>
 
                 <RadioGroup
                     android:id="@+id/rgUrinary"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="2"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:visibility="gone">
 
                     <RadioButton
                         android:id="@+id/rbUrinaryYes"
@@ -897,14 +899,16 @@
                     android:paddingLeft="2dp"
                     android:text="@string/prolonged_illness"
                     android:textColor="#000"
-                    android:textSize="15sp" />
+                    android:textSize="15sp"
+                    android:visibility="gone"/>
 
                 <RadioGroup
                     android:id="@+id/rgProlongedIllness"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="2"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:visibility="gone">
 
                     <RadioButton
                         android:id="@+id/rbProlongedIllnessYes"
@@ -933,14 +937,16 @@
                     android:paddingLeft="2dp"
                     android:text="@string/sugar_albumin"
                     android:textColor="#000"
-                    android:textSize="15sp" />
+                    android:textSize="15sp"
+                    android:visibility="gone"/>
 
                 <RadioGroup
                     android:id="@+id/rgSugarAlbumin"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="2"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:visibility="gone">
 
                     <RadioButton
                         android:id="@+id/rbSugarAlbuminYes"
@@ -969,14 +975,16 @@
                     android:paddingLeft="2dp"
                     android:text="@string/visit_sequence"
                     android:textColor="#000"
-                    android:textSize="15sp" />
+                    android:textSize="15sp"
+                    android:visibility="gone"/>
 
                 <Spinner
                     android:id="@+id/spnVisitSequence"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2dp"
-                    android:drawSelectorOnTop="true" />
+                    android:drawSelectorOnTop="true"
+                    android:visibility="gone"/>
 
                 <RadioGroup
                     android:id="@+id/rgVisitSequence"
@@ -1116,6 +1124,35 @@
                         android:onClick="show_callender"
                         android:src="@drawable/calenderr"
                         android:visibility="gone" />
+                </RelativeLayout>
+                <TextView
+                    android:id="@+id/diastxtBp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:gravity="left"
+                    android:paddingLeft="2dp"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:visibility="gone"/>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <EditText
+                        android:id="@+id/diasetxtBp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="2dp"
+                        android:inputType="numberDecimal"
+                        android:maxLength="6"
+                        android:singleLine="true" />
+
+
                 </RelativeLayout>
 
                 <LinearLayout

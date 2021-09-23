@@ -2560,18 +2560,18 @@ public class ActivityPregnantWomenMonitoring extends Activity {
 
 
 
-        if (etxtWeekOfPregnancy.getText().toString().trim().length()==0){
-            etxtWeekOfPregnancy.setFocusable(true);
-            etxtWeekOfPregnancy.setError(getString(R.string.please_enter_week_of_pregnancy));
-            return false;
-        }
+//        if (etxtWeekOfPregnancy.getText().toString().trim().length()==0){
+//            etxtWeekOfPregnancy.setFocusable(true);
+//            etxtWeekOfPregnancy.setError(getString(R.string.please_enter_week_of_pregnancy));
+//            return false;
+//        }
 
 
-        if (Integer.parseInt(etxtWeekOfPregnancy.getText().toString().trim())>42){
-            etxtWeekOfPregnancy.setFocusable(true);
-            etxtWeekOfPregnancy.setError(getString(R.string.pregnanacy_shuld_42));
-            return false;
-        }
+//        if (Integer.parseInt(etxtWeekOfPregnancy.getText().toString().trim())>42){
+//            etxtWeekOfPregnancy.setFocusable(true);
+//            etxtWeekOfPregnancy.setError(getString(R.string.pregnanacy_shuld_42));
+//            return false;
+//        }
 //        String weekOfPregnant = sqliteHelper.GetOneData("week_of_pregnancy", "pregnant_womem_monitor", String.valueOf(intWomenId));
 //        if (!weekOfPregnant.equals("")){
 //            if (Integer.parseInt(etxtWeekOfPregnancy.getText().toString().trim()) <= Integer.parseInt(weekOfPregnant)){
@@ -2580,11 +2580,11 @@ public class ActivityPregnantWomenMonitoring extends Activity {
 //                return false;
 //            }
 //        }
-        if (etxtBMI.getText().toString().trim().length()==0){
-            etxtBMI.setFocusable(true);
-            etxtBMI.setError(getString(R.string.please_enter_BMI));
-            return false;
-        }
+//        if (etxtBMI.getText().toString().trim().length()==0){
+//            etxtBMI.setFocusable(true);
+//            etxtBMI.setError(getString(R.string.please_enter_BMI));
+//            return false;
+//        }
         /*if (Integer.parseInt(etxtBMI.getText().toString().trim())>20){
             etxtBMI.setFocusable(true);
             etxtBMI.setError("BMI should not be greater then 20.");

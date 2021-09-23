@@ -289,7 +289,7 @@ public class AdolescentMonitoringActivity extends Activity {
 //                    current_status.setFocusable(false);
                     wvAdlNutritionHistory.setVisibility(View.VISIBLE);
                     inr_death_date.setVisibility(View.GONE);
-                    imgAdolscentMon.setVisibility(View.GONE);
+                  //  imgAdolscentMon.setVisibility(View.GONE);
                  /*   adolescent.setEnabled(true);
                     mother.setEnabled(true);
                     married.setEnabled(true);*/
@@ -316,7 +316,7 @@ public class AdolescentMonitoringActivity extends Activity {
                     wvAdlNutritionHistory.setVisibility(View.INVISIBLE);
                     // current_status.setFocusable(false);
                     adolescentMonitoring.setMgrStatus("Permanent Migration");
-                    imgAdolscentMon.setVisibility(View.GONE);
+                  //  imgAdolscentMon.setVisibility(View.GONE);
                    /* adolescent.setEnabled(true);
                     mother.setEnabled(true);
                     married.setEnabled(true);*/
@@ -992,15 +992,15 @@ public class AdolescentMonitoringActivity extends Activity {
                 Toast.makeText(getApplicationContext(), R.string.please_select_adolescent, Toast.LENGTH_LONG).show();
                 return;
             } else {
-                String rb1 = "";
-
-                if (radiogroupPeriods.getCheckedRadioButtonId() == -1) {
-                    Toast.makeText(getApplicationContext(), R.string.please_select_periods, Toast.LENGTH_LONG).show();
-                    return;
-                } else {
-                    rb1 = ((RadioButton) findViewById(radiogroupPeriods.getCheckedRadioButtonId())).getText().toString().trim();
-                    adolescentMonitoring.setPeriods(rb1);
-                }
+//                String rb1 = "";
+//
+//                if (radiogroupPeriods.getCheckedRadioButtonId() == -1) {
+//                    Toast.makeText(getApplicationContext(), R.string.please_select_periods, Toast.LENGTH_LONG).show();
+//                    return;
+//                } else {
+//                    rb1 = ((RadioButton) findViewById(radiogroupPeriods.getCheckedRadioButtonId())).getText().toString().trim();
+//                    adolescentMonitoring.setPeriods(rb1);
+//                }
                 try {
                     strName = spnAdolescentName.getSelectedItem().toString().trim();
                     intId = Integer.parseInt(getSelectedValue(spnAdolescentName));

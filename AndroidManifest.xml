@@ -39,6 +39,15 @@
         android:usesCleartextTraffic="true"
         tools:ignore="GoogleAppIndexingWarning">
         <activity
+            android:name=".NewCode.NutritionChampionsMonitoring"
+            android:exported="true" />
+        <activity
+            android:name=".NewCode.SuposhanSakhiMonitoring"
+            android:exported="true" />
+        <activity
+            android:name=".NewCode.ViewMenu"
+            android:exported="true" />
+        <activity
             android:name=".NewCode.NutritionChampionsRegistration"
             android:exported="true" />
         <activity

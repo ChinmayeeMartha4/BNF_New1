@@ -85,7 +85,7 @@
                         android:layout_height="60dp"
                         android:layout_centerInParent="true"
                         android:gravity="center"
-                        android:src="@drawable/calculator" />
+                        android:src="@drawable/bmi_calculator" />
 
                     <TextView
                         android:id="@+id/txtBMI"
@@ -107,7 +107,7 @@
                 android:layout_height="match_parent"
                 android:layout_marginLeft="5dp"
                 android:layout_weight="1"
-                android:background="@drawable/blogs_sel"
+                android:background="@drawable/edit_child_nutrition"
                 android:clickable="true"
                 android:onClick="click_list"
                 android:orientation="vertical"
@@ -124,7 +124,7 @@
                         android:layout_height="60dp"
                         android:layout_centerInParent="true"
                         android:gravity="center"
-                        android:src="@drawable/calculator" />
+                        android:src="@drawable/sam_calculator" />
 
                     <TextView
                         android:id="@+id/txtMother"
@@ -132,7 +132,7 @@
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/imgMother"
                         android:layout_centerHorizontal="true"
-                        android:text="@string/mal_nutrition_calculator"
+                        android:text="SAM Calculator"
                         android:gravity="center"
                         android:textColor="#fff"
                         android:textSize="18sp" />
@@ -150,14 +150,56 @@
             android:orientation="horizontal" >
 
             <LinearLayout
-                android:id="@+id/lnrBackToMenu"
+                android:id="@+id/lnrUnderWeight"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="@drawable/resource_sel"
+                android:background="@drawable/setting_sel"
                 android:padding="4dp"
                 android:clickable="true"
                 android:onClick="click_list">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                    <ImageView
+                        android:id="@+id/ivUnderWeight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:src="@drawable/underweight_calculator" />
+
+                    <TextView
+                        android:id="@+id/btnUnderWeight"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/ivUnderWeight"
+                        android:text="UnderWeight Calculator"
+                        android:gravity="center"
+                        android:textColor="#fff"
+                        android:textSize="18sp" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnrBackToMenu"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/resource_sel"
+                android:clickable="true"
+                android:onClick="click_list"
+                android:orientation="horizontal"
+                android:padding="4dp"
+
+                >
 
                 <RelativeLayout
                     android:layout_width="fill_parent"
@@ -175,54 +217,12 @@
                         android:id="@+id/btnBackToMain"
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
-                        android:layout_centerHorizontal="true"
-                        android:layout_centerInParent="true"
-                        android:layout_marginTop="10dp"
                         android:layout_below="@+id/ivHome"
-                        android:text="@string/back_main_menu"
-                        android:gravity="center"
-                        android:textColor="#fff"
-                        android:textSize="18sp" />
-
-                </RelativeLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/lnrViews"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="5dp"
-                android:layout_weight="1"
-                android:background="@drawable/resource_sel"
-                android:clickable="true"
-                android:onClick="click_list"
-                android:orientation="horizontal"
-                android:padding="4dp"
-                android:visibility="gone"
-                >
-
-                <RelativeLayout
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent" >
-
-                    <ImageView
-                        android:id="@+id/imgView"
-                        android:layout_width="wrap_content"
-                        android:layout_height="40dp"
-                        android:layout_centerInParent="true"
-                        android:gravity="center"
-                        android:src="@drawable/archive" />
-
-                    <TextView
-                        android:id="@+id/txtViews"
-                        android:layout_width="fill_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@+id/imgView"
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="10dp"
-                        android:text="Views"
                         android:gravity="center"
                         android:onClick="click_list"
+                        android:text="Back to menu"
                         android:textColor="#fff"
                         android:textSize="18sp" />
                 </RelativeLayout>
