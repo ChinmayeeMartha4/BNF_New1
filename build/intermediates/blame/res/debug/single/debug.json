@@ -840,6 +840,10 @@
         "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\material-1.3.0.aar\\dd25a2d2b56e4bb2f5d2f543b40bd81f\\res\\drawable\\ic_mtrl_checked_circle.xml"
     },
     {
+        "merged": "C:\\Users\\hp\\Desktop\\NewBitannia\\BNF_New1\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_icong.png.flat",
+        "source": "C:\\Users\\hp\\Desktop\\NewBitannia\\BNF_New1\\res\\drawable-hdpi\\icong.png"
+    },
+    {
         "merged": "C:\\Users\\hp\\Desktop\\NewBitannia\\BNF_New1\\build\\intermediates\\res\\merged\\debug\\layout_material_clock_period_toggle.xml.flat",
         "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-1\\files-1.1\\material-1.3.0.aar\\dd25a2d2b56e4bb2f5d2f543b40bd81f\\res\\layout\\material_clock_period_toggle.xml"
     },
@@ -2478,6 +2482,10 @@
     {
         "merged": "C:\\Users\\hp\\Desktop\\NewBitannia\\BNF_New1\\build\\intermediates\\res\\merged\\debug\\drawable_help_sel.xml.flat",
         "source": "C:\\Users\\hp\\Desktop\\NewBitannia\\BNF_New1\\res\\drawable\\help_sel.xml"
+    },
+    {
+        "merged": "C:\\Users\\hp\\Desktop\\NewBitannia\\BNF_New1\\build\\intermediates\\res\\merged\\debug\\layout_activity_attendance_take_image.xml.flat",
+        "source": "C:\\Users\\hp\\Desktop\\NewBitannia\\BNF_New1\\res\\layout\\activity_attendance_take_image.xml"
     },
     {
         "merged": "C:\\Users\\hp\\Desktop\\NewBitannia\\BNF_New1\\build\\intermediates\\res\\merged\\debug\\color_abc_primary_text_disable_only_material_dark.xml.flat",

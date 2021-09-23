@@ -11,10 +11,10 @@ INJECTED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:113:9
 	android:name
 		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:114:13-62
 manifest
-ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:2:1-525:12
-INJECTED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:2:1-525:12
-INJECTED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:2:1-525:12
-INJECTED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:2:1-525:12
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:2:1-529:12
+INJECTED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:2:1-529:12
+INJECTED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:2:1-529:12
+INJECTED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:2:1-529:12
 MERGED from [com.google.android.material:material:1.3.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\material-1.3.0.aar\dd25a2d2b56e4bb2f5d2f543b40bd81f\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\constraintlayout-2.0.4.aar\cfa9c7e6da8e10aacb9f23f77715fa1c\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat:1.3.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\appcompat-1.3.0.aar\8813a02f82dee88c0b06678c4a10ae8f\AndroidManifest.xml:17:1-24:12
@@ -62,9 +62,9 @@ MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\User
 MERGED from [androidx.print:print:1.0.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\print-1.0.0.aar\1653dd5922b23ab56456000a86fef505\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\interpolator-1.0.0.aar\456406e7efb3cad19edbbb44c884ac55\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\annotation-experimental-1.0.0.aar\355c63173522942a46aa10be558fb6d4\AndroidManifest.xml:17:1-24:12
-INJECTED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:2:1-525:12
-INJECTED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:2:1-525:12
-INJECTED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:2:1-525:12
+INJECTED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:2:1-529:12
+INJECTED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:2:1-529:12
+INJECTED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:2:1-529:12
 	package
 		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:4:5-34
 		INJECTED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml
@@ -160,7 +160,7 @@ MERGED from [com.journeyapps:zxing-android-legacy:2.0.1] C:\Users\hp\.gradle\cac
 	android:name
 		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:27:22-66
 application
-ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:29:5-523:19
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:29:5-527:19
 MERGED from [com.google.android.material:material:1.3.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\material-1.3.0.aar\dd25a2d2b56e4bb2f5d2f543b40bd81f\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.3.0] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\material-1.3.0.aar\dd25a2d2b56e4bb2f5d2f543b40bd81f\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\hp\.gradle\caches\transforms-1\files-1.1\constraintlayout-2.0.4.aar\cfa9c7e6da8e10aacb9f23f77715fa1c\AndroidManifest.xml:9:5-20
@@ -1131,6 +1131,12 @@ ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:519:9-52
 		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:522:13-44
 	android:name
 		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:520:13-44
+activity#com.example.mhealth.AttendanceImage
+ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:523:9-526:15
+	android:screenOrientation
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:525:13-49
+	android:name
+		ADDED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml:524:13-44
 uses-sdk
 INJECTED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\hp\Desktop\NewBitannia\BNF_New1\AndroidManifest.xml

@@ -520,6 +520,10 @@
             android:name=".MonthlyProgress"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme" />
+        <activity
+            android:name=".AttendanceImage"
+            android:screenOrientation="portrait"
+            />
     </application>
 
 </manifest>

@@ -1806,6 +1806,7 @@ drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_photo_camera
 drawable icon_demo
+drawable icong
 drawable image_bg
 drawable img
 drawable img_1
@@ -2469,6 +2470,7 @@ id imageView_women_list
 id imageView_women_list_mar
 id imageView_women_view
 id imageView_women_view_mar
+id image_att
 id img
 id img1
 id img2
@@ -3252,6 +3254,7 @@ id sub_View7
 id sub_View8
 id sub_View9
 id submenuarrow
+id submit
 id submitButton
 id submit_area
 id sysetxtBp
@@ -3484,6 +3487,7 @@ id tv_info_title
 id tv_mobile
 id tv_moduleVideo_title
 id tv_name
+id tv_nutrition_submit
 id tv_start_time
 id tv_start_time1
 id tv_suposhan_submit
@@ -3961,6 +3965,7 @@ layout activity_adolescent_monitoring
 layout activity_adolscent__baseline
 layout activity_adolscent__baseline2
 layout activity_app_drawer
+layout activity_attendance_take_image
 layout activity_awc_menu
 layout activity_b_m_i__calculator
 layout activity_background

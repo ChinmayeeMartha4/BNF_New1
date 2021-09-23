@@ -20,6 +20,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
+            android:text="Name"
             android:gravity="left"
             android:paddingLeft="2dp"
             android:drawableRight="@drawable/ic_baseline_star_24"
@@ -49,7 +50,7 @@
             android:gravity="left"
             android:padding="5dp"
             android:text="Mobile number"
-            android:textColor="#F31010"
+            android:textColor="#000"
             android:textSize="14dp"
             />
 
@@ -78,7 +79,7 @@
                 android:gravity="left"
                 android:padding="5dp"
                 android:text="Image"
-                android:textColor="#F31010"
+                android:textColor="#000"
                 android:textSize="14dp"
                 />
 
@@ -86,7 +87,8 @@
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_marginLeft="10dp"
-                android:src="@drawable/img" />
+                android:src="@drawable/img"
+                android:visibility="gone"/>
         </LinearLayout>
 
         <LinearLayout
@@ -103,7 +105,7 @@
                 android:layout_marginLeft="50dp"
                 android:layout_margin="2dp"
                 android:layout_weight="1"
-                android:src="@drawable/img_1" />
+                android:src="@drawable/ic_photo_camera" />
 
         </LinearLayout>
         <LinearLayout

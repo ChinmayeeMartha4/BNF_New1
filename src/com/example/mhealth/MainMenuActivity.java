@@ -28,6 +28,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.mhealth.NewCode.ViewMenu;
 import com.example.mhealth.app_drawer.AppDrawer;
@@ -35,6 +36,7 @@ import com.example.mhealth.helper.ConstantValue;
 import com.example.mhealth.helper.GlobalVars;
 import com.example.mhealth.helper.SharedPrefHelper;
 import com.example.mhealth.helper.SqliteHelper;
+import com.example.mhealth.model.AttendanceImagePojo;
 import com.example.mhealth.model.DownloadData;
 import com.example.mhealth.rest_apis.ApiClient;
 import com.example.mhealth.rest_apis.M_Health_API;
@@ -46,6 +48,7 @@ import org.json.JSONObject;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.Date;
 import java.util.Iterator;
 import java.util.Locale;
 
@@ -69,9 +72,15 @@ public class MainMenuActivity extends AppDrawer {
 
     String curDate, Sstatus = "", Hstatus = "";
 
-
+    TextView start,end,tv_start_time1,tv_end_time1;
+    String screen_type="";
+    String start1="";
+    String start_time="";
+    String end_time="";
+    String currentTimeStamp;
     SqliteHelper sqliteHelper;
     SharedPrefHelper sph;
+    AttendanceImagePojo attendanceImagePojo;
 
     public static Spannable removeUnderlines(Spannable p_Text) {
         URLSpan[] spans = p_Text.getSpans(0, p_Text.length(), URLSpan.class);
@@ -90,6 +99,52 @@ public class MainMenuActivity extends AppDrawer {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_menu);
         initialize();
+        Bundle bundle =getIntent().getExtras();
+        if (bundle!=null) {
+            screen_type = bundle.getString("screen_type", "");
+            start1 = bundle.getString("start1", "");
+            start_time = bundle.getString("start_time", "");
+            end_time = bundle.getString("end_time", "");
+        }
+        SimpleDateFormat dateFormat = new SimpleDateFormat("HH:mm:ss");
+        currentTimeStamp = dateFormat.format(new Date());
+        end.setVisibility(View.GONE);
+        start.setVisibility(View.VISIBLE);
+        tv_start_time1.setText(start_time);
+        tv_end_time1.setText(end_time);
+        if(screen_type.equals("AttendanceImage"))
+        {
+            end.setVisibility(View.VISIBLE);
+            start.setVisibility(View.GONE);
+
+        }
+        attendanceImagePojo=sqliteHelper.getAttendanceImageData();
+
+        start.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (attendanceImagePojo.getLocal_id() != 1) {
+
+                    Intent intent = new Intent(MainMenuActivity.this, AttendanceImage.class);
+                    intent.putExtra("screen_type", "MainMenu");
+
+                    startActivity(intent);
+                }
+
+                else {
+                    Toast.makeText(MainMenuActivity.this, "", Toast.LENGTH_SHORT).show();
+
+                }
+            }
+        });
+
+        end.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(MainMenuActivity.this, AttendanceImage.class);
+                startActivity(intent);
+            }
+        });
         //showPresentDialog();
         String languageId = sph.getString("Language", "1");// getting languageId
 
@@ -107,19 +162,19 @@ public class MainMenuActivity extends AppDrawer {
         strFooter = sqliteHelper.LanguageChanges(ConstantValue.LANTPIC, languageId);
         strAdolBaseline = sqliteHelper.LanguageChanges(ConstantValue.LANAdBase,languageId);
         strPWBaseline = sqliteHelper.LanguageChanges(ConstantValue.LANPWBASE,languageId);
-      //  strAwcAndMemDetails = sqliteHelper.LanguageChanges(ConstantValue.LANmmAwc, languageId);
+        //  strAwcAndMemDetails = sqliteHelper.LanguageChanges(ConstantValue.LANmmAwc, languageId);
 
         //setting text
-         // txtRegistration.setText(strReg);
+        // txtRegistration.setText(strReg);
         txtSettings.setText(strSetting);
-      //  txtHelp.setText(strHelp);
-     //   txtMonitoring.setText(R.string.monitoring);
+        //  txtHelp.setText(strHelp);
+        //   txtMonitoring.setText(R.string.monitoring);
         txtExit.setText(strExit);
         txtEdit.setText(strEdit);
         txtSynchronization.setText(R.string.synchronize);
-       // tvAwcAndMemDetails.setText(strAwcAndMemDetails);
-      //  txtadolscentBaseline.setText(strAdolBaseline);
-      //  txtPWBaseline.setText(strPWBaseline);
+        // tvAwcAndMemDetails.setText(strAwcAndMemDetails);
+        //  txtadolscentBaseline.setText(strAdolBaseline);
+        //  txtPWBaseline.setText(strPWBaseline);
         setTitle("");
         tvTitle = findViewById(R.id.tvTitle);
         tvTitle.setText(R.string.main_menu);
@@ -228,7 +283,7 @@ public class MainMenuActivity extends AppDrawer {
             public void onClick(View v) {
                 Intent intent = new Intent(MainMenuActivity.this, AdolescentBaselineAndView.class);
                 startActivity(intent);
-              //  dialog.dismiss();
+                //  dialog.dismiss();
             }
         });
 
@@ -337,7 +392,7 @@ public class MainMenuActivity extends AppDrawer {
         sph = new SharedPrefHelper(this);
         sqliteHelper = new SqliteHelper(this);
         txtRegistration = (TextView) findViewById(R.id.txtRegistration);
-       // txtMonitoring = (TextView) findViewById(R.id.txtMonitoring);
+        // txtMonitoring = (TextView) findViewById(R.id.txtMonitoring);
         txtSynchronization = (TextView) findViewById(R.id.txtSynchronization);
         txtHelp = (TextView) findViewById(R.id.txtHelp);
         txtSettings = (TextView) findViewById(R.id.txtSettings);
@@ -348,6 +403,10 @@ public class MainMenuActivity extends AppDrawer {
         txtadolscentBaseline = findViewById(R.id.txtadolscentBaseline);
         //tvAwcAndMemDetails = (TextView) findViewById(R.id.tvAwcAndMemDetails);
         //txtEventsOrMeetings = findViewById(R.id.txtEventsOrMeetings);
+        start=findViewById(R.id.start);
+        end=findViewById(R.id.end);
+        tv_end_time1=findViewById(R.id.tv_end_time1);
+        tv_start_time1=findViewById(R.id.tv_start_time1);
 
         lnrEdit = findViewById(R.id.lnrEdit);
         lnrView = findViewById(R.id.lnrEdit);
@@ -370,7 +429,7 @@ public class MainMenuActivity extends AppDrawer {
                 break;
             case R.id.lnrMonitoring:
 
-			Intent intentListing = new Intent(this, MainMenuMonitoringActivity.class);
+                Intent intentListing = new Intent(this, MainMenuMonitoringActivity.class);
                 Bundle bndlanimation1 = ActivityOptions.makeCustomAnimation(this, R.anim.animation1, R.anim.animation2)
                         .toBundle();
                 startActivity(intentListing, bndlanimation1);
@@ -429,7 +488,7 @@ public class MainMenuActivity extends AppDrawer {
                 startActivity(editInt1);
                 break;*/
             case R.id.lnrAdolBaseline:
-              //  setPreRightVaDialog();
+                //  setPreRightVaDialog();
                 Intent editInt1 = new Intent(this, ActivityBMI_Calculator.class);
                 startActivity(editInt1);
 

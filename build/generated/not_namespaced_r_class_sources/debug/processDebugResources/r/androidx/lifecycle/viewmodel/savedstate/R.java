@@ -12,7 +12,7 @@ public final class R {
     public static final class id {
         private id() {}
 
-        public static final int view_tree_saved_state_registry_owner = 0x7f09075b;
-        public static final int view_tree_view_model_store_owner = 0x7f09075c;
+        public static final int view_tree_saved_state_registry_owner = 0x7f09075e;
+        public static final int view_tree_view_model_store_owner = 0x7f09075f;
     }
 }

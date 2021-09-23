@@ -10,6 +10,7 @@ import android.os.UserHandle;
 import android.util.Log;
 import android.widget.Spinner;
 
+import com.example.mhealth.model.AttendanceImagePojo;
 import com.example.mhealth.model.ChildBehaviourChange;
 
 import java.io.ByteArrayOutputStream;
@@ -8700,5 +8701,137 @@ public class SqliteHelper {
         if (cursor.moveToFirst())
             sum = cursor.getString(cursor.getColumnIndex(colName)).trim();
         return sum;
+    }
+
+    public long saveSuposhanSakhiRegistrationData(SuposhanSakhiPojo suposhanSakhiPojo) {
+        mydb.openDataBase();
+        long id = 0;
+        DB = mydb.getDb();
+        try {
+            if (DB != null && DB.isOpen() && !DB.isReadOnly()) {
+                ContentValues values = new ContentValues();
+                values.put("name", suposhanSakhiPojo.getName());
+                values.put("mobile_number", suposhanSakhiPojo.getMobile_number());
+                values.put("photograph", suposhanSakhiPojo.getPhotograph());
+                values.put("flag", suposhanSakhiPojo.getFlag());
+                values.put("created_at", suposhanSakhiPojo.getCreated_at());
+                id = DB.insert("suposhan_sakhi", null, values);
+                Log.d("tag","data is inserted successfully" + id);
+            }
+        } catch (Exception s) {
+          //  Log.d("tetsts", s.getMessage());
+        }
+
+        return id;
+    }
+
+    public long saveNutritionChampionsRegistrationData(NutritionChampionPojo nutritionChampionPojo) {
+        mydb.openDataBase();
+        long id = 0;
+        DB = mydb.getDb();
+        try {
+            if (DB != null && DB.isOpen() && !DB.isReadOnly()) {
+                ContentValues values = new ContentValues();
+                values.put("name", nutritionChampionPojo.getName());
+                values.put("mobile_number", nutritionChampionPojo.getMobile_number());
+                values.put("photograph", nutritionChampionPojo.getPhotograph());
+                values.put("flag", nutritionChampionPojo.getFlag());
+                values.put("created_at", nutritionChampionPojo.getCreated_at());
+                id = DB.insert("nutrition_champion", null, values);
+                Log.d("tag","data is inserted successfully" + id);
+            }
+        } catch (Exception s) {
+            //  Log.d("tetsts", s.getMessage());
+        }
+
+        return id;
+    }
+    public AttendanceImagePojo getAttendanceImageData() {
+
+        AttendanceImagePojo attendanceImagePojo =new AttendanceImagePojo();
+//        SQLiteDatabase db = this.getWritableDatabase();
+        mydb.openDataBase();
+        DB = mydb.getDb();
+        try {
+            if (DB != null && DB.isOpen() && !DB.isReadOnly()) {
+                String query = "select local_id,start_image,start_time,end_time,end_image from attendance_image";
+                Cursor cursor = DB.rawQuery(query, null);
+                if (cursor != null && cursor.getCount() > 0) {
+                    cursor.moveToFirst();
+                    while (!cursor.isAfterLast()) {
+                        attendanceImagePojo.setLocal_id(cursor.getInt(cursor.getColumnIndex("local_id")));
+                        attendanceImagePojo.setStart_image(cursor.getString(cursor.getColumnIndex("start_image")));
+                        attendanceImagePojo.setStart_time(cursor.getString(cursor.getColumnIndex("start_time")));
+                        attendanceImagePojo.setEnd_time(cursor.getString(cursor.getColumnIndex("end_time")));
+                        attendanceImagePojo.setEnd_image(cursor.getString(cursor.getColumnIndex("end_image")));
+
+
+
+                        cursor.moveToNext();
+                    }
+//                    db.close();
+                }
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+
+        }
+        return attendanceImagePojo;
+
+    }
+
+    public AttendanceImagePojo saveAttendanceImageData1(AttendanceImagePojo attendanceImagePojo,String ids) {
+//        SQLiteDatabase db = this.getWritableDatabase();
+
+        mydb.openDataBase();
+        DB = mydb.getDb();
+        try {
+            if (DB != null && DB.isOpen() && !DB.isReadOnly()) {
+                ContentValues values = new ContentValues();
+//                if (id.equals("")) {
+                values.put("user_id", ids);
+                values.put("end_time", attendanceImagePojo.getEnd_time());
+                values.put("end_image", attendanceImagePojo.getEnd_image());
+                values.put("created_at", attendanceImagePojo.getCreated_at());
+                values.put("flag", attendanceImagePojo.getFlag());
+//                db.insert("attendance_image", null, values);
+////                db.update("attendance_image", values, "local_id = '" + id + "'", null);
+//                db.close();
+//                }
+//            else{
+                DB.update("attendance_image", values, "user_id = '" + ids + "'", null);
+//                DB.close();
+//            }
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            DB.close();
+        }
+        return attendanceImagePojo;
+    }
+    public AttendanceImagePojo saveAttendanceImageData(AttendanceImagePojo attendanceImagePojo, String ids) {
+//        SQLiteDatabase db = this.getWritableDatabase();
+        mydb.openDataBase();
+        DB = mydb.getDb();
+        try {
+            if (DB != null && DB.isOpen() && !DB.isReadOnly()) {
+                ContentValues values = new ContentValues();
+
+                values.put("user_id", ids);
+                values.put("start_image", attendanceImagePojo.getStart_image());
+                values.put("start_time", attendanceImagePojo.getStart_time());
+                values.put("created_at", attendanceImagePojo.getCreated_at());
+                values.put("flag", attendanceImagePojo.getFlag());
+
+                DB.insert("attendance_image", null, values);
+                DB.close();
+
+
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            DB.close();
+        }
+        return attendanceImagePojo;
     }
 }
