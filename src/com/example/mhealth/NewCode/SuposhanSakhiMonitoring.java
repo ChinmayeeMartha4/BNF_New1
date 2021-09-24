@@ -2,8 +2,11 @@ package com.example.mhealth.NewCode;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
+import android.view.View;
+import android.content.Intent;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
@@ -13,7 +16,7 @@ import com.example.mhealth.R;
 import com.example.mhealth.helper.SqliteHelper;
 import com.example.mhealth.helper.SuposhanSakhiMonitoringPojo;
 
-public class SuposhanSakhiMonitoring extends AppCompatActivity {
+public class SuposhanSakhiMonitoring extends Activity {
     RadioGroup rg_garden,rg_active;
     RadioButton rb_yes,rb_no,rb_active_yes,rb_active_no;
     TextView tv_suposhan_submit;
@@ -27,20 +30,20 @@ public class SuposhanSakhiMonitoring extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_suposhan_sakhi_monitoring);
         init();
-//        tv_suposhan_submit.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//
-//                    suposhanSakhiMonitoringPojo.setGarden_setup(str_rb_garden);
-//                    suposhanSakhiMonitoringPojo.setActive(str_rb_active);
-//
-//                sqliteHelper.saveSuposhanSakhiMonitoringData(suposhanSakhiMonitoringPojo);
-//
-//                    Intent intent = new Intent(SuposhanSakhiMonitoring.this, MainMenuMonitoringActivity.class);
-//                    startActivity(intent);
-//
-//            }
-//        });
+        tv_suposhan_submit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                    suposhanSakhiMonitoringPojo.setGarden_setup(str_rb_garden);
+                    suposhanSakhiMonitoringPojo.setActive(str_rb_active);
+
+                     sqliteHelper.saveSuposhanSakhiMonitoringData(suposhanSakhiMonitoringPojo);
+
+                    Intent intent = new Intent(SuposhanSakhiMonitoring.this, MainMenuMonitoringActivity.class);
+                    startActivity(intent);
+
+            }
+        });
 
         rg_garden.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override

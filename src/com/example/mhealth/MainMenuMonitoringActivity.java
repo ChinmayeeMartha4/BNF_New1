@@ -23,6 +23,7 @@ import android.view.Menu;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.LinearLayout;
 
 import com.example.mhealth.NewCode.NutritionChampionsMonitoring;
 import com.example.mhealth.NewCode.SuposhanSakhiMonitoring;
@@ -47,7 +48,7 @@ public class MainMenuMonitoringActivity extends Activity {
     private Context context=this;
     String strCancel, strYes, strNo, strMainMenu, strFooter, strChildNut, strPregWomNut,
             strAdlNut, strMonthlyMon;
-//    LinearLayout lnrSuposhanSakhi,lnrNutrition;
+    LinearLayout lnrSuposhanSakhi,lnrNutrition;
 
     public static Spannable removeUnderlines(Spannable p_Text) {
         URLSpan[] spans = p_Text.getSpans(0, p_Text.length(), URLSpan.class);
@@ -132,24 +133,24 @@ public class MainMenuMonitoringActivity extends Activity {
             }
         });
 
-//        lnrSuposhanSakhi.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//
-//                Intent intent = new Intent(MainMenuMonitoringActivity.this, SuposhanSakhiMonitoring.class);
-//                startActivity(intent);
-//
-//            }
-//        });
-//        lnrNutrition.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//
-//                Intent intent = new Intent(MainMenuMonitoringActivity.this, NutritionChampionsMonitoring.class);
-//                startActivity(intent);
-//
-//            }
-//        });
+        lnrSuposhanSakhi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent(MainMenuMonitoringActivity.this, SuposhanSakhiMonitoring.class);
+                startActivity(intent);
+
+            }
+        });
+        lnrNutrition.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent(MainMenuMonitoringActivity.this, NutritionChampionsMonitoring.class);
+                startActivity(intent);
+
+            }
+        });
 
         String lngTypt = sph.getString("languageID", "en");
         sph.setString("Language", lngTypt);
@@ -210,8 +211,8 @@ public class MainMenuMonitoringActivity extends Activity {
         tvTitleText=findViewById(R.id.tvTitleText);
         ivTitleBack=findViewById(R.id.ivTitleBack);
 
-//        lnrNutrition=findViewById(R.id.lnrNutrition);
-//        lnrSuposhanSakhi=findViewById(R.id.lnrSuposhanSakhi);
+        lnrNutrition=findViewById(R.id.lnrNutrition);
+        lnrSuposhanSakhi=findViewById(R.id.lnrSuposhanSakhi);
 
     }
 

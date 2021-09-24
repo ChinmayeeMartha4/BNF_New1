@@ -18,7 +18,7 @@ public final class R {
         private id() {}
 
         public static final int listItems = 0x7f090260;
-        public static final int search = 0x7f0904b5;
+        public static final int search = 0x7f0904ca;
     }
     public static final class layout {
         private layout() {}
@@ -28,7 +28,7 @@ public final class R {
     public static final class string {
         private string() {}
 
-        public static final int app_name = 0x7f100040;
+        public static final int app_name = 0x7f100044;
     }
     public static final class styleable {
         private styleable() {}

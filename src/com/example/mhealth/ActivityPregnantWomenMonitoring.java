@@ -101,11 +101,16 @@ public class ActivityPregnantWomenMonitoring extends Activity {
     static EditText etxtAbortionDate, etxt_unusual_birth;
     SqliteHelper sqliteHelper;
     SharedPrefHelper sph;
-    RadioGroup rgMgr, rgVisitSequence,rgNightBlindness,rgIodineDeficiency,rgFluorosis,rgFeverWithChild,rgCoughChild,rgBloodSputum,rgUrinary,rgProlongedIllness,rgSugarAlbumin;
+    RadioGroup rgMgr, rgVisitSequence,rgNightBlindness,rgIodineDeficiency,rgFluorosis,rgFeverWithChild,
+            rgCoughChild,rgBloodSputum,rgUrinary,rgProlongedIllness,rgSugarAlbumin,
+            rg_IFA,tv_Calcuim,rg_garden_setup,rg_Consumption_garden,rg_Registered_ICDS,rg_Hb_Level,rg_Newborn_Delivery;
     RadioButton rbMgrStatus, rbFirstVisit, rbSecondVisit, rbRandom,rbNBYes,rbNBNo,rbNBNot,
             rbIDYes,rbIDNo,rbIDNot,rbFluorosisYes,rbFluorosisNo,rbFluorosisNot,rbFeverWithChildYes,
             rbFeverWithChildNo,rbFeverWithChildNot,rbCoughChildYes,rbCoughChildNo,rbBloodSputumYes,rbBloodSputumNo,
-            rbUrinaryYes,rbUrinaryNo,rbProlongedIllnessYes,rbProlongedIllnessNo,rbSugarAlbuminYes,rbSugarAlbuminNo;
+            rbUrinaryYes,rbUrinaryNo,rbProlongedIllnessYes,rbProlongedIllnessNo,rbSugarAlbuminYes,rbSugarAlbuminNo,
+            rb_IFA_YES,rb_IFA_No,rb_Calcuim_YES,rb_Calcuim_No,rb_garden_YES,rb_garden_No,rb_Consumption_garden_YES
+            ,rb_Consumption_garden_No,rb_Registered_ICDS_YES,rb_Registered_ICDS_No,rb_Hb_Level_YES,rb_Hb_Level_No,
+            rb_Newborn_Delivery_YES,rb_Newborn_Delivery_No;
     CheckBox cbHeightBP, cbConvulsions, cbVaginalBleeding, cbFSVD,
             cbSevereAnaemia, cbDiabetes, cbTwins;
     int checkedstatus = 0;
@@ -1585,6 +1590,18 @@ public class ActivityPregnantWomenMonitoring extends Activity {
         rgSugarAlbumin=findViewById(R.id.rgSugarAlbumin);
         rbSugarAlbuminYes=findViewById(R.id.rbSugarAlbuminYes);
         rbSugarAlbuminNo=findViewById(R.id.rbSugarAlbuminNo);
+
+//        rgSugarAlbumin=findViewById(R.id.rgSugarAlbumin);
+//        rbSugarAlbuminYes=findViewById(R.id.rbSugarAlbuminYes);
+//        rbSugarAlbuminNo=findViewById(R.id.rbSugarAlbuminNo);
+
+//        rgSugarAlbumin=findViewById(R.id.rgSugarAlbumin);
+//        rbSugarAlbuminYes=findViewById(R.id.rbSugarAlbuminYes);
+//        rbSugarAlbuminNo=findViewById(R.id.rbSugarAlbuminNo);
+//
+//        rgSugarAlbumin=findViewById(R.id.rgSugarAlbumin);
+//        rbSugarAlbuminYes=findViewById(R.id.rbSugarAlbuminYes);
+//        rbSugarAlbuminNo=findViewById(R.id.rbSugarAlbuminNo);
     }
 
     public void clickGo(View v) {

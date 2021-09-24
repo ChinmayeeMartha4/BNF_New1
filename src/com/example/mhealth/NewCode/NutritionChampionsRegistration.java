@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.FileProvider;
 
 import android.annotation.SuppressLint;
+import android.app.Activity;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -45,9 +46,9 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
-public class NutritionChampionsRegistration extends AppCompatActivity {
+public class NutritionChampionsRegistration extends Activity {
 
-    TextView tv_suposhan_submit;
+    TextView tv_nutrition_submit;
     EditText et_name,et_mobile;
     ImageView image1;
     private Context context = this;
@@ -66,7 +67,7 @@ public class NutritionChampionsRegistration extends AppCompatActivity {
 
         init();
 
-        tv_suposhan_submit.setOnClickListener(new View.OnClickListener() {
+        tv_nutrition_submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
@@ -86,7 +87,7 @@ public class NutritionChampionsRegistration extends AppCompatActivity {
 
     }
     private void init() {
-        tv_suposhan_submit=findViewById(R.id.tv_suposhan_submit);
+        tv_nutrition_submit=findViewById(R.id.tv_nutrition_submit);
         et_mobile=findViewById(R.id.et_mobile);
         et_name=findViewById(R.id.et_name);
         image1=findViewById(R.id.image1);

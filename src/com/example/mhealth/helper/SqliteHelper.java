@@ -8737,7 +8737,7 @@ public class SqliteHelper {
                 values.put("photograph", nutritionChampionPojo.getPhotograph());
                 values.put("flag", nutritionChampionPojo.getFlag());
                 values.put("created_at", nutritionChampionPojo.getCreated_at());
-                id = DB.insert("nutrition_monitoring", null, values);
+                id = DB.insert("nutrition_registration", null, values);
                 Log.d("tag","data is inserted successfully" + id);
             }
         } catch (Exception s) {
@@ -8834,4 +8834,47 @@ public class SqliteHelper {
         }
         return attendanceImagePojo;
     }
+
+    public long saveSuposhanSakhiMonitoringData(SuposhanSakhiMonitoringPojo suposhanSakhiMonitoringPojo) {
+        mydb.openDataBase();
+        long id = 0;
+        DB = mydb.getDb();
+        try {
+            if (DB != null && DB.isOpen() && !DB.isReadOnly()) {
+                ContentValues values = new ContentValues();
+                values.put("garden_setup", suposhanSakhiMonitoringPojo.getGarden_setup());
+                values.put("active", suposhanSakhiMonitoringPojo.getActive());
+                values.put("flag", suposhanSakhiMonitoringPojo.getFlag());
+                values.put("created_at", suposhanSakhiMonitoringPojo.getCreated_at());
+                id = DB.insert("suposhan_sakhi_monitoring", null, values);
+                Log.d("tag","data is inserted successfully" + id);
+            }
+        } catch (Exception s) {
+            //  Log.d("tetsts", s.getMessage());
+        }
+
+        return id;
+    }
+
+    public long saveNutritionMonitoringData(NutritionMonitoringPojo nutritionMonitoringPojo) {
+        mydb.openDataBase();
+        long id = 0;
+        DB = mydb.getDb();
+        try {
+            if (DB != null && DB.isOpen() && !DB.isReadOnly()) {
+                ContentValues values = new ContentValues();
+                values.put("garden_setup", nutritionMonitoringPojo.getGarden_setup());
+                values.put("active", nutritionMonitoringPojo.getActive());
+                values.put("flag", nutritionMonitoringPojo.getFlag());
+                values.put("created_at", nutritionMonitoringPojo.getCreated_at());
+                id = DB.insert("nutrition_champions_monitoring", null, values);
+                Log.d("tag","data is inserted successfully" + id);
+            }
+        } catch (Exception s) {
+            //  Log.d("tetsts", s.getMessage());
+        }
+
+        return id;
+    }
+
 }

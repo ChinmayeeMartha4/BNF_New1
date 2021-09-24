@@ -201,6 +201,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
+                android:visibility="gone"
 
                 >
                 <RadioGroup
@@ -393,6 +394,30 @@
 
                 </RadioGroup>
 
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:textSize="14dp"
+                        android:paddingTop="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingBottom="10dp"
+                        android:text="This is a high risk pregnacy"
+                        android:textColor="#000"/>
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/ic_circle"
+                        android:layout_marginLeft="10dp"/>
+
+
+                </LinearLayout>
+
                 <TextView
                     android:id="@+id/txtWomenWeight"
                     android:layout_width="wrap_content"
@@ -421,7 +446,8 @@
                     android:gravity="left"
                     android:paddingLeft="2dp"
                     android:textColor="#000"
-                    android:textSize="15sp" />
+                    android:textSize="15sp"
+                    android:visibility="gone"/>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -438,7 +464,8 @@
                         android:focusable="true"
                         android:inputType="numberDecimal"
                         android:maxLength="5"
-                        android:singleLine="true" />
+                        android:singleLine="true"
+                        android:visibility="gone"/>
 
                     <ImageView
                         android:id="@+id/imgHbStatus"
@@ -509,6 +536,264 @@
 
 
                 </RelativeLayout>
+
+                <!-- NEW CODE ADD START -->
+
+                <TextView
+                    android:id="@+id/tv_IFA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:gravity="left"
+                    android:text="@string/ifa_tablet"
+                    android:paddingLeft="2dp"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    />
+                <RadioGroup
+                    android:id="@+id/rg_IFA"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_IFA_YES"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/yes"
+                        android:textColor="#000" />
+
+                    <RadioButton
+                        android:id="@+id/rb_IFA_No"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/no"
+                        android:textColor="#000" />
+
+                </RadioGroup>
+                <TextView
+                    android:id="@+id/tv_Calcuim"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:gravity="left"
+                    android:text="@string/calcuim_tablet"
+                    android:paddingLeft="2dp"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    />
+                <RadioGroup
+                    android:id="@+id/rg_Calcuim"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_Calcuim_YES"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/yes"
+                        android:textColor="#000" />
+
+                    <RadioButton
+                        android:id="@+id/rb_Calcuim_No"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/no"
+                        android:textColor="#000" />
+
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/tv_garden_setup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:gravity="left"
+                    android:text="@string/gardenSetup"
+                    android:paddingLeft="2dp"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    />
+                <RadioGroup
+                    android:id="@+id/rg_garden_setup"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_garden_YES"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/yes"
+                        android:textColor="#000" />
+
+                    <RadioButton
+                        android:id="@+id/rb_garden_No"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/no"
+                        android:textColor="#000" />
+
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/tv_Consumption_garden"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:gravity="left"
+                    android:text="@string/Consumption_garden"
+                    android:paddingLeft="2dp"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    />
+                <RadioGroup
+                    android:id="@+id/rg_Consumption_garden"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_Consumption_garden_YES"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/yes"
+                        android:textColor="#000" />
+
+                    <RadioButton
+                        android:id="@+id/rb_Consumption_garden_No"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/no"
+                        android:textColor="#000" />
+
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/tv_Registered_ICDS"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:gravity="left"
+                    android:text="@string/Registered_with_ICDS"
+                    android:paddingLeft="2dp"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    />
+                <RadioGroup
+                    android:id="@+id/rg_Registered_ICDS"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_Registered_ICDS_YES"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/yes"
+                        android:textColor="#000" />
+
+                    <RadioButton
+                        android:id="@+id/rb_Registered_ICDS_No"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/no"
+                        android:textColor="#000" />
+
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/tv_Hb_Level"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:gravity="left"
+                    android:text="@string/Hb_Level"
+                    android:paddingLeft="2dp"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    />
+                <RadioGroup
+                    android:id="@+id/rg_Hb_Level"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_Hb_Level_YES"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/yes"
+                        android:textColor="#000" />
+
+                    <RadioButton
+                        android:id="@+id/rb_Hb_Level_No"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/no"
+                        android:textColor="#000" />
+
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/tv_Newborn_Delivery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:gravity="left"
+                    android:text="@string/Newborn_Delivery"
+                    android:paddingLeft="2dp"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    />
+                <RadioGroup
+                    android:id="@+id/rg_Newborn_Delivery"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_Newborn_Delivery_YES"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/yes"
+                        android:textColor="#000" />
+
+                    <RadioButton
+                        android:id="@+id/rb_Newborn_Delivery_No"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/no"
+                        android:textColor="#000" />
+
+                </RadioGroup>
+
+
+
+                <!-- NEW CODE ADD ENDS -->
+
 
 
                 <!-- TWO TYPE OF BLOOD PRESSURE ENDS -->

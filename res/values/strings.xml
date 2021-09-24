@@ -447,4 +447,11 @@
     <string name="viewMenu">View Menu</string>
     <string name="garden_setup">Are the nutritoin garden setup done?</string>
     <string name="Are_the_active">Are the active?</string>
+    <string name="ifa_tablet">IFA Tablets received ?</string>
+    <string name="calcuim_tablet">Calcium Tablets received ?</string>
+    <string name="gardenSetup">Was the nutrition garden Setup this month ?</string>
+    <string name="Consumption_garden">Consumption from nutrition garden ?</string>
+    <string name="Registered_with_ICDS">Registered with ICDS ?</string>
+    <string name="Hb_Level">Hb Level ?</string>
+    <string name="Newborn_Delivery">Newborn Delivery ?</string>
 </resources>
