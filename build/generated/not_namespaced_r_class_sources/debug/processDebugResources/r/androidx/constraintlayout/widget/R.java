@@ -1034,12 +1034,12 @@ public final class R {
         public static final int top = 0x7f09057e;
         public static final int topPanel = 0x7f09057f;
         public static final int triangle = 0x7f090588;
-        public static final int unchecked = 0x7f090749;
-        public static final int uniform = 0x7f09074a;
-        public static final int up = 0x7f09074e;
-        public static final int visible = 0x7f090761;
-        public static final int wrap = 0x7f090768;
-        public static final int wrap_content = 0x7f090769;
+        public static final int unchecked = 0x7f090748;
+        public static final int uniform = 0x7f090749;
+        public static final int up = 0x7f09074d;
+        public static final int visible = 0x7f090760;
+        public static final int wrap = 0x7f090767;
+        public static final int wrap_content = 0x7f090768;
     }
     public static final class integer {
         private integer() {}

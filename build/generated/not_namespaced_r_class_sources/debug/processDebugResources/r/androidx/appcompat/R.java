@@ -807,14 +807,14 @@ public final class R {
         public static final int titleDividerNoCustom = 0x7f09057a;
         public static final int title_template = 0x7f09057b;
         public static final int topPanel = 0x7f09057f;
-        public static final int unchecked = 0x7f090749;
-        public static final int uniform = 0x7f09074a;
-        public static final int up = 0x7f09074e;
-        public static final int view_tree_lifecycle_owner = 0x7f09075d;
-        public static final int view_tree_saved_state_registry_owner = 0x7f09075e;
-        public static final int view_tree_view_model_store_owner = 0x7f09075f;
-        public static final int visible_removing_fragment_view_tag = 0x7f090762;
-        public static final int wrap_content = 0x7f090769;
+        public static final int unchecked = 0x7f090748;
+        public static final int uniform = 0x7f090749;
+        public static final int up = 0x7f09074d;
+        public static final int view_tree_lifecycle_owner = 0x7f09075c;
+        public static final int view_tree_saved_state_registry_owner = 0x7f09075d;
+        public static final int view_tree_view_model_store_owner = 0x7f09075e;
+        public static final int visible_removing_fragment_view_tag = 0x7f090761;
+        public static final int wrap_content = 0x7f090768;
     }
     public static final class integer {
         private integer() {}

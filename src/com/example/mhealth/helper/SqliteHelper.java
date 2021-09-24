@@ -8737,7 +8737,7 @@ public class SqliteHelper {
                 values.put("photograph", nutritionChampionPojo.getPhotograph());
                 values.put("flag", nutritionChampionPojo.getFlag());
                 values.put("created_at", nutritionChampionPojo.getCreated_at());
-                id = DB.insert("nutrition_champion", null, values);
+                id = DB.insert("nutrition_monitoring", null, values);
                 Log.d("tag","data is inserted successfully" + id);
             }
         } catch (Exception s) {

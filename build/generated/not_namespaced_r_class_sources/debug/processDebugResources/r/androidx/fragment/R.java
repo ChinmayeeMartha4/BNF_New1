@@ -162,10 +162,10 @@ public final class R {
         public static final int text2 = 0x7f090549;
         public static final int time = 0x7f090578;
         public static final int title = 0x7f090579;
-        public static final int view_tree_lifecycle_owner = 0x7f09075d;
-        public static final int view_tree_saved_state_registry_owner = 0x7f09075e;
-        public static final int view_tree_view_model_store_owner = 0x7f09075f;
-        public static final int visible_removing_fragment_view_tag = 0x7f090762;
+        public static final int view_tree_lifecycle_owner = 0x7f09075c;
+        public static final int view_tree_saved_state_registry_owner = 0x7f09075d;
+        public static final int view_tree_view_model_store_owner = 0x7f09075e;
+        public static final int visible_removing_fragment_view_tag = 0x7f090761;
     }
     public static final class integer {
         private integer() {}
