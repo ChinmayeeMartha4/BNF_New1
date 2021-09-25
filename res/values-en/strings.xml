@@ -74,6 +74,8 @@
     <string name="bronchiectasis">Bronchiectasis</string>
     <string name="heart_disease">Heart disease</string>
     <string name="gynec">Gynec</string>
+    <string name="have_you_received_any_hygiene_kit_received">Have you received any hygiene kit received</string>
+
     <string name="others">Others</string>
     <string name="house_2hold_id">House 2Hold Id</string>
     <string name="name_of_the_child">Name of the Child</string>

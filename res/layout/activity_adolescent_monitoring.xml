@@ -422,7 +422,53 @@
                     android:visibility="gone"
                     />
             </LinearLayout>
+            <LinearLayout
+                android:id="@+id/llhygiene_kit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
 
+                <TextView
+                    android:id="@+id/tvhygiene_kit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:gravity="left"
+                    android:paddingLeft="2dp"
+                    android:text="@string/have_you_received_any_hygiene_kit_received"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    />
+                <RadioGroup
+                    android:id="@+id/rghygiene_kit"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    >
+
+                    <RadioButton
+                        android:id="@+id/rbhygiene_kitYes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/yes"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:weightSum="1"/>
+
+                    <RadioButton
+                        android:id="@+id/rbhygiene_kitNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/no"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:weightSum="1"/>
+
+                </RadioGroup>
+            </LinearLayout>
             <TextView
                 android:id="@+id/txtIFA"
                 android:layout_width="wrap_content"

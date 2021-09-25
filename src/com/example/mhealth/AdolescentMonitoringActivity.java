@@ -25,6 +25,7 @@ import android.os.Environment;
 import android.provider.MediaStore;
 import androidx.core.content.FileProvider;
 
+import android.provider.Settings;
 import android.text.Editable;
 import android.text.Html;
 import android.text.Spannable;
@@ -97,17 +98,17 @@ public class AdolescentMonitoringActivity extends Activity {
     AdolescentMonitoring adolescentMonitoring;
     ArrayList<AdolescentMonitoring> list;
     long local_pw_id;
-    LinearLayout inr_death_date;
+    LinearLayout inr_death_date,llhygiene_kit;
     int checkedStatus = 0;
     TextView txtAdolescentGirlMonitor, txtAdolscentName, txtAdolescentWeight,
-            txtAdolescentHeight, txtAdolescentHb, txtDateOfRecord,
+            txtAdolescentHeight, txtAdolescentHb, txtDateOfRecord,tvhygiene_kit,
             txtPregnantNutritionHistory, txtFooter,  txtGps;
     EditText etxtSearchByHhid, etxtAdolescentWeight, etxtAdolescentHeight,
             etxtAdolescentHb;
     ImageView imgHbStatus;
-    RadioGroup rgMGR, current_status,rgIFA, radiogroupPeriods, rgaccessICDS, rgllrececiveIFA, rgtakenIFA, rgadolescentDewarming, rghealthService;
+    RadioGroup rgMGR, current_status,rgIFA, radiogroupPeriods,rghygiene_kit, rgaccessICDS, rgllrececiveIFA, rgtakenIFA, rgadolescentDewarming, rghealthService;
     RadioButton rbMgrStatus, tempMigration, permMigration, adolescent, mother,
-            married, rbPresent, rbAbsent, death,rbRegularly,rbNotRegularly,rbNotTaking, radioRegular, radioIrregular;
+            married, rbPresent,rbhygiene_kitYes,rbhygiene_kitNo, rbAbsent, death,rbRegularly,rbNotRegularly,rbNotTaking, radioRegular, radioIrregular;
     CheckBox cbDewormingDone;
     Button btnAdolescentGo, btnAdlMonSubmit;
     Spinner spnAdolescentName;
@@ -123,7 +124,7 @@ public class AdolescentMonitoringActivity extends Activity {
             strCancel, strTryAgain, strDone, strDeath, strTempMigration,
             strPermMigration, strMarkedLabel, strMother, strMarried, strAdolescentGirl,
             strConsumptionOfIFA="",strDewormingDone="",strLat, strLang, straccessICDS="",strrececiveIFA="",strtakenIFA="",
-            stradolescentDewarming="",strhealthService="";
+            stradolescentDewarming="",strhealthService="",strHygienekit="";
     int intId;
     TextView marked_label;
     ImageView imgAdolscentMon;
@@ -289,7 +290,7 @@ public class AdolescentMonitoringActivity extends Activity {
 //                    current_status.setFocusable(false);
                     wvAdlNutritionHistory.setVisibility(View.VISIBLE);
                     inr_death_date.setVisibility(View.GONE);
-                  //  imgAdolscentMon.setVisibility(View.GONE);
+                    //  imgAdolscentMon.setVisibility(View.GONE);
                  /*   adolescent.setEnabled(true);
                     mother.setEnabled(true);
                     married.setEnabled(true);*/
@@ -316,7 +317,7 @@ public class AdolescentMonitoringActivity extends Activity {
                     wvAdlNutritionHistory.setVisibility(View.INVISIBLE);
                     // current_status.setFocusable(false);
                     adolescentMonitoring.setMgrStatus("Permanent Migration");
-                  //  imgAdolscentMon.setVisibility(View.GONE);
+                    //  imgAdolscentMon.setVisibility(View.GONE);
                    /* adolescent.setEnabled(true);
                     mother.setEnabled(true);
                     married.setEnabled(true);*/
@@ -469,7 +470,20 @@ public class AdolescentMonitoringActivity extends Activity {
             }
         });
 
+        rghygiene_kit.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+                switch (i) {
+                    case R.id.rbhygiene_kitYes:
+                        strHygienekit = "Yes";
+                        break;
+                    case R.id.rbhygiene_kitNo:
+                        strHygienekit = "No";
+                        break;
 
+                }
+            }
+        });
         etxtAdolescentHb.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
@@ -1068,6 +1082,7 @@ public class AdolescentMonitoringActivity extends Activity {
                         adolescentMonitoring.setIs_taken_ifa(strtakenIFA);
                         adolescentMonitoring.setIs_adolescent_dewarming_tablet(stradolescentDewarming);
                         adolescentMonitoring.setIs_health_service(strhealthService);
+                        adolescentMonitoring.setIs_hygiene_kit(strHygienekit);
 
                         if (etxtAdolescentHb.getText().toString().trim().equals("")) {
                             adolescentMonitoring.setAdolescentHb("0");
@@ -1203,10 +1218,10 @@ public class AdolescentMonitoringActivity extends Activity {
     }
 
     private boolean checkValidation() {
-        if(spnAdolescentName.getSelectedItem().toString().equals("Please Select")){
-            Toast.makeText(context, R.string.please_select_adolescent, Toast.LENGTH_SHORT).show();
-            return false;
-        }
+//        if(spnAdolescentName.getSelectedItem().toString().equals("Please Select")){
+//            Toast.makeText(context, R.string.please_select_adolescent, Toast.LENGTH_SHORT).show();
+//            return false;
+//        }
         if (!etxtAdolescentHb.getText().toString().trim().equals("")) {
             if (Double.parseDouble(etxtAdolescentHb.getText().toString().trim()) < 2) {
                 etxtAdolescentHb.requestFocus();
@@ -1403,6 +1418,11 @@ public class AdolescentMonitoringActivity extends Activity {
         etxtDateOfScreening=findViewById(R.id.etxtDateOfScreening);
         tvTitleText=findViewById(R.id.tvTitleText);
         ivTitleBack=findViewById(R.id.ivTitleBack);
+        tvhygiene_kit=findViewById(R.id.tvhygiene_kit);
+        llhygiene_kit=findViewById(R.id.llhygiene_kit);
+        rghygiene_kit=findViewById(R.id.rghygiene_kit);
+        rbhygiene_kitYes=findViewById(R.id.rbhygiene_kitYes);
+        rbhygiene_kitNo=findViewById(R.id.rbhygiene_kitNo);
         txtAdolescentGirlMonitor = (TextView) findViewById(R.id.txtAdolescentGirlMonitor);
         txtAdolscentName = (TextView) findViewById(R.id.txtAdolscentName);
         txtAdolescentWeight = (TextView) findViewById(R.id.txtAdolescentWeight);

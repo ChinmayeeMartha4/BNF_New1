@@ -107,17 +107,20 @@ public class ActivityChildNutritionMonitor extends Activity {
     String sick_id, sick_id15,strHaveAdeama="";
     RadioButton radioYes, radioNo, tempMigration, permMigration, death, absent,
             rb_sick_no, rb_sick_yes, rb_sick_no15, rb_sick_yes15,rbPitting,rbBilateral,
-            rbMedicalFacilityYes,rbMedicalFacilityNo;
+            rbMedicalFacilityYes,rbMedicalFacilityNo,rb_medicaly_critical_yes,rb_medicaly_critical_no
+            ,rb_sent_to_nrc_yes,rb_sent_to_nrc_no,rb_nutrition_by_bnf_yes,rb_nutrition_by_bnf_no,rb_garden_setup_yes
+            ,rb_garden_setup_no,rb_nutrition_garden_yes,rb_nutrition_garden_no;
     CheckBox cbGrain, cbDal, cbMilkrelated, cbEggs, cbFleshfood, cbVitA, cbFruits;
     CheckBox cbDiarrhoea, cbCough, cbFever, cbDifficultybreathing, cbOther;
     CheckBox cbDiarrhoea_no15, cbCough_no15, cbFever_no15, cbDifficultybreathing_no15, cbOther_no15;
     RadioGroup radioGroup, radioGroupMigrate, rg_sick, rg_sick15,rgPOET,rgMedicalFacility, rgAgeVaccination,
             rgchildPremature, rgchildbreastfeeding,
-            rgmotherbreastmilk, rgchildVitA, rgchilddeworming_6, rgchildIFA, rgchildVaccinationStatus;
+            rgmotherbreastmilk, rgchildVitA, rgchilddeworming_6, rgchildIFA, rgchildVaccinationStatus
+    ,rg_medicaly_critical,rg_sent_to_nrc,rg_nutrition_by_bnf,rg_garden_setup,rg_nutrition_garden;
     TextView txtChildNutrition, txtChildName, txtchildWeight, txtchildHeight,
             txtPregmentWomen, txtMuac, txtChildhbn, txtEdema, txtPhoto, txtCurrentDate,
             txtNutritionHistory, txtFooter, tvNotification, txtSick, txtSick15, txtGps, preheight, tvchildVaccinationStatus;
-    EditText etxtSearchByHouseHoldId, etxtWeight, etxtHeight, etxtMuac;
+    EditText etxtSearchByHouseHoldId, etxtWeight, etxtHeight, etxtMuac,et_medicaly_critical,et_sent_to_nrc;
     TextView txtDeathReason;
     Button btnChildGo, btnSave;
     Spinner spnChildName, spnHB, spn_sickname, spn_sickname15, spnDeathReason;
@@ -150,7 +153,7 @@ public class ActivityChildNutritionMonitor extends Activity {
             strLang, strSick15, strPhotoInsHead, strPhotoIns, strOnfarm, strPrivateschool,
             strPOET,strMedicalFacility, strAgeVaccination, strchildPremature, strchildbreastfeeding,
             strmotherbreastmilk, strchildVitA, strchilddeworming_6, strchildIFA,
-            strchildVaccinationStatus;
+            strchildVaccinationStatus,strNutritionGarden,strGardenSetup,strNutritionBnf,strSentToNrc,strMedicaly;
     private long id;
     private Bitmap bitmap;
     private int user_id, flag = 0, migrationflag = 0, dateflag = 0, absentFlag = 0, temporaryMigrateFlag = 0,
@@ -166,6 +169,7 @@ public class ActivityChildNutritionMonitor extends Activity {
     public static EditText etxtDateOfScreening;
     android.app.Dialog info_alert;
     public static android.app.Dialog submit_alert;
+    ImageView Iv_image;
 
     LinearLayout llAgeVaccination, llchildPremature, llchildbreastfeeding, llmotherbreastmilk, llchildmeal,
             llchildmealnumber, llchildVitA6Months,
@@ -381,6 +385,86 @@ public class ActivityChildNutritionMonitor extends Activity {
                         break;
                     case R.id.rbchildVaccinationStatusNotVaccinated:
                         strchildVaccinationStatus="Not vaccinated at all";
+                        break;
+
+                }
+            }
+        });
+
+        rg_medicaly_critical.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+                switch (i){
+                    case R.id.rb_medicaly_critical_yes:
+                        strMedicaly="Yes";
+                        et_medicaly_critical.setVisibility(View.VISIBLE);
+                        break;
+                    case R.id.rb_medicaly_critical_no:
+                        strMedicaly="No";
+                        et_medicaly_critical.setVisibility(View.GONE);
+                        break;
+
+                }
+            }
+        });
+
+        rg_sent_to_nrc.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+                switch (i){
+                    case R.id.rb_sent_to_nrc_yes:
+                        strSentToNrc="Yes";
+                        et_sent_to_nrc.setVisibility(View.VISIBLE);
+                        Iv_image.setVisibility(View.VISIBLE);
+                        break;
+                    case R.id.rb_sent_to_nrc_no:
+                        strSentToNrc="No";
+                        et_sent_to_nrc.setVisibility(View.GONE);
+                        Iv_image.setVisibility(View.GONE);
+                        break;
+
+                }
+            }
+        });
+
+        rg_nutrition_by_bnf.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+                switch (i){
+                    case R.id.rb_nutrition_by_bnf_yes:
+                        strNutritionBnf="Yes";
+                        break;
+                    case R.id.rb_nutrition_by_bnf_no:
+                        strNutritionBnf="No";
+                        break;
+
+                }
+            }
+        });
+
+        rg_garden_setup.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+                switch (i){
+                    case R.id.rb_garden_setup_yes:
+                        strGardenSetup="Yes";
+                        break;
+                    case R.id.rb_garden_setup_no:
+                        strGardenSetup="No";
+                        break;
+
+                }
+            }
+        });
+        rg_nutrition_garden.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+                switch (i){
+                    case R.id.rb_nutrition_garden_yes:
+                        strNutritionGarden="Yes";
+                        break;
+                    case R.id.rb_nutrition_garden_no:
+                        strNutritionGarden="No";
                         break;
 
                 }
@@ -1081,7 +1165,7 @@ public class ActivityChildNutritionMonitor extends Activity {
         txtchildHeight.setText(strHeight);
         txtMuac.setText(strMuac);
         txtChildhbn.setText(strChildhbn);
-        txtEdema.setText(strEdema);
+        txtEdema.setText("Odeame");
         txtCurrentDate.setText(strCurrentDate);
         txtPhoto.setText(strPhoto);
         txtNutritionHistory.setText(strChildNutrition + " " + strHistory);
@@ -1099,7 +1183,7 @@ public class ActivityChildNutritionMonitor extends Activity {
         on_farm.setText(strOnfarm);
         private_school.setText(strPrivateschool);
 
-        txtSick.setText(strSick);
+        txtSick.setText("Is the child sick ?");
         rb_sick_no.setText(strNo);
         rb_sick_yes.setText(strYes);
 
@@ -1409,6 +1493,29 @@ public class ActivityChildNutritionMonitor extends Activity {
         cbDifficultybreathing_no15 = (CheckBox) findViewById(R.id.cbDifficultybreathing_no15);
         cbOther_no15 = (CheckBox) findViewById(R.id.cbOther_no15);
 
+        rg_medicaly_critical=findViewById(R.id.rg_medicaly_critical);
+        rb_medicaly_critical_yes=findViewById(R.id.rb_medicaly_critical_yes);
+        rb_medicaly_critical_no=findViewById(R.id.rb_medicaly_critical_no);
+        et_medicaly_critical=findViewById(R.id.et_medicaly_critical);
+
+        rg_sent_to_nrc=findViewById(R.id.rg_sent_to_nrc);
+        rb_sent_to_nrc_yes=findViewById(R.id.rb_sent_to_nrc_yes);
+        rb_sent_to_nrc_no=findViewById(R.id.rb_sent_to_nrc_no);
+        et_sent_to_nrc=findViewById(R.id.et_sent_to_nrc);
+        Iv_image=findViewById(R.id.Iv_image);
+
+        rg_nutrition_by_bnf=findViewById(R.id.rg_nutrition_by_bnf);
+        rb_nutrition_by_bnf_yes=findViewById(R.id.rb_nutrition_by_bnf_yes);
+        rb_nutrition_by_bnf_no=findViewById(R.id.rb_nutrition_by_bnf_no);
+
+        rg_garden_setup=findViewById(R.id.rg_garden_setup);
+        rb_garden_setup_yes=findViewById(R.id.rb_garden_setup_yes);
+        rb_garden_setup_no=findViewById(R.id.rb_garden_setup_no);
+
+        rg_nutrition_garden=findViewById(R.id.rg_nutrition_garden);
+        rb_nutrition_garden_yes=findViewById(R.id.rb_nutrition_garden_yes);
+        rb_nutrition_garden_no=findViewById(R.id.rb_nutrition_garden_no);
+
         childnutrition.setSickYesNo("");
         childnutrition.setSickName("");
         childnutrition.setSickYesNo15("");
@@ -1503,6 +1610,15 @@ public class ActivityChildNutritionMonitor extends Activity {
                 childnutrition.setDate_of_screening(etxtDateOfScreening.getText().toString().trim());
                 childnutrition.setProvision_of_edima(strPOET);
                 childnutrition.setLink_medical_facility(strMedicalFacility);
+
+//                childnutrition.setMedical_critical(strMedicaly);
+//                childnutrition.setMedical_critical_reason(et_medicaly_critical.getText().toString().trim());
+//                childnutrition.setNrc_last_month(strSentToNrc);
+//                childnutrition.setNrc_last_month_date(et_sent_to_nrc.getText().toString().trim());
+//                childnutrition.setNutrition_bnf(strNutritionBnf);
+//                childnutrition.setNutrition_garden(strGardenSetup);
+//                childnutrition.setNutrition_garden_kit(strNutritionGarden);
+
 
                 String spinner_value = String.valueOf(child_id);
                 String cBirth = sqliteHelper.getDOB(child_id);
@@ -1646,6 +1762,14 @@ public class ActivityChildNutritionMonitor extends Activity {
                                     childnutrition.setSick_reason(sickCondition);
                                     childnutrition.setSick_15_reason(sickCondition_015);
                                     childnutrition.setDreason("");
+
+                                    childnutrition.setMedical_critical(strMedicaly);
+                                    childnutrition.setMedical_critical_reason(et_medicaly_critical.getText().toString().trim());
+                                    childnutrition.setNrc_last_month(strSentToNrc);
+                                    childnutrition.setNrc_last_month_date(et_sent_to_nrc.getText().toString().trim());
+                                    childnutrition.setNutrition_bnf(strNutritionBnf);
+                                    childnutrition.setNutrition_garden(strGardenSetup);
+                                    childnutrition.setNutrition_garden_kit(strNutritionGarden);
 
 
                                     Time time = new Time();

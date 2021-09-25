@@ -140,6 +140,7 @@ public class SqliteHelper {
                 values.put("version_code", GlobalVars.App_Version);
                 values.put("img", adolescentMonitoring.getImage());
                 values.put("marked_as", adolescentMonitoring.getMarked_as());
+                values.put("is_hygiene_kit", adolescentMonitoring.getIs_hygiene_kit());
                 values.put("death_date", adolescentMonitoring.getDeath_date());
                 values.put("mobile_unique_id", adolescentMonitoring.getMobile_unique_id());
                 values.put("created_on_mobile", adolescentMonitoring.getCreated_on_mobile());
@@ -4188,6 +4189,15 @@ public class SqliteHelper {
                 values.put("urinary_complaints", pregnantWomenMonitor.getUrinary_complaints());
                 values.put("prolonged_illness", pregnantWomenMonitor.getProlonged_illness());
                 values.put("sugar_albumin", pregnantWomenMonitor.getSugar_albumin());
+
+                values.put("ifa_tablet", pregnantWomenMonitor.getIFA_tablet());
+                values.put("calcuim_tablet", pregnantWomenMonitor.getCalcuim_tablet());
+                values.put("nutrition_garden", pregnantWomenMonitor.getNutrition_garden());
+                values.put("consumption_garden", pregnantWomenMonitor.getConsumption_garden());
+                values.put("registered_icds", pregnantWomenMonitor.getRegistered_ICDS());
+                values.put("newborn_delivery", pregnantWomenMonitor.getNewborn_delivery());
+                values.put("mortality", pregnantWomenMonitor.getMortality());
+
                 values.put("state_id", sph.getString("state_id", ""));
                 values.put("district_id", sph.getString("district_id", ""));
                 values.put("block_id", sph.getString("block_id", ""));
@@ -4342,6 +4352,15 @@ public class SqliteHelper {
                 values.put("is_child_deworming_6months", childNutrition.getIs_child_deworming_6months());
                 values.put("is_child_ifa", childNutrition.getIs_child_ifa());
                 values.put("child_Vaccination_Status", childNutrition.getChild_Vaccination_Status());
+
+                values.put("medical_critical", childNutrition.getMedical_critical());
+                values.put("medical_critical_reason", childNutrition.getMedical_critical_reason());
+                values.put("nrc_last_month", childNutrition.getNrc_last_month());
+                values.put("nrc_last_month_date", childNutrition.getNrc_last_month_date());
+                values.put("nutrition_bnf", childNutrition.getNutrition_bnf());
+                values.put("nutrition_garden", childNutrition.getNutrition_garden());
+                values.put("nutrition_garden_kit", childNutrition.getNutrition_garden_kit());
+
                 values.put("sick_reason", childNutrition.getSick_reason());
                 values.put("state_id", sph.getString("state_id", ""));
                 values.put("district_id", sph.getString("district_id", ""));
@@ -8713,6 +8732,8 @@ public class SqliteHelper {
                 values.put("name", suposhanSakhiPojo.getName());
                 values.put("mobile_number", suposhanSakhiPojo.getMobile_number());
                 values.put("photograph", suposhanSakhiPojo.getPhotograph());
+                values.put("user_master_id", user_master_id);
+                values.put("user_id", user_id);
                 values.put("flag", suposhanSakhiPojo.getFlag());
                 values.put("created_at", suposhanSakhiPojo.getCreated_at());
                 id = DB.insert("suposhan_sakhi", null, values);
@@ -8735,6 +8756,8 @@ public class SqliteHelper {
                 values.put("name", nutritionChampionPojo.getName());
                 values.put("mobile_number", nutritionChampionPojo.getMobile_number());
                 values.put("photograph", nutritionChampionPojo.getPhotograph());
+                values.put("user_master_id", user_master_id);
+                values.put("user_id", user_id);
                 values.put("flag", nutritionChampionPojo.getFlag());
                 values.put("created_at", nutritionChampionPojo.getCreated_at());
                 id = DB.insert("nutrition_registration", null, values);
@@ -8844,6 +8867,8 @@ public class SqliteHelper {
                 ContentValues values = new ContentValues();
                 values.put("garden_setup", suposhanSakhiMonitoringPojo.getGarden_setup());
                 values.put("active", suposhanSakhiMonitoringPojo.getActive());
+                values.put("user_master_id", user_master_id);
+                values.put("user_id", user_id);
                 values.put("flag", suposhanSakhiMonitoringPojo.getFlag());
                 values.put("created_at", suposhanSakhiMonitoringPojo.getCreated_at());
                 id = DB.insert("suposhan_sakhi_monitoring", null, values);
@@ -8865,6 +8890,8 @@ public class SqliteHelper {
                 ContentValues values = new ContentValues();
                 values.put("garden_setup", nutritionMonitoringPojo.getGarden_setup());
                 values.put("active", nutritionMonitoringPojo.getActive());
+                values.put("user_master_id", user_master_id);
+                values.put("user_id", user_id);
                 values.put("flag", nutritionMonitoringPojo.getFlag());
                 values.put("created_at", nutritionMonitoringPojo.getCreated_at());
                 id = DB.insert("nutrition_champions_monitoring", null, values);

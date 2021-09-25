@@ -173,7 +173,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
                 android:orientation="vertical"
-                android:visibility="gone">
+                >
 
                 <RadioButton
                     android:id="@+id/rbPresent"
@@ -308,11 +308,13 @@
                 android:paddingLeft="2dp"
                 android:text="@string/date_of_screening"
                 android:textColor="#000"
-                android:textSize="15sp" />
+                android:textSize="15sp"
+                android:visibility="gone"/>
 
             <RelativeLayout
                 android:layout_width="fill_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:visibility="gone">
 
                 <EditText
                     android:id="@+id/etxtDateOfScreening"
@@ -486,6 +488,181 @@
 
             </LinearLayout>
 
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="7dp"
+                android:layout_weight="3"
+                android:orientation="vertical"
+
+                >
+
+                <TextView
+                    android:id="@+id/txtmedicaly_critical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0"
+                    android:text="@string/medical_critical"
+                    android:gravity="left"
+                    android:paddingLeft="2dp"
+                    android:textColor="#000"
+                    android:textSize="15sp" />
+
+
+                <RadioGroup
+                    android:id="@+id/rg_medicaly_critical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_medicaly_critical_yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Yes"
+                        android:layout_weight="1"
+                        android:textColor="#000" />
+
+                    <RadioButton
+                        android:id="@+id/rb_medicaly_critical_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="No"
+                        android:textColor="#000" />
+                </RadioGroup>
+            </LinearLayout>
+            <EditText
+                android:id="@+id/et_medicaly_critical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="7dp"
+                android:layout_weight="3"
+                android:orientation="vertical"
+
+                >
+
+                <TextView
+                    android:id="@+id/txtEdema"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0"
+                    android:gravity="left"
+                    android:paddingLeft="2dp"
+                    android:textColor="#000"
+                    android:textSize="15sp" />
+<!--                android:drawableRight="@drawable/ic_baseline_info_24"-->
+
+                <RadioGroup
+                    android:id="@+id/radioGroup"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radioYes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="#000" />
+
+                    <RadioButton
+                        android:id="@+id/radioNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="#000" />
+                </RadioGroup>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="7dp"
+                android:layout_weight="3"
+                android:orientation="vertical"
+
+                >
+
+                <TextView
+                    android:id="@+id/txt_sent_to_nrc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0"
+                    android:text="@string/sent_to_nrc"
+                    android:gravity="left"
+                    android:paddingLeft="2dp"
+                    android:textColor="#000"
+                    android:textSize="15sp" />
+
+
+                <RadioGroup
+                    android:id="@+id/rg_sent_to_nrc"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_sent_to_nrc_yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Yes"
+                        android:layout_weight="1"
+                        android:textColor="#000" />
+
+                    <RadioButton
+                        android:id="@+id/rb_sent_to_nrc_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="No"
+                        android:textColor="#000" />
+                </RadioGroup>
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <EditText
+                    android:id="@+id/et_sent_to_nrc"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="45dp"
+                    android:layout_marginTop="2dp"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:id="@+id/Iv_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="2dp"
+                    android:onClick="show_callender"
+                    android:src="@drawable/calenderr"
+                    android:visibility="gone"/>
+            </RelativeLayout>
+
             <TextView
                 android:id="@+id/txtChildHBN"
                 android:layout_width="wrap_content"
@@ -494,7 +671,7 @@
                 android:gravity="left"
                 android:paddingLeft="2dp"
                 android:text="@string/hb"
-                android:visibility="visible"
+                android:visibility="gone"
                 android:textColor="#000"
                 android:textSize="15sp" />
 
@@ -502,7 +679,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_vertical"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:visibility="gone">
 
                 <EditText
                     android:id="@+id/etxtAdolescentHb"
@@ -513,7 +691,8 @@
                     android:focusable="true"
                     android:inputType="numberDecimal"
                     android:maxLength="5"
-                    android:singleLine="true" />
+                    android:singleLine="true"
+                    android:visibility="gone"/>
 
                 <ImageView
                     android:id="@+id/imgHbStatus"
@@ -649,7 +828,151 @@
                 android:layout_height="fill_parent"
                 android:layout_marginTop="7dp"
                 android:layout_weight="3"
-                android:orientation="vertical">
+                android:orientation="vertical"
+
+                >
+
+                <TextView
+                    android:id="@+id/txt_nutrition_by_bnf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0"
+                    android:text="@string/nutrition_by_bnf"
+                    android:gravity="left"
+                    android:paddingLeft="2dp"
+                    android:textColor="#000"
+                    android:textSize="15sp" />
+
+
+                <RadioGroup
+                    android:id="@+id/rg_nutrition_by_bnf"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_nutrition_by_bnf_yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Yes"
+                        android:layout_weight="1"
+                        android:textColor="#000" />
+
+                    <RadioButton
+                        android:id="@+id/rb_nutrition_by_bnf_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="No"
+                        android:textColor="#000" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="7dp"
+                android:layout_weight="3"
+                android:orientation="vertical"
+
+                >
+
+                <TextView
+                    android:id="@+id/txt_garden_setup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0"
+                    android:text="@string/garden_setup1"
+                    android:gravity="left"
+                    android:paddingLeft="2dp"
+                    android:textColor="#000"
+                    android:textSize="15sp" />
+
+
+                <RadioGroup
+                    android:id="@+id/rg_garden_setup"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_garden_setup_yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Yes"
+                        android:layout_weight="1"
+                        android:textColor="#000" />
+
+                    <RadioButton
+                        android:id="@+id/rb_garden_setup_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="No"
+                        android:textColor="#000" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="7dp"
+                android:layout_weight="3"
+                android:orientation="vertical"
+
+                >
+
+                <TextView
+                    android:id="@+id/txt_nutrition_garden"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0"
+                    android:text="@string/nutrition_garden"
+                    android:gravity="left"
+                    android:paddingLeft="2dp"
+                    android:textColor="#000"
+                    android:textSize="15sp" />
+
+
+                <RadioGroup
+                    android:id="@+id/rg_nutrition_garden"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_nutrition_garden_yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Yes"
+                        android:layout_weight="1"
+                        android:textColor="#000" />
+
+                    <RadioButton
+                        android:id="@+id/rb_nutrition_garden_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="No"
+                        android:textColor="#000" />
+                </RadioGroup>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="7dp"
+                android:layout_weight="3"
+                android:orientation="vertical"
+                android:visibility="gone">
 
                 <TextView
                     android:id="@+id/txtSick15"
@@ -678,7 +1001,8 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:onClick="ShowSicknessList15"
-                        android:textColor="#000" />
+                        android:textColor="#000"
+                        android:visibility="gone"/>
 
                     <RadioButton
                         android:id="@+id/rb_sick_no15"
@@ -686,7 +1010,8 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:onClick="HideSicknessList15"
-                        android:textColor="#000" />
+                        android:textColor="#000"
+                        android:visibility="gone"/>
                 </RadioGroup>
 
 
@@ -752,49 +1077,7 @@
                     android:visibility="gone" />
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:layout_marginTop="7dp"
-                android:layout_weight="3"
-                android:orientation="vertical"
-                android:visibility="gone"
-                >
 
-                <TextView
-                    android:id="@+id/txtEdema"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:layout_weight="0"
-                    android:gravity="left"
-                    android:paddingLeft="2dp"
-                    android:textColor="#000"
-                    android:drawableRight="@drawable/ic_baseline_info_24"
-                    android:textSize="15sp" />
-
-                <RadioGroup
-                    android:id="@+id/radioGroup"
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="2"
-                    android:orientation="horizontal">
-
-                    <RadioButton
-                        android:id="@+id/radioYes"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:textColor="#000" />
-
-                    <RadioButton
-                        android:id="@+id/radioNo"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:textColor="#000" />
-                </RadioGroup>
-            </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/llTypeOfEdema"
@@ -812,6 +1095,7 @@
                     android:text="@string/provision_of_edima_and_its_type"
                     android:textColor="#000"
                     android:textSize="15sp"
+                    android:visibility="gone"
                     />
 
                 <RadioGroup
@@ -819,8 +1103,8 @@
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="2"
-                    android:visibility="visible"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:visibility="gone">
 
                     <RadioButton
                         android:id="@+id/rbPitting"
@@ -855,15 +1139,16 @@
                     android:paddingLeft="2dp"
                     android:text="@string/link_with_medical_facilities"
                     android:textColor="#000"
-                    android:textSize="15sp" />
+                    android:textSize="15sp"
+                    android:visibility="gone"/>
 
                 <RadioGroup
                     android:id="@+id/rgMedicalFacility"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="2"
-                    android:visibility="visible"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:visibility="gone">
 
                     <RadioButton
                         android:id="@+id/rbMedicalFacilityYes"
@@ -899,13 +1184,15 @@
                     android:paddingLeft="2dp"
                     android:text="@string/vaccination"
                     android:textColor="#000"
-                    android:textSize="15sp" />
+                    android:textSize="15sp"
+                    android:visibility="gone"/>
                 <RadioGroup
                     android:id="@+id/rgAgeVaccination"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:weightSum="3">
+                    android:weightSum="3"
+                    android:visibility="gone">
 
                     <RadioButton
                         android:id="@+id/rbAgeVaccinationRegular"
@@ -954,13 +1241,15 @@
                     android:paddingLeft="2dp"
                     android:text="@string/was_the_child_pre_mature"
                     android:textColor="#000"
-                    android:textSize="15sp" />
+                    android:textSize="15sp"
+                    android:visibility="gone"/>
                 <RadioGroup
                     android:id="@+id/rgchildPremature"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:weightSum="2">
+                    android:weightSum="2"
+                    android:visibility="gone">
 
                     <RadioButton
                         android:id="@+id/rbchildPrematureYes"
@@ -997,7 +1286,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:visibility="visible">
+                android:visibility="gone">
                 <TextView
                     android:id="@+id/tvchildbreastfeeding"
                     android:layout_width="wrap_content"
@@ -1007,13 +1296,15 @@
                     android:paddingLeft="2dp"
                     android:text="@string/has_the_child_under_exclusive_breastfeeding"
                     android:textColor="#000"
-                    android:textSize="15sp" />
+                    android:textSize="15sp"
+                    android:visibility="gone"/>
                 <RadioGroup
                     android:id="@+id/rgchildbreastfeeding"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:weightSum="2">
+                    android:weightSum="2"
+                    android:visibility="gone">
 
                     <RadioButton
                         android:id="@+id/rbchildbreastfeedingYes"
@@ -1041,7 +1332,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:visibility="visible">
+                android:visibility="gone">
                 <TextView
                     android:id="@+id/tvmotherbreastmilk"
                     android:layout_width="wrap_content"
@@ -1051,13 +1342,15 @@
                     android:paddingLeft="2dp"
                     android:text="@string/has_the_child_received_mother_s_breastmilk_yesterday"
                     android:textColor="#000"
-                    android:textSize="15sp" />
+                    android:textSize="15sp"
+                    android:visibility="gone"/>
                 <RadioGroup
                     android:id="@+id/rgmotherbreastmilk"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:weightSum="2">
+                    android:weightSum="2"
+                    android:visibility="gone">
 
                     <RadioButton
                         android:id="@+id/rbmotherbreastmilkYes"
@@ -1096,7 +1389,8 @@
                     android:paddingLeft="2dp"
                     android:text="@string/mention_the_number_of_meals_including_snacks_the_child_has_eaten_yesterday"
                     android:textColor="#000"
-                    android:textSize="15sp" />
+                    android:textSize="15sp"
+                    android:visibility="gone"/>
 
                 <EditText
                     android:id="@+id/etxtchildmealnumber"
@@ -1106,7 +1400,8 @@
                     android:layout_weight="1"
                     android:inputType="number"
                     android:maxLength="2"
-                    android:singleLine="true" />
+                    android:singleLine="true"
+                    android:visibility="gone"/>
 
 
             </LinearLayout>
@@ -1128,7 +1423,8 @@
                     android:text="@string/mark_all_food_groups_which_the_child_has_eaten_yesterday"
                     android:textColor="#000"
                     android:drawableEnd="@drawable/ic_baseline_info_24"
-                    android:textSize="15sp" />
+                    android:textSize="15sp"
+                    android:visibility="gone"/>
 
 
                 <CheckBox
@@ -1241,13 +1537,15 @@
                     android:paddingLeft="2dp"
                     android:text="@string/has_the_child_received_vit_a_in_last_six_months"
                     android:textColor="#000"
-                    android:textSize="15sp" />
+                    android:textSize="15sp"
+                    android:visibility="gone"/>
                 <RadioGroup
                     android:id="@+id/rgchildVitA"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:weightSum="2">
+                    android:weightSum="2"
+                    android:visibility="gone">
 
                     <RadioButton
                         android:id="@+id/rbchildVitAYes"
@@ -1329,13 +1627,15 @@
                     android:paddingLeft="2dp"
                     android:text="@string/has_the_child_received_ifa_in_last_month"
                     android:textColor="#000"
-                    android:textSize="15sp" />
+                    android:textSize="15sp"
+                    android:visibility="gone"/>
                 <RadioGroup
                     android:id="@+id/rgchildIFA"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:weightSum="2">
+                    android:weightSum="2"
+                    android:visibility="gone">
 
                     <RadioButton
                         android:id="@+id/rbchildIFAYes"

@@ -16,6 +16,63 @@ public class PregnantWomenMonitor {
             severe_anaemia,diabetes,twins,date_of_screening;
     private String week_of_pregnancy,night_blindness,iodine_deficiency,fluorosis,bmi,fever_with_chilled;
     private String cough,sputum_cough,urinary_complaints,prolonged_illness,sugar_albumin;
+    private String nutrition_garden,consumption_garden,registered_ICDS,IFA_tablet,calcuim_tablet,newborn_delivery,mortality;
+
+    public String getNutrition_garden() {
+        return nutrition_garden;
+    }
+
+    public void setNutrition_garden(String nutrition_garden) {
+        this.nutrition_garden = nutrition_garden;
+    }
+
+    public String getConsumption_garden() {
+        return consumption_garden;
+    }
+
+    public void setConsumption_garden(String consumption_garden) {
+        this.consumption_garden = consumption_garden;
+    }
+
+    public String getRegistered_ICDS() {
+        return registered_ICDS;
+    }
+
+    public void setRegistered_ICDS(String registered_ICDS) {
+        this.registered_ICDS = registered_ICDS;
+    }
+
+    public String getIFA_tablet() {
+        return IFA_tablet;
+    }
+
+    public void setIFA_tablet(String IFA_tablet) {
+        this.IFA_tablet = IFA_tablet;
+    }
+
+    public String getCalcuim_tablet() {
+        return calcuim_tablet;
+    }
+
+    public void setCalcuim_tablet(String calcuim_tablet) {
+        this.calcuim_tablet = calcuim_tablet;
+    }
+
+    public String getNewborn_delivery() {
+        return newborn_delivery;
+    }
+
+    public void setNewborn_delivery(String newborn_delivery) {
+        this.newborn_delivery = newborn_delivery;
+    }
+
+    public String getMortality() {
+        return mortality;
+    }
+
+    public void setMortality(String mortality) {
+        this.mortality = mortality;
+    }
 
     public String getCough() {
         return cough;

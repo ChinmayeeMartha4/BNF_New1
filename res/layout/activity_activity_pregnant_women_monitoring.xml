@@ -447,7 +447,7 @@
                     android:paddingLeft="2dp"
                     android:textColor="#000"
                     android:textSize="15sp"
-                    android:visibility="gone"/>
+                    />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -465,7 +465,7 @@
                         android:inputType="numberDecimal"
                         android:maxLength="5"
                         android:singleLine="true"
-                        android:visibility="gone"/>
+                        />
 
                     <ImageView
                         android:id="@+id/imgHbStatus"
@@ -728,13 +728,15 @@
                     android:paddingLeft="2dp"
                     android:textColor="#000"
                     android:textSize="15sp"
+                    android:visibility="gone"
                     />
                 <RadioGroup
                     android:id="@+id/rg_Hb_Level"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="2"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:visibility="gone">
 
                     <RadioButton
                         android:id="@+id/rb_Hb_Level_YES"
@@ -773,19 +775,55 @@
                     android:orientation="horizontal">
 
                     <RadioButton
-                        android:id="@+id/rb_Newborn_Delivery_YES"
+                        android:id="@+id/rb_Newborn_Delivery_Institutional"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="@string/yes"
+                        android:text="Institutional"
                         android:textColor="#000" />
 
                     <RadioButton
-                        android:id="@+id/rb_Newborn_Delivery_No"
+                        android:id="@+id/rb_Newborn_Delivery_Home"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="@string/no"
+                        android:text="Home"
+                        android:textColor="#000" />
+
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/tv_Mortality"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:gravity="left"
+                    android:text="Mortality"
+                    android:paddingLeft="2dp"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    />
+                <RadioGroup
+                    android:id="@+id/rg_Mortality"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_maternal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Maternal"
+                        android:textColor="#000" />
+
+                    <RadioButton
+                        android:id="@+id/rb_child"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Child"
                         android:textColor="#000" />
 
                 </RadioGroup>
@@ -1419,12 +1457,12 @@
                     android:paddingLeft="2dp"
                     android:textColor="#000"
                     android:textSize="15sp"
-                    android:visibility="gone"/>
+                    />
 
                 <RelativeLayout
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:visibility="gone">
+                   >
 
                     <EditText
                         android:id="@+id/diasetxtBp"

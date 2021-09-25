@@ -20,6 +20,15 @@ public class AdolescentMonitoring {
     private String is_taken_ifa;
     private String is_adolescent_dewarming_tablet;
     private String is_health_service;
+    private String is_hygiene_kit;
+
+    public String getIs_hygiene_kit() {
+        return is_hygiene_kit;
+    }
+
+    public void setIs_hygiene_kit(String is_hygiene_kit) {
+        this.is_hygiene_kit = is_hygiene_kit;
+    }
 
     public String getIs_adolescent_access_icds() {
         return is_adolescent_access_icds;

@@ -26,6 +26,69 @@ public class ChildNutrition {
     private String is_child_ifa;
     private String child_Vaccination_Status;
     private String select_child;
+    private String medical_critical;
+    private String medical_critical_reason;
+    private String nrc_last_month;
+    private String nrc_last_month_date;
+    private String nutrition_bnf;
+    private String nutrition_garden;
+    private String nutrition_garden_kit;
+
+    public String getMedical_critical() {
+        return medical_critical;
+    }
+
+    public void setMedical_critical(String medical_critical) {
+        this.medical_critical = medical_critical;
+    }
+
+    public String getMedical_critical_reason() {
+        return medical_critical_reason;
+    }
+
+    public void setMedical_critical_reason(String medical_critical_reason) {
+        this.medical_critical_reason = medical_critical_reason;
+    }
+
+    public String getNrc_last_month() {
+        return nrc_last_month;
+    }
+
+    public void setNrc_last_month(String nrc_last_month) {
+        this.nrc_last_month = nrc_last_month;
+    }
+
+    public String getNrc_last_month_date() {
+        return nrc_last_month_date;
+    }
+
+    public void setNrc_last_month_date(String nrc_last_month_date) {
+        this.nrc_last_month_date = nrc_last_month_date;
+    }
+
+    public String getNutrition_bnf() {
+        return nutrition_bnf;
+    }
+
+    public void setNutrition_bnf(String nutrition_bnf) {
+        this.nutrition_bnf = nutrition_bnf;
+    }
+
+    public String getNutrition_garden() {
+        return nutrition_garden;
+    }
+
+    public void setNutrition_garden(String nutrition_garden) {
+        this.nutrition_garden = nutrition_garden;
+    }
+
+    public String getNutrition_garden_kit() {
+        return nutrition_garden_kit;
+    }
+
+    public void setNutrition_garden_kit(String nutrition_garden_kit) {
+        this.nutrition_garden_kit = nutrition_garden_kit;
+    }
 
     public String getSelect_child() {
         return select_child;

@@ -454,4 +454,11 @@
     <string name="Registered_with_ICDS">Registered with ICDS ?</string>
     <string name="Hb_Level">Hb Level ?</string>
     <string name="Newborn_Delivery">Newborn Delivery ?</string>
+    <string name="medical_critical">Is the child medically critical ?</string>
+    <string name="sent_to_nrc">Was the child sent to NRC in last one month ?</string>
+    <string name="nutrition_by_bnf">Is the child receiving complementary nutrition by BNF ?</string>
+    <string name="garden_setup1">Nutrition garden set up in this month ?</string>
+    <string name="nutrition_garden">Was the nutrition garden kit given in this month ?</string>
+    <string name="have_you_received_any_hygiene_kit_received">Have you received any hygiene kit received</string>
+
 </resources>

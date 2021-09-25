@@ -14,6 +14,8 @@
     <string name="marital_status">वैवाहिक स्थिति</string>
     <string name="education">शिक्षा</string>
     <string name="add_mother">माँ जोड़ें</string>
+    <string name="have_you_received_any_hygiene_kit_received">क्या आपको कोई स्वच्छता किट प्राप्त हुई है</string>
+
     <string name="completed_pregnancy_months">गर्भावस्था के पूरे महीने</string>
     <string name="lmp_edd_date">एलएमपी / ईडीडी तिथि</string>
     <string name="completed_months_of_pregnancy">गर्भावस्था के पूरे हुए महीने</string>

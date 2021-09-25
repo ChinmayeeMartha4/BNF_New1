@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/hp/Desktop/NewBitannia/BNF_New1/res/drawable/ic_circle.xml" value="0.2169230769230769" />
+        <entry key="..\:/Users/hp/Desktop/NewBitannia/BNF_New1/res/layout/activity_activity_child_nutrition_monitor.xml" value="0.18954918032786885" />
         <entry key="..\:/Users/hp/Desktop/NewBitannia/BNF_New1/res/layout/activity_activity_child_reg.xml" value="0.20102564102564102" />
         <entry key="..\:/Users/hp/Desktop/NewBitannia/BNF_New1/res/layout/activity_activity_parent_registration.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/hp/Desktop/NewBitannia/BNF_New1/res/layout/activity_activity_pregnant_women_monitoring.xml" value="0.20416666666666666" />
@@ -20,6 +21,7 @@
         <entry key="..\:/Users/hp/Desktop/NewBitannia/BNF_New1/res/layout/activity_suposhan_sakhi.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/hp/Desktop/NewBitannia/BNF_New1/res/layout/activity_suposhan_sakhi_monitoring.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/hp/Desktop/NewBitannia/BNF_New1/res/layout/activity_view_menu.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/hp/Desktop/NewBitannia/BNF_New1/res/menu/activity_pregnant_women_monitoring.xml" value="0.20416666666666666" />
       </map>
     </option>
   </component>

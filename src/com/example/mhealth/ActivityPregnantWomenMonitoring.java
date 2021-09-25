@@ -103,14 +103,15 @@ public class ActivityPregnantWomenMonitoring extends Activity {
     SharedPrefHelper sph;
     RadioGroup rgMgr, rgVisitSequence,rgNightBlindness,rgIodineDeficiency,rgFluorosis,rgFeverWithChild,
             rgCoughChild,rgBloodSputum,rgUrinary,rgProlongedIllness,rgSugarAlbumin,
-            rg_IFA,tv_Calcuim,rg_garden_setup,rg_Consumption_garden,rg_Registered_ICDS,rg_Hb_Level,rg_Newborn_Delivery;
+            rg_IFA,rg_Calcuim,rg_garden_setup,rg_Consumption_garden,rg_Registered_ICDS,rg_Hb_Level,
+            rg_Newborn_Delivery,rg_Mortality;
     RadioButton rbMgrStatus, rbFirstVisit, rbSecondVisit, rbRandom,rbNBYes,rbNBNo,rbNBNot,
             rbIDYes,rbIDNo,rbIDNot,rbFluorosisYes,rbFluorosisNo,rbFluorosisNot,rbFeverWithChildYes,
             rbFeverWithChildNo,rbFeverWithChildNot,rbCoughChildYes,rbCoughChildNo,rbBloodSputumYes,rbBloodSputumNo,
             rbUrinaryYes,rbUrinaryNo,rbProlongedIllnessYes,rbProlongedIllnessNo,rbSugarAlbuminYes,rbSugarAlbuminNo,
             rb_IFA_YES,rb_IFA_No,rb_Calcuim_YES,rb_Calcuim_No,rb_garden_YES,rb_garden_No,rb_Consumption_garden_YES
             ,rb_Consumption_garden_No,rb_Registered_ICDS_YES,rb_Registered_ICDS_No,rb_Hb_Level_YES,rb_Hb_Level_No,
-            rb_Newborn_Delivery_YES,rb_Newborn_Delivery_No;
+            rb_Newborn_Delivery_Institutional,rb_Newborn_Delivery_Home,rb_maternal,rb_child;
     CheckBox cbHeightBP, cbConvulsions, cbVaginalBleeding, cbFSVD,
             cbSevereAnaemia, cbDiabetes, cbTwins;
     int checkedstatus = 0;
@@ -138,7 +139,8 @@ public class ActivityPregnantWomenMonitoring extends Activity {
             strFSVD = "", strSevereAnaemia = "", strDiabetes = "", strTwins = "", strNightBlindness="",
             strIodineDeficiency="", strPregnancyStatus="",strCoughChild="",strCoughChildNo="",strBloodSputum="",
             strBloodSputumNo="",strUrinary="",strUrinaryNo="",strProlongedIllness="",strProlongedIllnessNo="",
-            strSugarAlbumin="",strSugarAlbuminNo="";
+            strSugarAlbumin="",strSugarAlbuminNo="",strMortality,strNewborn,strRegistered,strConsumption,
+            strGarden,strCalcuim,strIFA;
     int intWomenId;
     double height;
     ImageView imgPregWomenMon;
@@ -754,6 +756,106 @@ public class ActivityPregnantWomenMonitoring extends Activity {
                 String weight = etxtWomenWeight.getText().toString().trim();
                 String a = getBMI(weight, height);
                 etxtBMI.setText(a);
+            }
+        });
+
+        //new code start
+
+        rg_IFA.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+                switch (i) {
+                    case R.id.rb_IFA_YES:
+                        strIFA = "Yes";
+                        break;
+                    case R.id.rb_IFA_No:
+                        strIFA = "No";
+                        break;
+                }
+            }
+        });
+
+        rg_Calcuim.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+                switch (i) {
+                    case R.id.rb_Calcuim_YES:
+                        strCalcuim = "Yes";
+                        break;
+                    case R.id.rb_Calcuim_No:
+                        strCalcuim = "No";
+                        break;
+                }
+            }
+        });
+
+        rg_garden_setup.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+                switch (i) {
+                    case R.id.rb_garden_YES:
+                        strGarden = "Yes";
+                        break;
+                    case R.id.rb_garden_No:
+                        strGarden = "No";
+                        break;
+                }
+            }
+        });
+
+        rg_Consumption_garden.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+                switch (i) {
+                    case R.id.rb_Consumption_garden_YES:
+                        strConsumption = "Yes";
+                        break;
+                    case R.id.rb_Consumption_garden_No:
+                        strConsumption = "No";
+                        break;
+                }
+            }
+        });
+
+        rg_Registered_ICDS.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+                switch (i) {
+                    case R.id.rb_Registered_ICDS_YES:
+                        strRegistered = "Yes";
+                        break;
+                    case R.id.rb_Registered_ICDS_No:
+                        strRegistered = "No";
+                        break;
+                }
+            }
+        });
+
+        rg_Newborn_Delivery.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+                switch (i) {
+                    case R.id.rb_Newborn_Delivery_Institutional:
+                        strNewborn = "Institutional";
+                        break;
+                    case R.id.rb_Newborn_Delivery_Home:
+                        strNewborn = "Home";
+                        break;
+                }
+            }
+        });
+
+        rg_Mortality.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+                switch (i) {
+                    case R.id.rb_maternal:
+                        strMortality = "Maternal";
+                        break;
+                    case R.id.rb_child:
+                        strMortality = "Child";
+                        break;
+                }
             }
         });
     }
@@ -1591,17 +1693,33 @@ public class ActivityPregnantWomenMonitoring extends Activity {
         rbSugarAlbuminYes=findViewById(R.id.rbSugarAlbuminYes);
         rbSugarAlbuminNo=findViewById(R.id.rbSugarAlbuminNo);
 
-//        rgSugarAlbumin=findViewById(R.id.rgSugarAlbumin);
-//        rbSugarAlbuminYes=findViewById(R.id.rbSugarAlbuminYes);
-//        rbSugarAlbuminNo=findViewById(R.id.rbSugarAlbuminNo);
+        rg_IFA=findViewById(R.id.rg_IFA);
+        rb_IFA_YES=findViewById(R.id.rb_IFA_YES);
+        rb_IFA_No=findViewById(R.id.rb_IFA_No);
 
-//        rgSugarAlbumin=findViewById(R.id.rgSugarAlbumin);
-//        rbSugarAlbuminYes=findViewById(R.id.rbSugarAlbuminYes);
-//        rbSugarAlbuminNo=findViewById(R.id.rbSugarAlbuminNo);
-//
-//        rgSugarAlbumin=findViewById(R.id.rgSugarAlbumin);
-//        rbSugarAlbuminYes=findViewById(R.id.rbSugarAlbuminYes);
-//        rbSugarAlbuminNo=findViewById(R.id.rbSugarAlbuminNo);
+        rg_Calcuim=findViewById(R.id.rg_Calcuim);
+        rb_Calcuim_YES=findViewById(R.id.rb_Calcuim_YES);
+        rb_Calcuim_No=findViewById(R.id.rb_Calcuim_No);
+
+        rg_garden_setup=findViewById(R.id.rg_garden_setup);
+        rb_garden_YES=findViewById(R.id.rb_garden_YES);
+        rb_garden_No=findViewById(R.id.rb_garden_No);
+
+        rg_Consumption_garden=findViewById(R.id.rg_Consumption_garden);
+        rb_Consumption_garden_YES=findViewById(R.id.rb_Consumption_garden_YES);
+        rb_Consumption_garden_No=findViewById(R.id.rb_Consumption_garden_No);
+
+        rg_Registered_ICDS=findViewById(R.id.rg_Registered_ICDS);
+        rb_Registered_ICDS_YES=findViewById(R.id.rb_Registered_ICDS_YES);
+        rb_Registered_ICDS_No=findViewById(R.id.rb_Registered_ICDS_No);
+
+        rg_Newborn_Delivery=findViewById(R.id.rg_Newborn_Delivery);
+        rb_Newborn_Delivery_Institutional=findViewById(R.id.rb_Newborn_Delivery_Institutional);
+        rb_Newborn_Delivery_Home=findViewById(R.id.rb_Newborn_Delivery_Home);
+
+        rg_Mortality=findViewById(R.id.rg_Mortality);
+        rb_maternal=findViewById(R.id.rb_maternal);
+        rb_child=findViewById(R.id.rb_child);
     }
 
     public void clickGo(View v) {
@@ -1698,6 +1816,14 @@ public class ActivityPregnantWomenMonitoring extends Activity {
                             pregnantWomenMonitor.setUrinary_complaints(strUrinary);
                             pregnantWomenMonitor.setProlonged_illness(strProlongedIllness);
                             pregnantWomenMonitor.setSugar_albumin(strSugarAlbumin);
+
+                            pregnantWomenMonitor.setIFA_tablet(strIFA);
+                            pregnantWomenMonitor.setCalcuim_tablet(strCalcuim);
+                            pregnantWomenMonitor.setNutrition_garden(strGarden);
+                            pregnantWomenMonitor.setConsumption_garden(strConsumption);
+                            pregnantWomenMonitor.setRegistered_ICDS(strRegistered);
+                            pregnantWomenMonitor.setNewborn_delivery(strNewborn);
+                            pregnantWomenMonitor.setMortality(strMortality);
 
                             Time time = new Time();
                             time.setToNow();
