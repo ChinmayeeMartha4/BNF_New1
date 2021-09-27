@@ -33,6 +33,33 @@ public class ChildNutrition {
     private String nutrition_bnf;
     private String nutrition_garden;
     private String nutrition_garden_kit;
+    private String nrc_referral;
+    private String complimentary_nutrition;
+    private String registered_with_icds;
+
+    public String getNrc_referral() {
+        return nrc_referral;
+    }
+
+    public void setNrc_referral(String nrc_referral) {
+        this.nrc_referral = nrc_referral;
+    }
+
+    public String getComplimentary_nutrition() {
+        return complimentary_nutrition;
+    }
+
+    public void setComplimentary_nutrition(String complimentary_nutrition) {
+        this.complimentary_nutrition = complimentary_nutrition;
+    }
+
+    public String getRegistered_with_icds() {
+        return registered_with_icds;
+    }
+
+    public void setRegistered_with_icds(String registered_with_icds) {
+        this.registered_with_icds = registered_with_icds;
+    }
 
     public String getMedical_critical() {
         return medical_critical;

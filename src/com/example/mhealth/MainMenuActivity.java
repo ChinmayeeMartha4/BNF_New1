@@ -77,6 +77,7 @@ public class MainMenuActivity extends AppDrawer {
     String start1="";
     String start_time="";
     String end_time="";
+    String id="";
     String currentTimeStamp;
     SqliteHelper sqliteHelper;
     SharedPrefHelper sph;
@@ -101,40 +102,44 @@ public class MainMenuActivity extends AppDrawer {
         initialize();
         Bundle bundle =getIntent().getExtras();
         if (bundle!=null) {
-            screen_type = bundle.getString("screen_type", "");
-            start1 = bundle.getString("start1", "");
-            start_time = bundle.getString("start_time", "");
-            end_time = bundle.getString("end_time", "");
+            id = bundle.getString("Id", "");
+            screen_type = bundle.getString("screenType", "");
+//            start1 = bundle.getString("start1", "");
+//            start_time = bundle.getString("start_time", "");
+//            end_time = bundle.getString("end_time", "");
         }
         SimpleDateFormat dateFormat = new SimpleDateFormat("HH:mm:ss");
         currentTimeStamp = dateFormat.format(new Date());
         end.setVisibility(View.GONE);
         start.setVisibility(View.VISIBLE);
-        tv_start_time1.setText(start_time);
-        tv_end_time1.setText(end_time);
-        if(screen_type.equals("AttendanceImage"))
-        {
-            end.setVisibility(View.VISIBLE);
-            start.setVisibility(View.GONE);
 
+        attendanceImagePojo=sqliteHelper.getAttendanceImageUpdatedData(id);
+        tv_start_time1.setText(attendanceImagePojo.getStart_time());
+        tv_end_time1.setText(attendanceImagePojo.getEnd_time());
+        String ID= String.valueOf(attendanceImagePojo.getId());
+        if(!ID.equals("") && !ID.equals("0")) {
+            if (attendanceImagePojo.getStart_time().equals("") && attendanceImagePojo.getEnd_time().equals("")) {
+                end.setVisibility(View.GONE);
+                start.setVisibility(View.VISIBLE);
+            } else if (!attendanceImagePojo.getStart_time().equals("") && !attendanceImagePojo.getEnd_time().equals("")) {
+                end.setVisibility(View.GONE);
+                start.setVisibility(View.VISIBLE);
+            } else {
+                end.setVisibility(View.VISIBLE);
+                start.setVisibility(View.GONE);
+            }
+        }else {
+            end.setVisibility(View.GONE);
+            start.setVisibility(View.VISIBLE);
         }
-        attendanceImagePojo=sqliteHelper.getAttendanceImageData();
-
         start.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (attendanceImagePojo.getLocal_id() != 1) {
-
-                    Intent intent = new Intent(MainMenuActivity.this, AttendanceImage.class);
-                    intent.putExtra("screen_type", "MainMenu");
-
-                    startActivity(intent);
-                }
-
-                else {
-                    Toast.makeText(MainMenuActivity.this, "", Toast.LENGTH_SHORT).show();
-
-                }
+//                if (attendanceImagePojo.getLocal_id() != 1) {
+                Intent intent = new Intent(MainMenuActivity.this, AttendanceImage.class);
+                intent.putExtra("screen_type", "start_tme");
+                startActivity(intent);
+//                }
             }
         });
 
@@ -142,6 +147,9 @@ public class MainMenuActivity extends AppDrawer {
             @Override
             public void onClick(View view) {
                 Intent intent=new Intent(MainMenuActivity.this, AttendanceImage.class);
+                String id= String.valueOf(attendanceImagePojo.getId());
+                intent.putExtra("screen_type", "end_tme");
+                intent.putExtra("id", id);
                 startActivity(intent);
             }
         });

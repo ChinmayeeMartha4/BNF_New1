@@ -6,6 +6,15 @@ public class NutritionMonitoringPojo {
     private String active;
     private String flag;
     private String created_at;
+    private String id;
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
 
     public String getLocal_id() {
         return local_id;

@@ -8,14 +8,14 @@ public class AttendanceImagePojo {
     private String end_image;
     private String flag;
     private String created_at;
-    private int local_id;
+    private int id;
 
-    public int getLocal_id() {
-        return local_id;
+    public int getId() {
+        return id;
     }
 
-    public void setLocal_id(int local_id) {
-        this.local_id = local_id;
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getUser_id() {

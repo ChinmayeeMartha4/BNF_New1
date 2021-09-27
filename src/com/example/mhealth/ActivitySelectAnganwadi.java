@@ -46,6 +46,7 @@ import com.example.mhealth.helper.SharedPrefHelper;
 import com.example.mhealth.helper.SpinnerHelper;
 import com.example.mhealth.helper.SqliteHelper;
 import com.example.mhealth.helper.attendance;
+import com.example.mhealth.model.AttendanceImagePojo;
 import com.example.mhealth.model.LoginModel;
 import com.example.mhealth.rest_apis.ApiClient;
 import com.example.mhealth.rest_apis.M_Health_API;
@@ -86,6 +87,7 @@ public class ActivitySelectAnganwadi extends Activity {
     private ImageView ivDownloadAnganwadi;
     public static android.app.Dialog submit_alert;
     private Context context=this;
+    AttendanceImagePojo attendanceImagePojo;
 
 
     public static Spannable removeUnderlines(Spannable p_Text) {
@@ -129,6 +131,7 @@ public class ActivitySelectAnganwadi extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_new_login);
 
+        attendanceImagePojo=new AttendanceImagePojo();
 
         spnAnganwadi = (Spinner) findViewById(R.id.spnAnganwadi);
         btnLoginGo = (Button) findViewById(R.id.btnLoginGo);
@@ -434,8 +437,10 @@ public class ActivitySelectAnganwadi extends Activity {
         anganwadi_id = Integer.parseInt(getSelectedValue(spnAnganwadi));
         setUserInTiming(Integer.toString(user_master_id), Integer.toString(anganwadi_id));
         sph.setInt("user_id", anganwadi_id);
-
+        attendanceImagePojo=sqliteHelper.getAttendanceImageData();
+        String id= String.valueOf(attendanceImagePojo.getId());
         Intent intent = new Intent(this, MainMenuActivity.class);
+        intent.putExtra("Id",id);
         startActivity(intent);
         this.finish();
     }

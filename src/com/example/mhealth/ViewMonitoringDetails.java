@@ -14,7 +14,8 @@ import java.util.Date;
 
 public class ViewMonitoringDetails extends Activity {
 
-    TextView textChildMonitorViewNumber,textChildMonitorViewNumber1,textPregnantMonitorViewNumber,textPregnantMonitorViewNumber1,textAdolescentMonitorViewNumber,textAdolescentMonitorViewNumber1;
+
+    TextView textChildMonitorViewNumber,tvTitleText,textChildMonitorViewNumber1,textPregnantMonitorViewNumber,textPregnantMonitorViewNumber1,textAdolescentMonitorViewNumber,textAdolescentMonitorViewNumber1;
     SqliteHelper sqliteHelper;
     TextView months1,months;
     @Override
@@ -22,16 +23,10 @@ public class ViewMonitoringDetails extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view_monitoring_details);
         getActionBar().hide();
+        init();
+        ;
+        tvTitleText.setText(R.string.viewMenu);
 
-        textChildMonitorViewNumber=findViewById(R.id.textChildMonitorViewNumber);
-        textChildMonitorViewNumber1=findViewById(R.id.textChildMonitorViewNumber1);
-        textPregnantMonitorViewNumber=findViewById(R.id.textpregnantMonitorView);
-        textPregnantMonitorViewNumber1=findViewById(R.id.textPregnatMonitorViewNumber1);
-        textAdolescentMonitorViewNumber=findViewById(R.id.textAdolescentMonitorView);
-        textAdolescentMonitorViewNumber1=findViewById(R.id.textAdolescentMonitorViewNumber1);
-        months1=findViewById(R.id.months1);
-        months=findViewById(R.id.months);
-        sqliteHelper=new SqliteHelper(this);
         String dob2 = new SimpleDateFormat("yyyy-MM-dd").format(new Date());
 
         Calendar c = Calendar.getInstance();
@@ -42,12 +37,12 @@ public class ViewMonitoringDetails extends Activity {
         String SecondMonth1="";
         firstMonth= String.valueOf(month);
         if (firstMonth.length()>1){
-          SecondMonth=firstMonth;
+            SecondMonth=firstMonth;
         }else {
             SecondMonth="0"+firstMonth;
         }
 
-       String firstMonth1= String.valueOf(month+1);
+        String firstMonth1= String.valueOf(month+1);
         if (firstMonth1.length()>1){
             SecondMonth1=firstMonth1;
         }else {
@@ -71,5 +66,19 @@ public class ViewMonitoringDetails extends Activity {
         textAdolescentMonitorViewNumber.setText(num4);
         textAdolescentMonitorViewNumber1.setText(num5);
 
+    }
+
+    private void init() {
+        textChildMonitorViewNumber=findViewById(R.id.textChildMonitorViewNumber);
+        textChildMonitorViewNumber1=findViewById(R.id.textChildMonitorViewNumber1);
+        textPregnantMonitorViewNumber=findViewById(R.id.textpregnantMonitorView);
+        textPregnantMonitorViewNumber1=findViewById(R.id.textPregnatMonitorViewNumber1);
+        textAdolescentMonitorViewNumber=findViewById(R.id.textAdolescentMonitorView);
+        textAdolescentMonitorViewNumber1=findViewById(R.id.textAdolescentMonitorViewNumber1);
+        tvTitleText=findViewById(R.id.tvTitleText);
+        months1=findViewById(R.id.months1);
+        months=findViewById(R.id.months);
+
+        sqliteHelper=new SqliteHelper(this);
     }
 }

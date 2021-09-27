@@ -27,6 +27,7 @@ import androidx.annotation.NonNull;
 import com.example.mhealth.model.AttendanceImagePojo;
 import com.example.mhealth.helper.SharedPrefHelper;
 import com.example.mhealth.helper.SqliteHelper;
+import com.example.mhealth.utils.CommonMethods;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
@@ -56,6 +57,10 @@ public class AttendanceImage extends Activity {
     SharedPrefHelper sharedPrefHelper;
     String currentTimeStamp;
     String ids;
+    String user_id;
+    AttendanceImagePojo attendanceImagePojos;
+    AttendanceImagePojo aImagePojo, aImagePojos;
+    String id="", updatedId;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -65,55 +70,53 @@ public class AttendanceImage extends Activity {
         init();
         Bundle bundle =getIntent().getExtras();
         if (bundle!=null) {
+            id = bundle.getString("id", "");
             screen_type = bundle.getString("screen_type", "");
-            ids= sharedPrefHelper.getString("id","");
-
         }
-        attendanceImagePojo=sqliteHelper.getAttendanceImageData();
-//        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+
+        attendanceImagePojos=new AttendanceImagePojo();
+        user_id= String.valueOf(sharedPrefHelper.getInt("user_master_id", 0));
         SimpleDateFormat dateFormat = new SimpleDateFormat("HH:mm:ss");
         currentTimeStamp = dateFormat.format(new Date());
+
+//        attendanceImagePojos= sqliteHelper.getAttendanceImageData();
+//        id= String.valueOf(attendanceImagePojos.getId());
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(screen_type.equals("MainMenu")) {
+                if(screen_type.equals("start_tme")) {
                     attendanceImagePojo.setStart_image(image64);
                     attendanceImagePojo.setStart_time(currentTimeStamp);
+                    attendanceImagePojo.setEnd_image("");
+                    attendanceImagePojo.setEnd_time("");
+                    attendanceImagePojo.setCreated_at(CommonMethods.getCurrentDateTime());
 
-
-//                    sqliteHelper.saveAttendanceImageData(attendanceImagePojo, sharedPrefHelper.getString("user_id", ""));
-                    sqliteHelper.saveAttendanceImageData(attendanceImagePojo,ids);
-                    Intent intent = new Intent(com.example.mhealth.AttendanceImage.this, MainMenuActivity.class);
-                    intent.putExtra("screen_type", "AttendanceImage");
-                    intent.putExtra("start_time", attendanceImagePojo.getStart_time());
+                    id = String.valueOf(sqliteHelper.saveAttendanceImageData(attendanceImagePojo));
+                    aImagePojo= sqliteHelper.getAttendanceImageUpdatedData(id);
+                    String Id= String.valueOf(aImagePojo.getId());
+                    Intent intent = new Intent(AttendanceImage.this, MainMenuActivity.class);
+//                    intent.putExtra("start_time", aImagePojo.getStart_time());
+//                    intent.putExtra("screenType", "startTime");
+                    intent.putExtra("Id", Id);
                     startActivity(intent);
-                }
-                else
-                {
+                } else {
+                    aImagePojo= sqliteHelper.getAttendanceImageUpdatedData(id);
+                    attendanceImagePojo.setStart_image(aImagePojo.getStart_image());
+                    attendanceImagePojo.setStart_time(aImagePojo.getStart_time());
                     attendanceImagePojo.setEnd_image(image64);
                     attendanceImagePojo.setEnd_time(currentTimeStamp);
-//                    sqliteHelper.saveAttendanceImageData1(attendanceImagePojo, sharedPrefHelper.getString("user_id",""));
-                    sqliteHelper.saveAttendanceImageData1(attendanceImagePojo,ids);
+                    sqliteHelper.saveAttendanceUpdateImage(attendanceImagePojo, id);
+                    aImagePojos= sqliteHelper.getAttendanceImageUpdatedData(id);
+                    String Id= String.valueOf(aImagePojos.getId());
                     Intent intent=new Intent(AttendanceImage.this, MainMenuActivity.class);
-                    intent.putExtra("start_time", attendanceImagePojo.getStart_time());
-                    intent.putExtra("end_time", attendanceImagePojo.getEnd_time() );
+//                    intent.putExtra("start_time", aImagePojos.getStart_time());
+//                    intent.putExtra("end_time", aImagePojos.getEnd_time() );
+                    intent.putExtra("Id", Id);
+//                    intent.putExtra("screenType", "endTime");
                     startActivity(intent);
                 }
-
             }
         });
-//        submit.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                attendanceImagePojo.setStart_image(image64);
-//                attendanceImagePojo.setEnd_image(image64);
-//                sqliteHelper.saveAttendanceImageData1(attendanceImagePojo, sharedPrefHelper.getString("user_id",""));
-//                Intent intent=new Intent(AttendanceImage.this, MainMenu.class);
-//                intent.putExtra("screen_type","AttendanceImage");
-//                startActivity(intent);
-
-//            }
-//        });
         image.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -290,6 +293,8 @@ public class AttendanceImage extends Activity {
         submit=findViewById(R.id.submit);
         image=findViewById(R.id.image_att);
         attendanceImagePojo= new AttendanceImagePojo();
+        aImagePojo= new AttendanceImagePojo();
+        aImagePojos= new AttendanceImagePojo();
         sqliteHelper=new SqliteHelper(this);
         sharedPrefHelper=new SharedPrefHelper(this);
     }

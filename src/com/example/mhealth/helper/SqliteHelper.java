@@ -4360,6 +4360,9 @@ public class SqliteHelper {
                 values.put("nutrition_bnf", childNutrition.getNutrition_bnf());
                 values.put("nutrition_garden", childNutrition.getNutrition_garden());
                 values.put("nutrition_garden_kit", childNutrition.getNutrition_garden_kit());
+                values.put("nrc_referral", childNutrition.getNrc_referral());
+                values.put("complimentary_nutrition", childNutrition.getComplimentary_nutrition());
+                values.put("registered_with_icds", childNutrition.getRegistered_with_icds());
 
                 values.put("sick_reason", childNutrition.getSick_reason());
                 values.put("state_id", sph.getString("state_id", ""));
@@ -8729,6 +8732,7 @@ public class SqliteHelper {
         try {
             if (DB != null && DB.isOpen() && !DB.isReadOnly()) {
                 ContentValues values = new ContentValues();
+                values.put("id", suposhanSakhiPojo.getId());
                 values.put("name", suposhanSakhiPojo.getName());
                 values.put("mobile_number", suposhanSakhiPojo.getMobile_number());
                 values.put("photograph", suposhanSakhiPojo.getPhotograph());
@@ -8753,6 +8757,7 @@ public class SqliteHelper {
         try {
             if (DB != null && DB.isOpen() && !DB.isReadOnly()) {
                 ContentValues values = new ContentValues();
+                values.put("id", nutritionChampionPojo.getId());
                 values.put("name", nutritionChampionPojo.getName());
                 values.put("mobile_number", nutritionChampionPojo.getMobile_number());
                 values.put("photograph", nutritionChampionPojo.getPhotograph());
@@ -8769,7 +8774,7 @@ public class SqliteHelper {
 
         return id;
     }
-    public AttendanceImagePojo getAttendanceImageData() {
+    public AttendanceImagePojo getAttendanceImageUpdatedData(String local_id) {
 
         AttendanceImagePojo attendanceImagePojo =new AttendanceImagePojo();
 //        SQLiteDatabase db = this.getWritableDatabase();
@@ -8777,18 +8782,16 @@ public class SqliteHelper {
         DB = mydb.getDb();
         try {
             if (DB != null && DB.isOpen() && !DB.isReadOnly()) {
-                String query = "select local_id,start_image,start_time,end_time,end_image from attendance_image";
+                String query = "select id,start_image,start_time,end_time,end_image from attendance_image where id='"+local_id+"'";
                 Cursor cursor = DB.rawQuery(query, null);
                 if (cursor != null && cursor.getCount() > 0) {
                     cursor.moveToFirst();
                     while (!cursor.isAfterLast()) {
-                        attendanceImagePojo.setLocal_id(cursor.getInt(cursor.getColumnIndex("local_id")));
+                        attendanceImagePojo.setId(cursor.getInt(cursor.getColumnIndex("id")));
                         attendanceImagePojo.setStart_image(cursor.getString(cursor.getColumnIndex("start_image")));
                         attendanceImagePojo.setStart_time(cursor.getString(cursor.getColumnIndex("start_time")));
                         attendanceImagePojo.setEnd_time(cursor.getString(cursor.getColumnIndex("end_time")));
                         attendanceImagePojo.setEnd_image(cursor.getString(cursor.getColumnIndex("end_image")));
-
-
 
                         cursor.moveToNext();
                     }
@@ -8803,59 +8806,87 @@ public class SqliteHelper {
 
     }
 
-    public AttendanceImagePojo saveAttendanceImageData1(AttendanceImagePojo attendanceImagePojo,String ids) {
-//        SQLiteDatabase db = this.getWritableDatabase();
+    public AttendanceImagePojo getAttendanceImageData() {
 
+        AttendanceImagePojo attendanceImagePojo =new AttendanceImagePojo();
+//        SQLiteDatabase db = this.getWritableDatabase();
         mydb.openDataBase();
         DB = mydb.getDb();
         try {
             if (DB != null && DB.isOpen() && !DB.isReadOnly()) {
+                String query = "SELECT id, start_image, start_time, end_time, end_image FROM attendance_image where user_id='"+ user_master_id+"' ORDER BY id DESC LIMIT 1 ";
+                Cursor cursor = DB.rawQuery(query, null);
+                if (cursor != null && cursor.getCount() > 0) {
+                    cursor.moveToFirst();
+                    while (!cursor.isAfterLast()) {
+                        attendanceImagePojo.setId(cursor.getInt(cursor.getColumnIndex("id")));
+                        attendanceImagePojo.setStart_image(cursor.getString(cursor.getColumnIndex("start_image")));
+                        attendanceImagePojo.setStart_time(cursor.getString(cursor.getColumnIndex("start_time")));
+                        attendanceImagePojo.setEnd_time(cursor.getString(cursor.getColumnIndex("end_time")));
+                        attendanceImagePojo.setEnd_image(cursor.getString(cursor.getColumnIndex("end_image")));
+                        cursor.moveToNext();
+                    }
+                }
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+
+        }
+        return attendanceImagePojo;
+
+    }
+
+    public long saveAttendanceImageData(AttendanceImagePojo attendanceImagePojo) {
+        mydb.openDataBase();
+        long id = 0;
+        DB = mydb.getDb();
+        try {
+            if (DB != null && DB.isOpen() && !DB.isReadOnly()) {
                 ContentValues values = new ContentValues();
-//                if (id.equals("")) {
-                values.put("user_id", ids);
+                values.put("start_image", attendanceImagePojo.getStart_image());
+                values.put("start_time", attendanceImagePojo.getStart_time());
+                values.put("user_id", user_master_id);
                 values.put("end_time", attendanceImagePojo.getEnd_time());
                 values.put("end_image", attendanceImagePojo.getEnd_image());
                 values.put("created_at", attendanceImagePojo.getCreated_at());
-                values.put("flag", attendanceImagePojo.getFlag());
-//                db.insert("attendance_image", null, values);
-////                db.update("attendance_image", values, "local_id = '" + id + "'", null);
-//                db.close();
-//                }
-//            else{
-                DB.update("attendance_image", values, "user_id = '" + ids + "'", null);
-//                DB.close();
-//            }
+                values.put("flag", "0");
+
+                id = DB.insert("attendance_image", null, values);
+
+                Log.d("tag","data is inserted successfully" + id);
             }
-        } catch (Exception e) {
-            e.printStackTrace();
-            DB.close();
+        } catch (Exception s) {
+            Log.d("tetsts", s.getMessage());
         }
-        return attendanceImagePojo;
+
+        return id;
     }
-    public AttendanceImagePojo saveAttendanceImageData(AttendanceImagePojo attendanceImagePojo, String ids) {
-//        SQLiteDatabase db = this.getWritableDatabase();
+
+    public long saveAttendanceUpdateImage(AttendanceImagePojo attendanceImagePojo, String id) {
         mydb.openDataBase();
+        long ids = 0;
         DB = mydb.getDb();
         try {
             if (DB != null && DB.isOpen() && !DB.isReadOnly()) {
                 ContentValues values = new ContentValues();
-
-                values.put("user_id", ids);
+                values.put("id", id);
                 values.put("start_image", attendanceImagePojo.getStart_image());
                 values.put("start_time", attendanceImagePojo.getStart_time());
+                values.put("user_id", user_master_id);
+                values.put("end_time", attendanceImagePojo.getEnd_time());
+                values.put("end_image", attendanceImagePojo.getEnd_image());
                 values.put("created_at", attendanceImagePojo.getCreated_at());
-                values.put("flag", attendanceImagePojo.getFlag());
+                values.put("flag", "0");
 
-                DB.insert("attendance_image", null, values);
-                DB.close();
+                ids = DB.update("attendance_image", values, "id=" + id, null);
 
-
+                Log.d("tag","data is inserted successfully" + ids);
             }
-        } catch (Exception e) {
-            e.printStackTrace();
-            DB.close();
+        } catch (Exception s) {
+            Log.d("tetsts", s.getMessage());
         }
-        return attendanceImagePojo;
+
+        return ids;
     }
 
     public long saveSuposhanSakhiMonitoringData(SuposhanSakhiMonitoringPojo suposhanSakhiMonitoringPojo) {
@@ -8865,6 +8896,7 @@ public class SqliteHelper {
         try {
             if (DB != null && DB.isOpen() && !DB.isReadOnly()) {
                 ContentValues values = new ContentValues();
+                values.put("id", suposhanSakhiMonitoringPojo.getId());
                 values.put("garden_setup", suposhanSakhiMonitoringPojo.getGarden_setup());
                 values.put("active", suposhanSakhiMonitoringPojo.getActive());
                 values.put("user_master_id", user_master_id);
@@ -8888,6 +8920,7 @@ public class SqliteHelper {
         try {
             if (DB != null && DB.isOpen() && !DB.isReadOnly()) {
                 ContentValues values = new ContentValues();
+                values.put("id", nutritionMonitoringPojo.getId());
                 values.put("garden_setup", nutritionMonitoringPojo.getGarden_setup());
                 values.put("active", nutritionMonitoringPojo.getActive());
                 values.put("user_master_id", user_master_id);

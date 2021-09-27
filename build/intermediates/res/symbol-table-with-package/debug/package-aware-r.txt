@@ -2611,13 +2611,11 @@ id lnrChildView
 id lnrClose
 id lnrConclusion
 id lnrEdit
-id lnrEditAbsent
 id lnrEditChild
 id lnrEditChildAbsent
 id lnrEditChildNutritionHB
 id lnrEditEligibleFamily
 id lnrEditOption
-id lnrEligibleFamily
 id lnrExit
 id lnrGuideline
 id lnrHelp
@@ -2944,9 +2942,13 @@ id rb_Newborn_Delivery_Home
 id rb_Newborn_Delivery_Institutional
 id rb_Registered_ICDS_No
 id rb_Registered_ICDS_YES
+id rb_Registered_ICDS_no
+id rb_Registered_ICDS_yes
 id rb_active_no
 id rb_active_yes
 id rb_child
+id rb_complimentary_nutrition_no
+id rb_complimentary_nutrition_yes
 id rb_eng
 id rb_garden_No
 id rb_garden_YES
@@ -2957,6 +2959,8 @@ id rb_maternal
 id rb_medicaly_critical_no
 id rb_medicaly_critical_yes
 id rb_no
+id rb_nrc_referral_no
+id rb_nrc_referral_yes
 id rb_nutrition_by_bnf_no
 id rb_nutrition_by_bnf_yes
 id rb_nutrition_garden_no
@@ -3119,10 +3123,12 @@ id rg_Mortality
 id rg_Newborn_Delivery
 id rg_Registered_ICDS
 id rg_active
+id rg_complimentary_nutrition
 id rg_garden
 id rg_garden_setup
 id rg_group
 id rg_medicaly_critical
+id rg_nrc_referral
 id rg_nutrition_by_bnf
 id rg_nutrition_garden
 id rg_sent_to_nrc
@@ -3824,7 +3830,10 @@ id txtWhenStartFood
 id txtWhichNutrientDef
 id txtWomenWeight
 id txtYouAreAneamic
+id txt_Comp_Nut_rec
+id txt_Registered_with_ICDS
 id txt_garden_setup
+id txt_nrc_referal
 id txt_nutrition_by_bnf
 id txt_nutrition_garden
 id txt_sent_to_nrc
@@ -4319,6 +4328,7 @@ string choose_language
 string clear_text_end_icon_content_description
 string completed_months_of_pregnancy
 string completed_pregnancy_months
+string complimentary_nutrition
 string congenital_chronic_condition
 string consumption_of_ifa_tablet
 string convulsions
@@ -4536,6 +4546,7 @@ string not_needed
 string not_taken
 string not_taking
 string not_vaccinated_at_all
+string nrc_referral
 string number_of_family_members
 string nutrition_by_bnf
 string nutrition_garden

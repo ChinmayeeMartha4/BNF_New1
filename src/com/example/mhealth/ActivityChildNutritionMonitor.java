@@ -109,14 +109,17 @@ public class ActivityChildNutritionMonitor extends Activity {
             rb_sick_no, rb_sick_yes, rb_sick_no15, rb_sick_yes15,rbPitting,rbBilateral,
             rbMedicalFacilityYes,rbMedicalFacilityNo,rb_medicaly_critical_yes,rb_medicaly_critical_no
             ,rb_sent_to_nrc_yes,rb_sent_to_nrc_no,rb_nutrition_by_bnf_yes,rb_nutrition_by_bnf_no,rb_garden_setup_yes
-            ,rb_garden_setup_no,rb_nutrition_garden_yes,rb_nutrition_garden_no;
+            ,rb_garden_setup_no,rb_nutrition_garden_yes,rb_nutrition_garden_no
+            ,rb_nrc_referral_yes,rb_nrc_referral_no,rb_complimentary_nutrition_yes
+            ,rb_complimentary_nutrition_no,rb_Registered_ICDS_yes,rb_Registered_ICDS_no;
     CheckBox cbGrain, cbDal, cbMilkrelated, cbEggs, cbFleshfood, cbVitA, cbFruits;
     CheckBox cbDiarrhoea, cbCough, cbFever, cbDifficultybreathing, cbOther;
     CheckBox cbDiarrhoea_no15, cbCough_no15, cbFever_no15, cbDifficultybreathing_no15, cbOther_no15;
     RadioGroup radioGroup, radioGroupMigrate, rg_sick, rg_sick15,rgPOET,rgMedicalFacility, rgAgeVaccination,
             rgchildPremature, rgchildbreastfeeding,
             rgmotherbreastmilk, rgchildVitA, rgchilddeworming_6, rgchildIFA, rgchildVaccinationStatus
-    ,rg_medicaly_critical,rg_sent_to_nrc,rg_nutrition_by_bnf,rg_garden_setup,rg_nutrition_garden;
+    ,rg_medicaly_critical,rg_sent_to_nrc,rg_nutrition_by_bnf,rg_garden_setup,rg_nutrition_garden
+            ,rg_nrc_referral,rg_complimentary_nutrition,rg_Registered_ICDS;
     TextView txtChildNutrition, txtChildName, txtchildWeight, txtchildHeight,
             txtPregmentWomen, txtMuac, txtChildhbn, txtEdema, txtPhoto, txtCurrentDate,
             txtNutritionHistory, txtFooter, tvNotification, txtSick, txtSick15, txtGps, preheight, tvchildVaccinationStatus;
@@ -153,7 +156,8 @@ public class ActivityChildNutritionMonitor extends Activity {
             strLang, strSick15, strPhotoInsHead, strPhotoIns, strOnfarm, strPrivateschool,
             strPOET,strMedicalFacility, strAgeVaccination, strchildPremature, strchildbreastfeeding,
             strmotherbreastmilk, strchildVitA, strchilddeworming_6, strchildIFA,
-            strchildVaccinationStatus,strNutritionGarden,strGardenSetup,strNutritionBnf,strSentToNrc,strMedicaly;
+            strchildVaccinationStatus,strNutritionGarden,strGardenSetup,strNutritionBnf,strSentToNrc,strMedicaly
+            ,strRegisteredIcds,strComplimentaryNutrition,strNrcReferral;
     private long id;
     private Bitmap bitmap;
     private int user_id, flag = 0, migrationflag = 0, dateflag = 0, absentFlag = 0, temporaryMigrateFlag = 0,
@@ -465,6 +469,51 @@ public class ActivityChildNutritionMonitor extends Activity {
                         break;
                     case R.id.rb_nutrition_garden_no:
                         strNutritionGarden="No";
+                        break;
+
+                }
+            }
+        });
+
+        rg_nrc_referral.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+                switch (i){
+                    case R.id.rb_nrc_referral_yes:
+                        strNrcReferral="Yes";
+                        break;
+                    case R.id.rb_nrc_referral_no:
+                        strNrcReferral="No";
+                        break;
+
+                }
+            }
+        });
+
+        rg_complimentary_nutrition.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+                switch (i){
+                    case R.id.rb_complimentary_nutrition_yes:
+                        strComplimentaryNutrition="Yes";
+                        break;
+                    case R.id.rb_complimentary_nutrition_no:
+                        strComplimentaryNutrition="No";
+                        break;
+
+                }
+            }
+        });
+
+        rg_Registered_ICDS.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+                switch (i){
+                    case R.id.rb_Registered_ICDS_yes:
+                        strRegisteredIcds="Yes";
+                        break;
+                    case R.id.rb_Registered_ICDS_no:
+                        strRegisteredIcds="No";
                         break;
 
                 }
@@ -1516,6 +1565,18 @@ public class ActivityChildNutritionMonitor extends Activity {
         rb_nutrition_garden_yes=findViewById(R.id.rb_nutrition_garden_yes);
         rb_nutrition_garden_no=findViewById(R.id.rb_nutrition_garden_no);
 
+        rg_nrc_referral=findViewById(R.id.rg_nrc_referral);
+        rb_nrc_referral_yes=findViewById(R.id.rb_nrc_referral_yes);
+        rb_nrc_referral_no=findViewById(R.id.rb_nrc_referral_no);
+
+        rg_complimentary_nutrition=findViewById(R.id.rg_complimentary_nutrition);
+        rb_complimentary_nutrition_yes=findViewById(R.id.rb_complimentary_nutrition_yes);
+        rb_complimentary_nutrition_no=findViewById(R.id.rb_complimentary_nutrition_no);
+
+        rg_Registered_ICDS=findViewById(R.id.rg_Registered_ICDS);
+        rb_Registered_ICDS_yes=findViewById(R.id.rb_Registered_ICDS_yes);
+        rb_Registered_ICDS_no=findViewById(R.id.rb_Registered_ICDS_no);
+
         childnutrition.setSickYesNo("");
         childnutrition.setSickName("");
         childnutrition.setSickYesNo15("");
@@ -1770,6 +1831,9 @@ public class ActivityChildNutritionMonitor extends Activity {
                                     childnutrition.setNutrition_bnf(strNutritionBnf);
                                     childnutrition.setNutrition_garden(strGardenSetup);
                                     childnutrition.setNutrition_garden_kit(strNutritionGarden);
+                                    childnutrition.setRegistered_with_icds(strRegisteredIcds);
+                                    childnutrition.setComplimentary_nutrition(strComplimentaryNutrition);
+                                    childnutrition.setNrc_referral(strNrcReferral);
 
 
                                     Time time = new Time();

@@ -39,32 +39,32 @@ public final class R {
     public static final class id {
         private id() {}
 
-        public static final int zxing_back_button = 0x7f0907ad;
-        public static final int zxing_barcode_image_view = 0x7f0907ae;
-        public static final int zxing_contents_supplement_text_view = 0x7f0907af;
-        public static final int zxing_contents_text_view = 0x7f0907b0;
-        public static final int zxing_decode = 0x7f0907b1;
-        public static final int zxing_decode_failed = 0x7f0907b2;
-        public static final int zxing_decode_succeeded = 0x7f0907b3;
-        public static final int zxing_format_text_view = 0x7f0907b4;
-        public static final int zxing_help_contents = 0x7f0907b5;
-        public static final int zxing_image_view = 0x7f0907b6;
-        public static final int zxing_launch_product_query = 0x7f0907b7;
-        public static final int zxing_menu_encode = 0x7f0907b8;
-        public static final int zxing_menu_help = 0x7f0907b9;
-        public static final int zxing_menu_share = 0x7f0907ba;
-        public static final int zxing_meta_text_view = 0x7f0907bb;
-        public static final int zxing_meta_text_view_label = 0x7f0907bc;
-        public static final int zxing_preview_view = 0x7f0907bd;
-        public static final int zxing_quit = 0x7f0907be;
-        public static final int zxing_restart_preview = 0x7f0907bf;
-        public static final int zxing_result_button_view = 0x7f0907c0;
-        public static final int zxing_result_view = 0x7f0907c1;
-        public static final int zxing_return_scan_result = 0x7f0907c2;
-        public static final int zxing_status_view = 0x7f0907c3;
-        public static final int zxing_time_text_view = 0x7f0907c4;
-        public static final int zxing_type_text_view = 0x7f0907c5;
-        public static final int zxing_viewfinder_view = 0x7f0907c6;
+        public static final int zxing_back_button = 0x7f0907b6;
+        public static final int zxing_barcode_image_view = 0x7f0907b7;
+        public static final int zxing_contents_supplement_text_view = 0x7f0907b8;
+        public static final int zxing_contents_text_view = 0x7f0907b9;
+        public static final int zxing_decode = 0x7f0907ba;
+        public static final int zxing_decode_failed = 0x7f0907bb;
+        public static final int zxing_decode_succeeded = 0x7f0907bc;
+        public static final int zxing_format_text_view = 0x7f0907bd;
+        public static final int zxing_help_contents = 0x7f0907be;
+        public static final int zxing_image_view = 0x7f0907bf;
+        public static final int zxing_launch_product_query = 0x7f0907c0;
+        public static final int zxing_menu_encode = 0x7f0907c1;
+        public static final int zxing_menu_help = 0x7f0907c2;
+        public static final int zxing_menu_share = 0x7f0907c3;
+        public static final int zxing_meta_text_view = 0x7f0907c4;
+        public static final int zxing_meta_text_view_label = 0x7f0907c5;
+        public static final int zxing_preview_view = 0x7f0907c6;
+        public static final int zxing_quit = 0x7f0907c7;
+        public static final int zxing_restart_preview = 0x7f0907c8;
+        public static final int zxing_result_button_view = 0x7f0907c9;
+        public static final int zxing_result_view = 0x7f0907ca;
+        public static final int zxing_return_scan_result = 0x7f0907cb;
+        public static final int zxing_status_view = 0x7f0907cc;
+        public static final int zxing_time_text_view = 0x7f0907cd;
+        public static final int zxing_type_text_view = 0x7f0907ce;
+        public static final int zxing_viewfinder_view = 0x7f0907cf;
     }
     public static final class layout {
         private layout() {}
@@ -87,27 +87,27 @@ public final class R {
     public static final class string {
         private string() {}
 
-        public static final int zxing_app_name = 0x7f100203;
-        public static final int zxing_button_cancel = 0x7f100204;
-        public static final int zxing_button_ok = 0x7f100205;
-        public static final int zxing_contents_contact = 0x7f100206;
-        public static final int zxing_contents_email = 0x7f100207;
-        public static final int zxing_contents_location = 0x7f100208;
-        public static final int zxing_contents_phone = 0x7f100209;
-        public static final int zxing_contents_sms = 0x7f10020a;
-        public static final int zxing_contents_text = 0x7f10020b;
-        public static final int zxing_menu_encode_mecard = 0x7f10020c;
-        public static final int zxing_menu_encode_vcard = 0x7f10020d;
-        public static final int zxing_menu_help = 0x7f10020e;
-        public static final int zxing_menu_share = 0x7f10020f;
-        public static final int zxing_msg_camera_framework_bug = 0x7f100210;
-        public static final int zxing_msg_default_format = 0x7f100211;
-        public static final int zxing_msg_default_meta = 0x7f100212;
-        public static final int zxing_msg_default_status = 0x7f100213;
-        public static final int zxing_msg_default_time = 0x7f100214;
-        public static final int zxing_msg_default_type = 0x7f100215;
-        public static final int zxing_msg_encode_contents_failed = 0x7f100216;
-        public static final int zxing_msg_unmount_usb = 0x7f100217;
+        public static final int zxing_app_name = 0x7f100205;
+        public static final int zxing_button_cancel = 0x7f100206;
+        public static final int zxing_button_ok = 0x7f100207;
+        public static final int zxing_contents_contact = 0x7f100208;
+        public static final int zxing_contents_email = 0x7f100209;
+        public static final int zxing_contents_location = 0x7f10020a;
+        public static final int zxing_contents_phone = 0x7f10020b;
+        public static final int zxing_contents_sms = 0x7f10020c;
+        public static final int zxing_contents_text = 0x7f10020d;
+        public static final int zxing_menu_encode_mecard = 0x7f10020e;
+        public static final int zxing_menu_encode_vcard = 0x7f10020f;
+        public static final int zxing_menu_help = 0x7f100210;
+        public static final int zxing_menu_share = 0x7f100211;
+        public static final int zxing_msg_camera_framework_bug = 0x7f100212;
+        public static final int zxing_msg_default_format = 0x7f100213;
+        public static final int zxing_msg_default_meta = 0x7f100214;
+        public static final int zxing_msg_default_status = 0x7f100215;
+        public static final int zxing_msg_default_time = 0x7f100216;
+        public static final int zxing_msg_default_type = 0x7f100217;
+        public static final int zxing_msg_encode_contents_failed = 0x7f100218;
+        public static final int zxing_msg_unmount_usb = 0x7f100219;
     }
     public static final class style {
         private style() {}

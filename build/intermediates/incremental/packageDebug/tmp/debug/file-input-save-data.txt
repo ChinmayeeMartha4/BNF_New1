@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Fri Sep 24 16:47:38 IST 2021
+#Mon Sep 27 11:33:35 IST 2021
 17.baseType=DIRECTORY
 4.path=zxinglegacy/images/contact-results-screen.jpg
 25.base=C\:\\Users\\hp\\Desktop\\NewBitannia\\BNF_New1\\build\\intermediates\\merged_assets\\debug\\mergeDebugAssets\\out
